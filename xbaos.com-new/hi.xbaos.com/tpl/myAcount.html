@@ -1,0 +1,76 @@
+<link rel="stylesheet" href="../css/myAcount.css">
+    <div class="content-one-box">
+        <div class="wrap">
+            <!--筛选盒子-->
+            <div class="select-box">
+                <ul class="select-list" style="width: 40%">
+                    <li class="system con" style="width: 31%">
+                        <input type="text" id="con-one" class="con" ng-model="systemSearch">
+                        <i>
+                            <img src="../img/icon_xiala_12x7.png" alt="">
+                        </i>
+                        <!--选项内容-->
+                        <ul class="system-son animated">
+                            <li class="active text get-con" ng-click="systemSearch='ios'">ios</li>
+                            <li class="text get-con" ng-click="systemSearch='Android'">Android</li>
+                        </ul>
+                    </li>
+                    <li class="country con" style="width: 31%">
+                            <input type="text" id="con" class="con" ng-model="search">
+                        <i>
+                            <img src="../img/cha.png" alt="" style="top:4px">
+                        </i>
+                        <!--选项内容-->
+                        <select-country search="search" country="countryCode"></select-country>
+                    </li>
+                    <li class="package-name con" style="width: 31%">
+                        <input type="text" class="con" placeholder="Package Name" ng-model="packageName">
+                    </li>
+                </ul>
+                <div class="btn-search">
+                    Search
+                </div>
+            </div>
+            <!--数据、内容-->
+            <div class="data-content" ng-repeat="item in appContent">
+                <table class="table table-striped table-bordered">
+                    <tr>
+                        <td class="first">App ID:</td>
+                        <td class="two">{{item.id}}</td>
+                    </tr>
+                    <tr>
+                        <td class="first">App Name:</td>
+                        <td class="two">{{item.name}}</td>
+                    </tr>
+                    <tr>
+                        <td class="first">Country:</td>
+                        <td class="two">{{item.countryName}}</td>
+                    </tr>
+                    <tr>
+                        <td class="first">Package Name:</td>
+                        <td class="two">{{item.packageName}}</td>
+                    </tr>
+                </table>
+                <!--细节按钮-->
+                <div class="detail-btn">
+                    <!--<a href="#!/seeDetail">Details</a>-->
+                    <a href="javascript:;" ng-click="detailCon(item.id,item.accept,item.packageName,item.name)">Details</a>
+                </div>
+            </div>
+
+
+            <!--没有查询到数据-->
+            <div class="no-data">
+                <div class="picture">
+                    <img src="../img/empty.png" alt="">
+                </div>
+                <p class="prompt">There is no search results for the time being.</p>
+                <div class="create-btn">
+                    <a href="javascript:;" ng-click="CreativeNewApp()">Creative New App</a>
+                    <!--#!/seeDetail/{{systemSearch}}/0/{{countryCode}}/{{packageName}}-->
+                </div>
+            </div>
+        </div>
+    </div>
+<!--<script src="../js/jquery-3.2.1.min.js"></script>-->
+<!--<script src="../js/myAccount.js"></script>-->

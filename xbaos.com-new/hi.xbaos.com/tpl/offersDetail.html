@@ -1,0 +1,136 @@
+
+<link rel="stylesheet" href="../css/offersDetail.css">
+<div class="box">
+    <div class="wrap">
+        <!--这是顶部，标题-->
+        <div class="top">
+            <div class="left_box">
+                <img ng-src="{{content.icon}}" alt="">
+            </div>
+            <div class="right_box_text">
+                <p><span>{{content.id}}</span> - <span>{{content.offerName}}</span> - <span>{{content.incent}}</span> - <span>{{content.platform}}</span> - {{content.accept}}</p>
+            </div>
+        </div>
+        <!--顶部标题结束-->
+        <!--导航 开始-->
+        <ul class="lab">
+            <li class="first">
+                <a href="javascript:;">App Detail</a>
+            </li>
+            <!--<li>-->
+                <!--<a href="javascript:;">App Source</a>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<a href="javascript:;">Aff List</a>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<a href="javascript:;">Promotion record</a>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<a href="javascript:;">Help</a>-->
+            <!--</li>-->
+        </ul>
+        <!--导航 结束-->
+        <!--content star-->
+        <div class="con-list">
+            <div class="con-list-son">
+                <span class="title">Campaign</span>
+                <table class="table table-bordered">
+                    <tr class="bt">
+                        <th class="text-center">Offer ID</th>
+                        <th class="text-center">Creative Time</th>
+                        <th class="text-center">Payout</th>
+                        <th class="text-center">Daily Cap</th>
+                        <th class="text-center">Safety Cap</th>
+                        <th class="text-center">Total Cap</th>
+                        <th class="text-center">Ads Cycle</th>
+                    </tr>
+                    <tr class="text-center">
+                        <td>{{content.id}}</td>
+                        <td>{{content.createTime}}</td>
+                        <td>{{payout}}</td>
+                        <td>{{content.dailyCap}}</td>
+                        <td>{{content.saftycap}}</td>
+                        <td>{{content.totalCap}}</td>
+                        <td><span>{{content.netid}}</span> - {{content.netName}}</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="con-list-son">
+                <span class="title">Targeting</span>
+                <table class="table table-bordered">
+                    <tr class="bt">
+                        <th class="text-center">Country</th>
+                        <th class="text-center">Traffic Requirement</th>
+                        <th class="text-center">Traffic Type</th>
+                        <th class="text-center">Device Type</th>
+                        <th class="text-center">OS</th>
+                        <th class="text-center">Gaid/Idfa</th>
+                        <th class="text-center">Hard</th>
+                        <th class="text-center">Huge</th>
+                    </tr>
+                    <tr class="text-center">
+                        <td>{{content.accept}}</td>
+                        <td>{{content.incent}}</td>
+                        <td>{{content.trafficType}}</td>
+                        <td>{{content.deviceType}}</td>
+                        <td>{{content.platform}}</td>
+                        <td>{{content.type}}</td>
+                        <td>{{content.hard}}</td>
+                        <td>{{content.huge}}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!--content end-->
+        <!--mark star-->
+        <div class="footer">
+            <p class="text">Quality Require Desc: {{content.kpi}}</p>
+            <div class="mark-box">
+                <span>Remarks</span>
+                <textarea class="form-control " rows="3" id="mark" ng-model="remark"></textarea>
+            </div>
+            <div class="submit-box">
+                <div class="select-box">
+                    <a href="javascript:;">{{statuResult}}</a>
+                    <em>
+                        <img src="../img/xiala.png" alt="">
+                    </em>
+                </div>
+                <ul class="select-list">
+                    <li class="color">Save</li>
+                    <li>Action</li>
+                    <li>Done</li>
+                </ul>
+                <div class="edit">
+                    <a href="#!/editOffers/{{content.id}}">Edit</a>
+                </div>
+                <div class="save">
+                    <a href="javascript:;">Save</a>
+                </div>
+            </div>
+            <div class="footer-box">
+                <p class="title">
+                    <span>Offer Name:</span>
+                   {{content.offerName}}
+                </p>
+                <div class="content">
+                    <p class="con-one">
+                        <span>PackageName:</span>
+                        {{content.packageName}}
+                    </p>
+                    <p class="link">
+                        <span>Preview Link:</span>
+                        {{content.previewLink}}
+                    </p>
+                    <div class="link">
+                        <span>Track Link:</span>
+                        {{content.trackingLink}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--mark end-->
+        <div class="pagesPrompt">It's the first page already</div>
+    </div>
+</div>

@@ -1,0 +1,101 @@
+
+<link rel="shortcut icon" href="../img/favicon.ico">
+
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="../css/apps.css">
+
+<!-- Important. For Theming change primary-color variable in main.css  -->
+
+<link href="../css/font-awesome.min.css" rel="stylesheet">
+
+<!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="../js/html5shiv.js"></script>
+
+<![endif]-->
+<div class="con-wrap">
+    <!--saixuan BOX-->
+
+    <div class="select-box">
+        <ul class="select-list">
+            <li class="system con">
+                <input type="text" id="con-id" class="con" placeholder="OffersId" ng-model="offersIdCon">
+            </li>
+            <li class="system con">
+                <input type="text" id="con-one" class="con" placeholder="offerName" ng-model="offerName">
+            </li>
+            <li class="package-name con">
+                <input type="text" class="con" placeholder="Package Name" ng-model="packageName">
+            </li>
+            <li class="country con">
+                <input type="text" id="con" class="con" ng-model="search" placeholder="Country">
+                <i>
+                    <img src="../img/cha.png" alt="">
+                </i>
+                <!--选项内容-->
+                <select-country search="search" country="countryCode"></select-country>
+            </li>
+        </ul>
+        <div class="btn-search" ng-click="ajaxGet()">
+            Search
+        </div>
+    </div>
+
+
+    <div class="list-box">
+        <div class="listWhole">
+            <p></p>
+            <!--loop start-->
+            <div class="list-container" ng-repeat="item in contents">
+                <div class="icons ">
+                    <div class="icons_img ">
+                        <a href="#!/offersDetail/{{item.id}}" target="_blank">
+                            <img ng-src="{{item.icon}}" class="icon" alt="icon" >
+                        </a>
+                    </div>
+                    <div class="icon_words">
+                        <h4>
+                            <a href="#!/offersDetail/{{item.id}}" target="_blank"><span>{{item.id}}</span>-{{item.name}}-{{item.netid}}</a>
+                            <a href="#!/appDetail/{{item.appid}}/table1">-{{item.appid}}</a>
+                        </h4>
+                        <p>{{item.incent}}-<span>{{item.platform}}</span>-{{item.accept}}</p>
+                        <span><img src="../img/position.png" alt="position.png"><span>8.00</span><span>Hong Kong</span></span>
+                    </div>
+                </div>
+                <!--<div class="middle_content">-->
+                    <!--<div class="today_lead">-->
+                        <!--<p>Today Lead</p>-->
+                        <!--<p>{{item.today_lead}}</p>-->
+                    <!--</div>-->
+                    <!--<div class="today_lead">-->
+                        <!--<p>Month Lead</p>-->
+                        <!--<p>{{item.total_lead}}</p>-->
+                    <!--</div>-->
+                    <!--<div class="Earnings">-->
+                        <!--<p>Earnings</p>-->
+                        <!--<p>{{item.total_revenue}}</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <div class="button_status">
+                    <div class="status">
+                        <div class="status_img" id="{{item.active}}" ng-click="switch(item.id,$index)">
+                            <img src="../img/Float_close.png" alt="float_close" class="closes">
+                            <img src="../img/Float_open.png" alt="float_close" class="open">
+                        </div>
+                        <div class="edit">
+                            <a href="#!/editOffers/{{item.id}}">Edit</a></div>
+                    </div>
+                </div>
+            </div>
+            <!--loop end-->
+            <!--pagination-->
+            <tm-pagination conf="paginationConf" id="pagination"></tm-pagination>
+        </div>
+        <!--loading 效果-->
+        <div id="loading-center" loading-effect>
+        </div>
+    </div>
+</div>
+<!-- detail_list End -->
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>

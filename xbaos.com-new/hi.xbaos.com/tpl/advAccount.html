@@ -1,0 +1,38 @@
+<link rel="stylesheet" href="../css/advAccount.css">
+<link rel="stylesheet" href="../css/affAccount.css">
+<div class="data-wrap">
+    <div class="wrapBox">
+        <div class="detail-btn">
+            <a href="#!/advAccountDetail/0/0">Add</a>
+        </div>
+    </div>
+    <table class="table">
+        <tr>
+            <th>Net ID</th>
+            <th>Company</th>
+            <th>Email</th>
+            <th>Status</th>
+            <th>Create Time</th>
+            <th></th>
+        </tr>
+        <tr ng-repeat="item in advAccountData">
+            <td>{{item.userid}}</td>
+            <td>{{item.company}}</td>
+            <td>{{item.user_name}}</td>
+            <td>
+                <span class="status" ng-if="item.active==true">Approved</span>
+                <span class="statusTwo" ng-if="item.active==false">Blocked</span>
+            </td>
+            <td>{{item.createTime}}</td>
+            <td>
+                <a href="#!/advAccountDetail/{{item.userid}}/{{item.infoid}}">
+                    <img src="../img/icon_edit14x14.png" alt="">
+                </a>
+            </td>
+
+        </tr>
+    </table>
+    <!--pagination-->
+    <tm-pagination conf="paginationConf" id="pagination"></tm-pagination>
+    <div class="pagesPrompt">It's the first page already</div>
+</div>

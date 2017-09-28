@@ -1,0 +1,276 @@
+
+<link href="../css/vendor.css" rel="stylesheet" type="text/css">
+<link href="../css/cp.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="../css/view.css">
+<div id="ember318" class="ember-view">
+    <div class=" transitview ">
+    <!----></div>
+
+
+    <div class="content-body transitview   ">
+        <div class="top-container transitview  ">
+            <div class="org-container">
+                <div class="center-container row">
+                    <div class="pull-left col-md-9 col-xs-9">
+                        <div class="row">
+                            <!---->              <h4 class="over-flow" title="XBAOS LTD">
+                            <b>Invoice to Adv</b>
+                        </h4>
+                        </div>
+                    </div>
+                    <!---->          </div>
+            </div>
+        </div>
+
+        <div class="zb-container">
+            <div class="top-container secure">
+                <div class="secure-band">
+                    <div class="center-container actions">
+                        <div class="hidden-xs">
+                            <h3 style="margin: 5px 0 0;"><strong>${{confirmed}}</strong></h3>
+                            <p class="text-overdue">Balance Due</p>
+                        </div>
+                        <div class="clearfix">
+                            <div class="seperator-col spaced pull-left hidden-xs">
+                                <div class="col">
+                                    <div class="text-muted">Invoice #:</div>
+                                    <div>{{invoiceNumber}}</div>
+                                </div>
+                                <div class="col">
+                                    <div class="text-muted">Due Date:</div>
+                                    <div>{{engMonth}}</div>
+                                </div>
+                            </div>
+                            <div class="pull-right">
+                                <button class="btn btn-default" type="button" id="email">
+                                    <span class="iconfont icon-fasongyoujian"></span>
+                                </button>
+                                <button class="btn btn-default" type="button" id="submit">
+                                    <span class="iconfont icon-queren"></span>
+                                </button>
+                                <button class="btn btn-default" type="button" id="print">
+                                    <span class="iconfont icon-ccgl-dayinliebiao-3"></span>
+                                </button>
+                                <button class="btn btn-default" type="button" id="download">
+                                    <span class="iconfont icon-download"></span>
+                                </button>
+                                <!---->              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="secure-details-container">
+                <div class="row visible-xs"><hr class="row"></div>
+                <div class="pdf-container  center-container hidden-xs" id="downloadCon">
+                    <div>
+                        <div class="pcs-template">
+                            <div class="pcs-template-header pcs-header-content" id="header">
+                            </div>
+                            <div class="pcs-template-body">
+                                <table style="width:100%;table-layout: fixed;">
+                                    <tbody>
+                                    <tr>
+                                        <td style="vertical-align: top; width:50%;">
+                                            <div>
+                                                <!--http://xbaoslogo.oss-ap-southeast-1.aliyuncs.com/redblack-8.png-->
+                                                <img src="../img/viwImg.png" style="width:240.00px;height:57.92px;" id="logo_content">
+                                            </div>
+                                            <span class="pcs-orgname"><b>{{ourData.accountHolder}}</b></span><br>
+                                            <span class="pcs-label">
+             <span style="white-space: pre-wrap;word-wrap: break-word;" id="tmp_org_address">Company ID : {{ourData.companyRegistrationNo}}
+{{ourData.companyOfficeAddress}}</span>
+             </span>
+                                        </td>
+                                        <td style="vertical-align: top; text-align:right;width:50%;">
+
+                                            <span class="pcs-entity-title">INVOICE</span><br>
+                                            <span id="tmp_entity_number" style="font-size: 10pt;" class="pcs-label">
+                                                <b># {{invoiceNumber}}</b>
+                                            </span>
+                                            <div style="clear:both;margin-top:20px;">
+                                                <span style="font-size:8pt;"><b>Balance Due</b></span><br>
+                                                <span style="font-size:12pt;"><b>${{confirmed}}</b></span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+
+                                <table style="clear:both;width:100%;margin-top:30px;table-layout:fixed;">
+                                    <tbody><tr>
+                                        <td style="width:60%;vertical-align:bottom;word-wrap: break-word;">
+                                            <div><label style="font-size: 10pt;" class="pcs-label" id="tmp_billing_address_label">Bill To</label>
+                                                <br>
+                                                <span class="pcs-customer-name" id="zb-pdf-customer-detail" style="color: #6495ED;">{{advData.accountHolder}}</span><br>
+                                                <span>{{advData.companyOfficeAddress}}</span>
+                                            </div>
+                                        </td>
+                                        <td style="vertical-align:bottom;width: 40%;" align="right">
+                                            <table style="float:right;width: 100%;table-layout: fixed;word-wrap: break-word;" cellspacing="0" cellpadding="0" border="0">
+                                                <tbody>
+                                                <tr>
+                                                    <td style="text-align:right;padding:5px 10px 5px 0px;font-size:10pt;">
+                                                        <span class="pcs-label">Invoice Date :</span>
+                                                    </td>
+                                                    <td style="text-align:right;">
+                                                        <span id="tmp_entity_date">{{engMonth}}</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align:right;padding:5px 10px 5px 0px;font-size: 10pt;">
+                                                        <span class="pcs-label">Terms :</span>
+                                                    </td>
+                                                    <td style="text-align:right;">
+                                                        <span id="tmp_payment_terms">Net 30</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align:right;padding:5px 10px 5px 0px;font-size: 10pt;">
+                                                        <span class="pcs-label">Due Date :</span>
+                                                    </td>
+                                                    <td style="text-align:right;">
+                                                        <span id="tmp_due_date">{{engMonthLate}}</span>
+                                                    </td>
+                                                </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    </tbody></table>
+
+                                <table style="width:100%;margin-top:20px;table-layout:fixed;" class="pcs-itemtable" cellspacing="0" cellpadding="0" border="0">
+                                    <thead>
+                                    <tr style="height:32px;">
+                                        <td style="padding:5px 0 5px 5px;text-align: center;word-wrap: break-word;width: 5%;" class="pcs-itemtable-header">
+                                            #
+                                        </td>
+                                        <td style="padding:5px 10px 5px 20px;word-wrap: break-word;" class="pcs-itemtable-header pcs-itemtable-description">
+                                            Item &amp; Description
+                                        </td>
+
+                                        <td style="padding:5px 10px 5px 5px;word-wrap: break-word;width: 20%;" class="pcs-itemtable-header" align="right">
+                                            Qty
+                                        </td>
+
+                                        <td style="padding:5px 10px 5px 5px;word-wrap: break-word;width: 11%;" class="pcs-itemtable-header" align="right">
+                                            Rate
+                                        </td>
+                                        <td style="padding:5px 10px 5px 5px;word-wrap: break-word;width:120px;" class="pcs-itemtable-header" align="right">
+                                            Amount
+                                        </td>
+                                    </tr>
+                                    </thead>
+                                    <tbody class="itemBody">
+                                    <tr>
+                                        <td style="padding: 10px 0 10px 5px;text-align: center;word-wrap: break-word;" class="pcs-item-row" valign="top">
+                                            1
+                                        </td>
+
+                                        <td style="padding: 10px 0px 10px 20px;" class="pcs-item-row" valign="top">
+                                            <div>
+                                                <div>
+                                                    <span style="word-wrap: break-word;" id="tmp_item_name">Campaign</span>
+                                                </div>
+                                            </div>
+                                        </td>
+
+                                        <td style="padding: 10px 10px 5px 10px;text-align:right;word-wrap: break-word;" class="pcs-item-row" valign="top" id="confirmed">{{confirmed}}</td>
+                                        <td style="padding: 10px 10px 5px 10px;text-align:right;word-wrap: break-word;" class="pcs-item-row" valign="top">
+                                            <span id="tmp_item_rate">{{rate}}</span>
+                                        </td>
+                                        <td style="text-align:right;padding: 10px 10px 10px 5px;word-wrap: break-word;" class="pcs-item-row" valign="top">
+                                            <span id="tmp_item_amount">{{confirmed*rate}}</span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                <div style="width: 100%;margin-top: 1px;">
+                                    <div style="width: 45%;padding: 10px 10px 3px 3px;font-size: 9pt;float: left;">
+                                        <div style="white-space: pre-wrap;"></div>
+
+                                    </div>
+                                    <div style="width: 50%;float:right;">
+                                        <table class="pcs-totals" width="100%" cellspacing="0" border="0">
+                                            <tbody>
+                                            <tr>
+                                                <td style="padding: 5px 10px 5px 0;" valign="middle" align="right">Sub Total</td>
+                                                <td id="tmp_subtotal" style="width:120px;padding: 10px 10px 10px 5px;" valign="middle" align="right">{{confirmed*rate}}</td>
+                                            </tr>
+
+
+
+                                            <tr>
+                                                <td style="padding: 5px 10px 5px 0;" valign="middle" align="right"><b>Total</b></td>
+                                                <td id="tmp_total" style="width:120px;padding: 10px 10px 10px 5px;" valign="middle" align="right"><b>${{confirmed*rate}}</b></td>               </tr>
+
+
+
+                                            <tr style="height:40px;" class="pcs-balance">
+                                                <td style="padding:5px 10px 5px 0;" valign="middle" align="right"><b>Balance Due</b></td>
+                                                <td id="tmp_balance_due" style="width:120px;padding: 10px 10px 10px 5px;" valign="middle" align="right"><b>${{confirmed*rate}}</b></td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div style="clear: both;"></div>
+                                </div>
+
+
+
+
+                                <div style="clear:both;margin-top:50px;width:100%;">
+                                    <label style="font-size: 10pt;font-weight: bold"  class="pcs-label">Notes</label><br>
+                                    <p style="margin-top:7px;white-space: pre-wrap;word-wrap: break-word;" class="pcs-notes">Thanks for your business.</p>
+                                    <label style="font-size: 10pt;font-weight: bold"  class="pcs-label">Contact</label><br>
+                                    <p style="margin-top:7px;white-space: pre-wrap;word-wrap: break-word;" class="pcs-notes">billing@xbaos.com</p>
+                                </div>
+
+
+
+                                <div style="clear:both;margin-top:30px;width:100%;">
+                                    <label style="font-size: 10pt;font-weight: bold" id="tmp_terms_label" class="pcs-label">Terms &amp; Conditions</label><br>
+                                    <p class="pcs-terms" id="addressCon">
+                                        <p>Account Name:{{ourData.accountHolder}}</p>
+                                        <p>Account Number:{{ourData.accountNumber}}</p>
+                                        <p>Bank name: {{ourData.bankName}}</p>
+                                        <p>Bank Routing Number: {{ourData.bankRoutingNumber}}</p>
+                                        <p>Bank SWIFT Code: {{ourData.swift}}</p>
+                                        <p>IBAN&Bank address etc.: {{ourData.additionalPaymentDetails}}</p>
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <div class="pcs-template-footer">
+                                <div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---->
+        </div>
+    </div>
+
+
+    <!---->
+
+    <!--<div id="ember356" class="ember-view"><div id="statusMsg" style="display: none;" align="center">-->
+        <!--<div class="">-->
+            <!--<div class="pull-left">&lt;!&ndash;&ndash;&gt;</div>-->
+            <!--<div class="pull-left msg">-->
+                <!--<span>&lt;!&ndash;&ndash;&gt;</span>-->
+            <!--</div>-->
+            <!--<div class="pull-right">-->
+                <!--&lt;!&ndash;&ndash;&gt;    </div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+
+    <!---->
+</div>
+<!--</body></html>-->

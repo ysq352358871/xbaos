@@ -1,0 +1,144 @@
+<link rel="stylesheet" href="../css/dashboard.css">
+<div class="alert">
+</div>
+<div class="alert_box animated">
+    <img src="../img/icon_close14x14_white.png" alt="close" id="close">
+    <div class="alert_content">
+        <div>Custom indicators</div>
+        <div id="menuWrap">
+            <div class="appId true">
+                <img src="../img/icon_checklink_dark.png" alt="" class="false">
+                <img src="../img/but_Checkbox_selected.png" alt="" class="true">
+                <span>App ID</span>
+            </div>
+            <div class="affId true">
+                <!--<input type="checkbox">-->
+                <img src="../img/icon_checklink_dark.png" alt="" class="false">
+                <img src="../img/but_Checkbox_selected.png" alt="" class="true">
+                <span>Aff ID</span>
+            </div>
+            <div  class="offerId true">
+                <!--<input type="checkbox">-->
+                <img src="../img/icon_checklink_dark.png" alt="" class="false">
+                <img src="../img/but_Checkbox_selected.png" alt="" class="true">
+                <span>offer_id</span>
+            </div>
+            <div  class="netId true two">
+                <!--<input type="checkbox">-->
+                <img src="../img/icon_checklink_dark.png" alt="" class="false">
+                <img src="../img/but_Checkbox_selected.png" alt="" class="true">
+                <span>Net Id</span>
+            </div>
+            <div  class="appName true two">
+                <!--<input type="checkbox">-->
+                <img src="../img/icon_checklink_dark.png" alt="" class="false">
+                <img src="../img/but_Checkbox_selected.png" alt="" class="true">
+                <span>App Name</span>
+            </div>
+            <div  class="markPayout true two">
+                <!--<input type="checkbox">-->
+                <img src="../img/icon_checklink_dark.png" alt="" class="false">
+                <img src="../img/but_Checkbox_selected.png" alt="" class="true">
+                <span>Mark Payout</span>
+            </div>
+            <div  class="date true two">
+                <!--<input type="checkbox">-->
+                <img src="../img/icon_checklink_dark.png" alt="" class="false">
+                <img src="../img/but_Checkbox_selected.png" alt="" class="true">
+                <span>Date</span>
+            </div>
+            <div  class="postCvr true two">
+                <!--<input type="checkbox">-->
+                <img src="../img/icon_checklink_dark.png" alt="" class="false">
+                <img src="../img/but_Checkbox_selected.png" alt="" class="true">
+                <span>postCvr</span>
+            </div>
+            <div  class="cvr true two">
+                <!--<input type="checkbox">-->
+                <img src="../img/icon_checklink_dark.png" alt="" class="false">
+                <img src="../img/but_Checkbox_selected.png" alt="" class="true">
+                <span>cvr</span>
+            </div>
+            <div  class="click true two">
+                <!--<input type="checkbox">-->
+                <img src="../img/icon_checklink_dark.png" alt="" class="false">
+                <img src="../img/but_Checkbox_selected.png" alt="" class="true">
+                <span>Click</span>
+            </div>
+            <div  class="postback true two">
+                <!--<input type="checkbox">-->
+                <img src="../img/icon_checklink_dark.png" alt="" class="false">
+                <img src="../img/but_Checkbox_selected.png" alt="" class="true">
+                <span>Postback</span>
+            </div>
+            <div  class="callback true two">
+                <!--<input type="checkbox">-->
+                <img src="../img/icon_checklink_dark.png" alt="" class="false">
+                <img src="../img/but_Checkbox_selected.png" alt="" class="true">
+                <span>Callback</span>
+            </div>
+        </div>
+    </div>
+    <div class="save">
+        save
+    </div>
+</div>
+<div class="appReport_content">
+    <div class="content_header">
+        <div>
+            <img src="../img/but_Checkbox_selected.png" alt="">
+            <a href="javascript:;" class="custom">Custom</a>
+        </div>
+        <div class="form-group time">
+            <select class="form-control" id="time">
+                <option value="0">Today</option>
+                <option value="1">Yesterday</option>
+                <option value="7">7 days ago</option>
+            </select>
+        </div>
+    </div>
+    <div class="detail_page">
+        <div class="detail_content">
+            <table class="table table-striped">
+                <tr>
+                    <th ng-if="appIdFlag==true">App ID</th>
+                    <th ng-if="affIdFlag==true">Aff ID</th>
+                    <th ng-if="offerIdFlag==true">Offer_id</th>
+                    <th ng-if="netIdFlag==true">Net Id</th>
+                    <th ng-if="appNameFlag==true">App Name</th>
+                    <th ng-if="markPayoutFlag==true">Payout</th>
+                    <th ng-if="dateFlag==true">Date</th>
+                    <th ng-if="postCvrFlag==true">postCvr</th>
+                    <th ng-if="cvrFlag==true">cvr</th>
+                    <th ng-if="click==true">Click</th>
+                    <th ng-if="postback==true">Postback</th>
+                    <th ng-if="callback==true">Callback</th>
+                </tr>
+                <tr ng-repeat="item in dataList">
+                    <td>
+                        <a href="#!/appDetail/{{item.appid}}/table3" style="color: #D21212">{{item.appid}}</a>
+                    </td>
+                    <td>
+                        <a href="#!/offersDetail/{{item.affid}}" style="color: #D21212">{{item.affid}}</a>
+                    </td>
+                    <td>{{item.offer_id}}</td>
+                    <td>{{item.netid}}</td>
+                    <td>{{item.appName}}</td>
+                    <td>{{item.markPayout}}</td>
+                    <td>{{item.date}}</td>
+                    <td>{{item.postcvr}}<span>%</span></td>
+                    <td>{{item.cvr}}<span>%</span></td>
+                    <td>{{item.tracking}}</td>
+                    <td>{{item.postback}}</td>
+                    <td>{{item.callback}}</td>
+
+                </tr>
+            </table>
+        </div>
+    </div>
+    <!--pagination-->
+    <tm-pagination conf="paginationConf" id="pagination"></tm-pagination>
+    <!--loading 效果-->
+    <div id="loading-center" loading-effect>
+    </div>
+</div>

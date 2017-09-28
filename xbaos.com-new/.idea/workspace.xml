@@ -1,0 +1,1239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8ddd4d1f-acbb-49e7-b718-befee2f70410" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/css/font-flag/iconfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/css/font-flag/iconfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/css/font-flag/iconfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/css/iconfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/css/iconfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/css/iconfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/fonts/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/fonts/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/img/App_Store_dark.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/img/Float_close.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/img/Float_open.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/img/add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/img/but_Checkbox_default.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/img/but_Checkbox_default_dark.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/img/but_Checkbox_selected.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/img/but_Radio_default.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/img/but_Radio_selected.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/img/but_Radio_selected_xq.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/img/cha.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/img/empty.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/img/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/img/firstpage-y.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/img/firstpage.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/img/huishou.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/img/icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/img/icon_Account_dark.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/img/icon_Filter_dark.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/img/icon_Refresh.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/img/icon_Report_dark.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/img/icon_account.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/img/icon_account2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/img/icon_add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/img/icon_andriod.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/img/icon_bigadd.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/img/icon_close.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/img/icon_close_alert.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/img/icon_close_email.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/img/icon_dashboard_dark.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/img/icon_dashboard_white.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/img/icon_dropdown.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/img/icon_edit.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/img/icon_ios.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/img/icon_lock13x16.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/img/icon_open13x16.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/img/icon_quit.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/img/icon_search.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/img/icon_shouhui.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/img/icon_takeback.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/img/icon_today.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/img/icon_xiala_12x7.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/img/icon_yesterday.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/img/img_bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/img/img_bg_xq.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/img/lastpage-y.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/img/lastpage.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/img/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/img/logoNew.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/img/logo_xq.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/img/news.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/img/nextpage-y.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/img/nextpage.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/img/position.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/img/position2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/img/previouspage-y.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/img/previouspage.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/img/reduce.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/img/send.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/img/shopcart_Checkbox_default.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/img/shopcart_Checkbox_selected.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/img/shopping_cart.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/img/sort_01.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/img/sort_02.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/img/view.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/img/xiala.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/css/fontview/iconfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/css/fontview/iconfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/css/fontview/iconfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/css/iconfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/css/iconfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/font/Helvetica Neue CE 55 Roman.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/font/HelveticaNeue_Medium.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/fonts/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/fonts/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/img/App_Store_dark.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/img/Float_close.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/img/Float_open.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/img/add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/img/api.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/img/appSelect.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/img/appSelected.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/img/but_Checkbox_default.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/img/but_Checkbox_default_dark.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/img/but_Checkbox_selected.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/img/but_Radio_default.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/img/but_Radio_selected.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/img/but_Radio_selected_xq.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/img/cha.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/img/empty.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/img/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/img/firstpage-y.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/img/firstpage.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/img/huishou.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/img/icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/img/icon_Account_dark.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/img/icon_Filter_dark.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/img/icon_Refresh.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/img/icon_Report_dark.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/img/icon_add8.14.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/img/icon_checklink.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/img/icon_checklink_dark.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/img/icon_close.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/img/icon_close14x14_white.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/img/icon_close_email.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/img/icon_dashboard_dark.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/img/icon_dashboard_white.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/img/icon_dropdown.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/img/icon_edit.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/img/icon_edit14x14.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/img/icon_lock13x16.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/img/icon_open13x16.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/img/icon_search.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/img/icon_shouhui.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/img/icon_takeback.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/img/icon_xiala_12x7.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/img/img_bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/img/img_bg_xq.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/img/lastpage-y.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/img/lastpage.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/img/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/img/logoNew.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/img/logo_xq.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/img/news.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/img/nextpage-y.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/img/nextpage.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/img/position.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/img/position2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/img/previouspage-y.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/img/previouspage.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/img/reduce.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/img/send.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/img/shopcart_Checkbox_default.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/img/shopcart_Checkbox_selected.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/img/shopping_cart.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/img/sort_01.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/img/sort_02.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/img/title.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/img/view.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/img/viwImg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/img/xiala.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/forgot_password/img/but_Radio_selected.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/forgot_password/img/icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/forgot_password/img/icon_close.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/forgot_password/img/img_bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/forgot_password/img/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/login/img/but_Radio_selected.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/login/img/icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/login/img/img_bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/login/img/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/page1/img/icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/page1/img/img_bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/page1/img/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/page2/img/but_Radio_default.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/page2/img/but_Radio_selected.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/page2/img/icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/page2/img/img_bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/page2/img/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/page3/img/but_Radio_default.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/page3/img/but_Radio_selected.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/page3/img/img_bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/page3/img/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/register/img/but_Radio_selected.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/register/img/icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/register/img/icon_close.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/register/img/img_bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/register/img/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/reset_password/img/but_Radio_selected.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/reset_password/img/icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/reset_password/img/icon_close.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/reset_password/img/img_bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/reset_password/img/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/fonts/Stroke-Gap-Icons-Webfont/fonts/Stroke-Gap-Icons.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/areas.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/avatars/img1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/avatars/img2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/browsers-image.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/browsers-image2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/content-logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/demo/mac.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/email/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/email/mail_bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/icon/automatic.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/img1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/img1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/img10.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/img10.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/img2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/img2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/img3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/img3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/img4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/img4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/img_bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/iphone-ipad.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/laptop.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/laptop2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/logo-dark.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/logo-free.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/mail_bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/news/image1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/news/image2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/news/image3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/news/image4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/partners/partner-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/partners/partner-10.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/partners/partner-11.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/partners/partner-12.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/partners/partner-2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/partners/partner-3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/partners/partner-4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/partners/partner-5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/partners/partner-6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/partners/partner-7.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/partners/partner-8.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/partners/partner-9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/quote-orange.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/quotes.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/review-img1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/review-img2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/review-img3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/sections/home-top-background.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/sections/section-10.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/sections/section-11.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/sections/section-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/sections/section-3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/sections/section-4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/sections/section-5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/sections/section-6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/sections/section-7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/sections/section-8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/sections/section-9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/sections/section.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/service-round.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/step-arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/table-mac.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/team/member-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/team/member-2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/img/team/member-3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/vendor/bootstrap/dist/fonts/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/vendor/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/vendor/bootstrap/dist/fonts/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/vendor/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/vendor/fancybox/source/blank.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/vendor/fancybox/source/fancybox_loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/vendor/fancybox/source/fancybox_loading@2x.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/vendor/fancybox/source/fancybox_overlay.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/vendor/fancybox/source/fancybox_sprite.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/vendor/fancybox/source/fancybox_sprite@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/vendor/font-awesome/fonts/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/vendor/font-awesome/fonts/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/vendor/font-awesome/fonts/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/vendor/font-awesome/fonts/fontawesome-webfont.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/vendor/owl-carousel/owl-carousel/grabbing.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/xbaos.com-new.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/css/alert.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/css/alert_xq.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/css/animate.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/css/apiDoc.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/css/appDetail.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/css/appstore.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/css/bootstrap-datetimepicker.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/css/dashboard.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/css/font-awesome.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/css/font-flag/iconfont.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/css/font-flag/iconfont.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/css/font-flag/iconfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/css/iconfont.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/css/iconfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/css/index.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/css/init.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/css/new.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/css/password.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/css/payment.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/css/paymentDetail.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/css/postBack.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/css/profile.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/css/report.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/css/trafficInfo.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/fonts/glyphicons-halflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/js/angular-route.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/js/angular.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/js/bootstrap-datetimepicker.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/js/controller.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/js/country.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/js/echarts.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/js/html5shiv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/js/jquery-3.2.1.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/js/jquery.fly.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/js/module.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/js/route.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/js/service.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/js/timeZone.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/tpl/apiDoc.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/tpl/appDetail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/tpl/appstore.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/tpl/dashboard.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/tpl/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/tpl/myStore.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/tpl/password.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/tpl/payment.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/tpl/paymentDetail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/tpl/postBack.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/tpl/profile.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/tpl/report.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai.xbaos.com/tpl/trafficInfo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bi.xbaos.com/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/css/addAppCart.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/css/addCart.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/css/advAccount.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/css/advAccountPre.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/css/advFilter.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/css/affAccount.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/css/affAccountDetail.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/css/affApply.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/css/alert_xq.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/css/animate.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/css/animate.my.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/css/appDetail.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/css/apps.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/css/billAffReport.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/css/billAffReportDetail.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/css/billingDetail.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/css/bootstrap-datetimepicker.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/css/cp.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/css/dashboard.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/css/editOffers.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/css/email_newApp.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/css/font-awesome.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/css/font.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/css/fontview/iconfont.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/css/fontview/iconfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/css/iconfont.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/css/index.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/css/init.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/css/login.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/css/myAcount.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/css/new.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/css/offerReport.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/css/offersDetail.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/css/page3.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/css/password.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/css/seeDetail.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/css/setBid.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/css/trafficInfo.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/css/vendor.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/css/view.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/fonts/glyphicons-halflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/js/angular-route.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/js/angular.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/js/bootstrap-datetimepicker.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/js/clipboard.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/js/controller.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/js/country.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/js/html2canvas.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/js/html5shiv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/js/jquery-3.2.1.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/js/jspdf.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/js/module.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/js/route.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/js/service.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/js/timeZone.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/js/tm.pagination.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/tpl/addCart.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/tpl/addOffer.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/tpl/addTrace.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/tpl/advAccount.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/tpl/advAccountDetail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/tpl/advAccountPre.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/tpl/advFilter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/tpl/affAccount.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/tpl/affAccountDetail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/tpl/affApply.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/tpl/affFilter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/tpl/appDetail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/tpl/appReport.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/tpl/apps.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/tpl/billAffReport.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/tpl/billAffReportDetail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/tpl/billReport.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/tpl/billingDetail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/tpl/dashboard.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/tpl/editOffers.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/tpl/holdBilling.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/tpl/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/tpl/myAcount.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/tpl/offerReport.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/tpl/offers.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/tpl/offersDetail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/tpl/password.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/tpl/payInfo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/tpl/qualityReport.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/tpl/qualityReportDetail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/tpl/seeDetail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/tpl/trafficInfo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hi.xbaos.com/tpl/view.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/forgot_password.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/forgot_password/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/forgot_password/css/forgot_password.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/forgot_password/js/forget_password.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/forgot_password/js/jquery-1.11.3.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/login/css/alert.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/login/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/login/css/login.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/login/js/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/login/js/login.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/page1/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/page1/css/init.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/page1/css/page1.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/page1/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/page1/js/jquery-3.2.1.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/page1/js/page1.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/page2/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/page2/css/init.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/page2/css/page2.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/page2/js/country.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/page2/js/jquery-3.2.1.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/page2/js/page2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/page2/js/timeZone.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/page2/page2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/page3/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/page3/css/init.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/page3/css/page3.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/page3/js/jquery-3.2.1.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/page3/js/page3.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/page3/page3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/register.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/register/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/register/css/register.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/register/js/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/register/js/signUp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/reset_password.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/reset_password/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/reset_password/css/rest_password.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/reset_password/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/reset_password/js/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/u.xbaos.com/reset_password/js/rest_password.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/about.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/contact.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/css/main.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/css/main.css.2017-08-09" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/css/swiper.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/fonts/Stroke-Gap-Icons-Webfont/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/js/contact.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/js/custom.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/js/jquery-1.11.3.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/js/jquery.validate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/js/map.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/js/modernizr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/js/swiper.animate1.0.2.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/js/swiper.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/services.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/vendor/animate.css/animate.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/vendor/bootstrap/dist/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/vendor/bootstrap/dist/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/vendor/fancybox/source/jquery.fancybox.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/vendor/fancybox/source/jquery.fancybox.pack.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/vendor/font-awesome/css/font-awesome.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/vendor/jquery-ui/jquery-ui.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/vendor/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/vendor/owl-carousel/owl-carousel/owl.carousel.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/vendor/owl-carousel/owl-carousel/owl.carousel.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/vendor/slick-carousel/slick/slick.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/vendor/slick-carousel/slick/slick.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/vendor/slider-pro/dist/css/slider-pro.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/vendor/slider-pro/dist/js/jquery.sliderPro.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/vendor/waypoints/lib/jquery.waypoints.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xbaos.com/vendor/wow/dist/wow.min.js" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/hi.xbaos.com/tpl/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="15" column="45" lean-forward="false" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Campaign</find>
+      <find>col</find>
+      <find>$3,521.50</find>
+      <find>XBAOS LTD</find>
+      <find>flag</find>
+      <find>cap</find>
+      <find>updateCon</find>
+      <find>offerEmail</find>
+      <find>console.log(data)</find>
+      <find>fade</find>
+      <find>addCart</find>
+      <find>pageList</find>
+      <find>conf.onChange()</find>
+      <find>changeCurrentPage</find>
+      <find>$scope.index</find>
+      <find>index</find>
+      <find>$scope.flag</find>
+      <find>$scope.select</find>
+      <find>updateDeduct();</find>
+      <find>updateDeduct</find>
+      <find>offerSource</find>
+      <find>active</find>
+      <find>$scope.netid</find>
+      <find>$rootScope.r.abort();</find>
+      <find>$.ajax({</find>
+      <find>updatePassword</find>
+      <find>account.xbaos.com</find>
+      <find>appName</find>
+      <find>#page-preloader</find>
+      <find>radio-inline</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/hi.xbaos.com/tpl/advAccountPre.html" />
+        <option value="$PROJECT_DIR$/hi.xbaos.com/tpl/advAccountDetail.html" />
+        <option value="$PROJECT_DIR$/hi.xbaos.com/tpl/affAccountDetail.html" />
+        <option value="$PROJECT_DIR$/hi.xbaos.com/tpl/seeDetail.html" />
+        <option value="$PROJECT_DIR$/ai.xbaos.com/css/index.css" />
+        <option value="$PROJECT_DIR$/hi.xbaos.com/tpl/billingDetail.html" />
+        <option value="$PROJECT_DIR$/hi.xbaos.com/tpl/affFilter.html" />
+        <option value="$PROJECT_DIR$/hi.xbaos.com/css/animate.my.css" />
+        <option value="$PROJECT_DIR$/hi.xbaos.com/css/apps.css" />
+        <option value="$PROJECT_DIR$/hi.xbaos.com/js/route.js" />
+        <option value="$PROJECT_DIR$/hi.xbaos.com/tpl/apps.html" />
+        <option value="$PROJECT_DIR$/hi.xbaos.com/tpl/index.html" />
+        <option value="$PROJECT_DIR$/hi.xbaos.com/tpl/advFilter.html" />
+        <option value="$PROJECT_DIR$/hi.xbaos.com/tpl/offerReport.html" />
+        <option value="$PROJECT_DIR$/hi.xbaos.com/tpl/billReport.html" />
+        <option value="$PROJECT_DIR$/hi.xbaos.com/tpl/addOffer.html" />
+        <option value="$PROJECT_DIR$/u.xbaos.com/reset_password/js/rest_password.js" />
+        <option value="$PROJECT_DIR$/u.xbaos.com/forgot_password/js/forget_password.js" />
+        <option value="$PROJECT_DIR$/ai.xbaos.com/js/route.js" />
+        <option value="$PROJECT_DIR$/ai.xbaos.com/tpl/payment.html" />
+        <option value="$PROJECT_DIR$/hi.xbaos.com/tpl/billAffReportDetail.html" />
+        <option value="$PROJECT_DIR$/hi.xbaos.com/css/billAffReportDetail.css" />
+        <option value="$PROJECT_DIR$/ai.xbaos.com/tpl/paymentDetail.html" />
+        <option value="$PROJECT_DIR$/ai.xbaos.com/css/paymentDetail.css" />
+        <option value="$PROJECT_DIR$/ai.xbaos.com/js/controller.js" />
+        <option value="$PROJECT_DIR$/hi.xbaos.com/css/advFilter.css" />
+        <option value="$PROJECT_DIR$/hi.xbaos.com/css/billAffReport.css" />
+        <option value="$PROJECT_DIR$/hi.xbaos.com/tpl/billAffReport.html" />
+        <option value="$PROJECT_DIR$/xbaos.com/js/custom.js" />
+        <option value="$PROJECT_DIR$/xbaos.com/about.html" />
+        <option value="$PROJECT_DIR$/xbaos.com/contact.html" />
+        <option value="$PROJECT_DIR$/xbaos.com/services.html" />
+        <option value="$PROJECT_DIR$/hi.xbaos.com/css/myAcount.css" />
+        <option value="$PROJECT_DIR$/hi.xbaos.com/tpl/appDetail.html" />
+        <option value="$PROJECT_DIR$/hi.xbaos.com/tpl/editOffers.html" />
+        <option value="$PROJECT_DIR$/hi.xbaos.com/css/index.css" />
+        <option value="$PROJECT_DIR$/ai.xbaos.com/js/service.js" />
+        <option value="$PROJECT_DIR$/ai.xbaos.com/css/appDetail.css" />
+        <option value="$PROJECT_DIR$/ai.xbaos.com/tpl/appDetail.html" />
+        <option value="$PROJECT_DIR$/hi.xbaos.com/tpl/offersDetail.html" />
+        <option value="$PROJECT_DIR$/hi.xbaos.com/tpl/offers.html" />
+        <option value="$PROJECT_DIR$/hi.xbaos.com/js/controller.js" />
+        <option value="$PROJECT_DIR$/u.xbaos.com/page2/page2.html" />
+        <option value="$PROJECT_DIR$/u.xbaos.com/page3/js/page3.js" />
+        <option value="$PROJECT_DIR$/u.xbaos.com/page2/js/page2.js" />
+        <option value="$PROJECT_DIR$/u.xbaos.com/page1/js/page1.js" />
+        <option value="$PROJECT_DIR$/u.xbaos.com/register/js/signUp.js" />
+        <option value="$PROJECT_DIR$/xbaos.com/index.html" />
+        <option value="$PROJECT_DIR$/xbaos.com/css/main.css" />
+        <option value="$PROJECT_DIR$/u.xbaos.com/login/js/login.js" />
+        <option value="$PROJECT_DIR$/hi.xbaos.com/js/service.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="1" />
+    <option name="width" value="1761" />
+    <option name="height" value="1008" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="xbaos.com-new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xbaos.com-new" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="JavaScriptPreferStrict" value="false" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\xbaos.com-new\hi.xbaos.com\js" />
+      <recent name="E:\xbaos.com-new\hi.xbaos.com\css" />
+      <recent name="E:\xbaos.com-new\ai.xbaos.com\css" />
+      <recent name="E:\xbaos.com-new\ai.xbaos.com\js" />
+      <recent name="E:\xbaos.com-new\hi.xbaos.com\img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\xbaos.com-new\u.xbaos.com" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8ddd4d1f-acbb-49e7-b718-befee2f70410" name="Default" comment="" />
+      <created>1502806562392</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1502806562392</updated>
+      <workItem from="1502806563890" duration="6377000" />
+      <workItem from="1502848982938" duration="40434000" />
+      <workItem from="1502936017367" duration="19099000" />
+      <workItem from="1502959778926" duration="24783000" />
+      <workItem from="1503024383947" duration="2364000" />
+      <workItem from="1503026898709" duration="44510000" />
+      <workItem from="1503278582660" duration="13273000" />
+      <workItem from="1503300171947" duration="25322000" />
+      <workItem from="1503326463456" duration="117000" />
+      <workItem from="1503327531058" duration="2958000" />
+      <workItem from="1503367250666" duration="46245000" />
+      <workItem from="1503455371400" duration="40325000" />
+      <workItem from="1503541727294" duration="25339000" />
+      <workItem from="1503628218750" duration="9476000" />
+      <workItem from="1503885950291" duration="662000" />
+      <workItem from="1503930403735" duration="631000" />
+      <workItem from="1503973036369" duration="2279000" />
+      <workItem from="1504017064116" duration="1844000" />
+      <workItem from="1504060807651" duration="1978000" />
+      <workItem from="1504159824598" duration="10532000" />
+      <workItem from="1504190541064" duration="1423000" />
+      <workItem from="1504232291031" duration="37328000" />
+      <workItem from="1504490992810" duration="32939000" />
+      <workItem from="1504578851636" duration="40678000" />
+      <workItem from="1504665974624" duration="31772000" />
+      <workItem from="1504751797807" duration="39795000" />
+      <workItem from="1504839579671" duration="38143000" />
+      <workItem from="1505092416762" duration="38007000" />
+      <workItem from="1505181524339" duration="33872000" />
+      <workItem from="1505267388008" duration="29593000" />
+      <workItem from="1505303304298" duration="12477000" />
+      <workItem from="1505354189727" duration="42980000" />
+      <workItem from="1505440979190" duration="31610000" />
+      <workItem from="1505698349525" duration="10556000" />
+      <workItem from="1505787549069" duration="17436000" />
+      <workItem from="1505872290519" duration="24917000" />
+      <workItem from="1505959865766" duration="31835000" />
+      <workItem from="1506047278016" duration="31193000" />
+      <workItem from="1506304067410" duration="38000000" />
+      <workItem from="1506392916720" duration="6404000" />
+      <workItem from="1506412941929" duration="11000" />
+      <workItem from="1506413106712" duration="12396000" />
+      <workItem from="1506479760646" duration="6553000" />
+      <workItem from="1506512584890" duration="5689000" />
+      <workItem from="1506564683510" duration="8509000" />
+      <workItem from="1506596670960" duration="695000" />
+      <workItem from="1506600817880" duration="144000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="923503000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1" y="0" width="1761" height="1008" extended-state="1" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23505513" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44739884" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875144" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32947975" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44739884" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21338251" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="E:/myself/typeScript/test.js.map" />
+        <option value="E:/myself/typeScript/test.js" />
+        <option value="E:/myself/typeScript/变量声明.js.map" />
+        <option value="E:/myself/typeScript/变量声明.js" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="54" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/hi.xbaos.com/css/affAccountDetail.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="125" column="20" lean-forward="true" selection-start-line="125" selection-start-column="20" selection-end-line="125" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ai.xbaos.com/js/route.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="20" column="31" lean-forward="false" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ai.xbaos.com/tpl/payment.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="581">
+          <caret line="65" column="98" lean-forward="false" selection-start-line="65" selection-start-column="98" selection-end-line="65" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hi.xbaos.com/css/billAffReportDetail.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ai.xbaos.com/css/paymentDetail.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="37" column="16" lean-forward="true" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ai.xbaos.com/tpl/paymentDetail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="57" lean-forward="true" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hi.xbaos.com/img/but_Radio_selected.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hi.xbaos.com/img/but_Radio_selected_xq.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hi.xbaos.com/img/Float_open.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hi.xbaos.com/css/advFilter.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="779">
+          <caret line="53" column="22" lean-forward="false" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hi.xbaos.com/css/billAffReport.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="779">
+          <caret line="112" column="22" lean-forward="false" selection-start-line="112" selection-start-column="22" selection-end-line="112" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hi.xbaos.com/tpl/billAffReport.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="779">
+          <caret line="235" column="53" lean-forward="false" selection-start-line="235" selection-start-column="43" selection-end-line="235" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hi.xbaos.com/tpl/billAffReportDetail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="16" column="7" lean-forward="false" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hi.xbaos.com/tpl/billingDetail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="48" column="63" lean-forward="true" selection-start-line="48" selection-start-column="63" selection-end-line="48" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hi.xbaos.com/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="25" column="10" lean-forward="true" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xbaos.com/js/contact.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-165">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xbaos.com/js/custom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5258">
+          <caret line="239" column="48" lean-forward="false" selection-start-line="239" selection-start-column="48" selection-end-line="239" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xbaos.com/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xbaos.com/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xbaos.com/services.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hi.xbaos.com/css/myAcount.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="122" column="21" lean-forward="false" selection-start-line="122" selection-start-column="21" selection-end-line="122" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hi.xbaos.com/tpl/appDetail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="81" column="38" lean-forward="false" selection-start-line="81" selection-start-column="38" selection-end-line="81" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hi.xbaos.com/tpl/editOffers.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="170" column="95" lean-forward="false" selection-start-line="170" selection-start-column="92" selection-end-line="170" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hi.xbaos.com/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="848" column="19" lean-forward="false" selection-start-line="848" selection-start-column="19" selection-end-line="848" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ai.xbaos.com/js/controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="1183" column="0" lean-forward="false" selection-start-line="1183" selection-start-column="0" selection-end-line="1183" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/u.xbaos.com/reset_password/js/bootstrap.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ai.xbaos.com/js/service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ai.xbaos.com/tpl/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="41" lean-forward="true" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ai.xbaos.com/tpl/appDetail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="52" column="69" lean-forward="false" selection-start-line="52" selection-start-column="69" selection-end-line="52" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ai.xbaos.com/css/appDetail.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="335" column="22" lean-forward="false" selection-start-line="335" selection-start-column="22" selection-end-line="335" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hi.xbaos.com/tpl/offersDetail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="39" column="53" lean-forward="false" selection-start-line="39" selection-start-column="53" selection-end-line="39" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hi.xbaos.com/js/controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="1113" column="6" lean-forward="false" selection-start-line="1113" selection-start-column="6" selection-end-line="1113" selection-end-column="6" />
+          <folding>
+            <element signature="e#257#14674#0" expanded="false" />
+            <element signature="e#14857#20679#0" expanded="false" />
+            <element signature="e#20861#28711#0" expanded="false" />
+            <element signature="e#28895#40305#0" expanded="false" />
+            <element signature="e#40484#59018#0" expanded="false" />
+            <element signature="e#43528#43642#0" expanded="false" />
+            <element signature="e#43694#44659#0" expanded="false" />
+            <element signature="e#44725#45188#0" expanded="false" />
+            <element signature="e#45254#45812#0" expanded="false" />
+            <element signature="e#45893#46231#0" expanded="false" />
+            <element signature="e#46291#46635#0" expanded="false" />
+            <element signature="e#47370#48685#0" expanded="false" />
+            <element signature="e#49000#51080#0" expanded="false" />
+            <element signature="e#51170#52998#0" expanded="false" />
+            <element signature="e#53078#54268#0" expanded="false" />
+            <element signature="e#54361#56986#0" expanded="false" />
+            <element signature="e#57131#58472#0" expanded="false" />
+            <element signature="e#58589#59008#0" expanded="false" />
+            <element signature="e#59195#68830#0" expanded="false" />
+            <element signature="e#69007#71045#0" expanded="false" />
+            <element signature="e#71207#75840#0" expanded="false" />
+            <element signature="e#76008#81248#0" expanded="false" />
+            <element signature="e#81414#93486#0" expanded="false" />
+            <element signature="e#93668#98003#0" expanded="false" />
+            <element signature="e#98170#103796#0" expanded="false" />
+            <element signature="e#100483#101034#0" expanded="false" />
+            <element signature="e#103946#106196#0" expanded="false" />
+            <element signature="e#106347#111028#0" expanded="false" />
+            <element signature="e#111169#120783#0" expanded="false" />
+            <element signature="e#120958#126669#0" expanded="false" />
+            <element signature="e#126821#129572#0" expanded="false" />
+            <element signature="e#129755#142467#0" expanded="false" />
+            <element signature="e#142648#146901#0" expanded="false" />
+            <element signature="e#147090#158400#0" expanded="false" />
+            <element signature="e#158573#159720#0" expanded="false" />
+            <element signature="e#159894#168652#0" expanded="false" />
+            <element signature="e#168798#174779#0" expanded="false" />
+            <element signature="e#174929#177578#0" expanded="false" />
+            <element signature="e#177757#187975#0" expanded="false" />
+            <element signature="e#188153#189736#0" expanded="false" />
+            <element signature="e#189922#203869#0" expanded="false" />
+            <element signature="e#204014#206244#0" expanded="false" />
+            <element signature="e#206424#208045#0" expanded="false" />
+            <element signature="e#208231#218714#0" expanded="false" />
+            <element signature="e#218895#232607#0" expanded="false" />
+            <element signature="e#232782#237394#0" expanded="false" />
+            <element signature="e#237572#239018#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hi.xbaos.com/tpl/offers.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="58" column="86" lean-forward="false" selection-start-line="58" selection-start-column="86" selection-end-line="58" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hi.xbaos.com/tpl/apps.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="69" column="72" lean-forward="false" selection-start-line="69" selection-start-column="41" selection-end-line="69" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/u.xbaos.com/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="29" lean-forward="false" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/u.xbaos.com/page1/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/u.xbaos.com/page2/page2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="242" column="55" lean-forward="false" selection-start-line="242" selection-start-column="55" selection-end-line="242" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/u.xbaos.com/page3/page3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xbaos.com/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="33" column="90" lean-forward="false" selection-start-line="33" selection-start-column="90" selection-end-line="33" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xbaos.com/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="157" column="34" lean-forward="true" selection-start-line="157" selection-start-column="34" selection-end-line="157" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xbaos.com/css/main.css.2017-08-09">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-528">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/u.xbaos.com/forgot_password/js/forget_password.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="65" column="41" lean-forward="false" selection-start-line="65" selection-start-column="41" selection-end-line="65" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/u.xbaos.com/page1/js/page1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="77" column="16" lean-forward="false" selection-start-line="77" selection-start-column="16" selection-end-line="77" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/u.xbaos.com/page2/js/page2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="234" column="10" lean-forward="false" selection-start-line="234" selection-start-column="10" selection-end-line="234" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/u.xbaos.com/page3/js/page3.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="110" column="28" lean-forward="false" selection-start-line="110" selection-start-column="28" selection-end-line="110" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/u.xbaos.com/register/js/signUp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="54" column="16" lean-forward="true" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/u.xbaos.com/reset_password/js/rest_password.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="24" column="36" lean-forward="true" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/u.xbaos.com/login/js/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="53" column="13" lean-forward="false" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/u.xbaos.com/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="9" column="40" lean-forward="true" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hi.xbaos.com/js/service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hi.xbaos.com/tpl/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="45" lean-forward="false" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

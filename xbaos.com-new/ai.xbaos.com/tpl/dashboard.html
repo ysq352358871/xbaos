@@ -1,0 +1,136 @@
+<link rel="stylesheet" href="../css/dashboard.css">
+<div class="dashboard_box">
+    <div class="dashboard_page">
+        <!--dashboard_left start-->
+        <div class="dashboard_left">
+            <!--two days start-->
+            <div class="twoDays">
+                <div class="today">
+                    <div class="today_header">Today’s earnings</div>
+                    <div class="today_content">
+                        <img src="../img/icon_today.png" alt="today">
+                        <span>{{today.earning}} $</span>
+                    </div>
+                </div>
+                <div class="yesterday">
+                    <div class="yesterday_header">Yesterday’s earnings</div>
+                    <div class="yesterday_content">
+                        <img src="../img/icon_yesterday.png" alt="yesterday">
+                        <span>{{yesterday.earning}} $</span>
+                    </div>
+                </div>
+            </div>
+            <!--two days end-->
+
+            <!--last  7day's earnings start-->
+            <!--<div id="sex_earnings">-->
+
+            <!--</div>-->
+            <div id="sex_earnings_box">
+                <div class="appHeader">
+                    Last 7 day’s earnings
+                </div>
+                <line  id="sex_earnings" legend="legend" item="item" data="data"> </line>
+            </div>
+
+            <!--last 7day's earnings end-->
+
+            <!--recently app start-->
+            <div class="recently_app">
+                <div class="appHeader">
+                    Recently Approved App
+                </div>
+                <div class="appList">
+                    <!--loop start-->
+                    <div class="appList_content" ng-repeat="item in ApprovedApplist">
+                        <div class="appList_img">
+                            <img ng-src="{{item.icon}}" alt="">
+                        </div>
+                        <div class="appList_words">
+                            <p>{{item.appid}} - {{item.appname}}</p>
+                            <p>{{item.accept}} - {{item.incent}} - {{item.platform}}</p>
+                        </div>
+                        <div class="time">{{item.date}}</div>
+                    </div>
+                    <!--loop end-->
+                </div>
+            </div>
+            <!--recently app end-->
+        </div>
+        <!--dashboard_left end-->
+
+        <!--dashboard_right start-->
+        <div class="dashboard_right">
+            <div class="dashboard_right_wrap">
+                <div class="top_app">
+                    <div class="header">Top App of EPC</div>
+                    <div class="top_content">
+                        <div class="first_three">
+                            <div class="x-box" ng-repeat="itemOne in AppEPClist" ng-if="$index<5">
+                                <div class="imgBox">
+                                    <img ng-src="{{itemOne.icon}}" alt="">
+                                    <span>#0{{$index+1}}</span>
+                                </div>
+                                <div class="img_words">
+                                    <p>{{itemOne.appid}}-{{itemOne.accept}}-{{itemOne.platform}}</p>
+                                    <p>{{itemOne.epc}}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="the_rest">
+                            <!--single data-->
+                            <div class="rest_single" ng-repeat="itemTwo in AppEPClist" ng-if="$index>4">
+                                <div class="single_size">#{{$index+1}}</div>
+                                <div class="single_img">
+                                    <img ng-src="{{itemTwo.icon}}" alt="">
+                                </div>
+                                <div class="single_words">
+                                    <P class="title">{{itemTwo.packageName}}</P>
+                                    <P class="cn">{{itemTwo.accept}}-{{itemTwo.platform}}</P>
+                                </div>
+                                <div class="single_price">{{itemTwo.epc}}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="new_app">
+                    <div class="header">New App</div>
+                    <div class="new_content">
+                        <!--loop start-->
+                        <div class="img_box" ng-repeat="item in NewApplist">
+                            <div class="new_img">
+                                <img ng-src="{{item.icon}}" alt="">
+                            </div>
+                            <div class="img_hover animated">
+                                <div class="hover_top">
+                                    <span>{{item.appid}} - {{item.appname}}</span>
+                                </div>
+                                <div class="hover_bottom">
+                                    <p>{{item.accept}}</p>
+                                    <p>{{item.platform}}</p>
+                                    <p>{{item.incent}}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--loop start-->
+
+                        <div class="add_img">
+                            <a href="#!/appstore" class="animated">
+                                <img src="../img/icon_bigadd.png" alt="add">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--dashboard_right end-->
+    </div>
+    <div class="prompt">
+        Delete successfully
+    </div>
+    <!--loading 效果-->
+    <div id="loading-center" loading-effect>
+    </div>
+</div>
+</div>

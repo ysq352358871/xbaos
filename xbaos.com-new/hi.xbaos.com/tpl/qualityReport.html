@@ -1,0 +1,100 @@
+<link rel="stylesheet" href="../css/offerReport.css">
+<div class="father-box">
+    <div class="wrap">
+        <div class="input-content">
+            <!--表单内容-->
+            <form class="form-inline input-con">
+                <div style="display: block">
+                    <div style="display: block">
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="date" value="logs" checked>Logs Date
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="date" value="leads">Lead Date
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group input-box" id="startTimeBox">
+                        <label for="startTime" class="label">Start Time</label>
+                        <input class="form-control input-con timeSelect" start-time id="startTime"  ng-model="monthTime">
+                    </div>
+                    <div class="form-group input-box" id="endTimeBox">
+                        <label for="endTime" class="label">End Time</label>
+                        <input class="form-control input-con timeSelect" end-time id="endTime"  ng-model="endTime">
+                    </div>
+                </div>
+                <div class="form-group input-box" id="netIdBox">
+                    <label for="netId" class="label">Net ID</label>
+                    <input class="form-control input-con idSelect"  id="netId" ng-model="netId">
+                    <ul class="idListBox">
+                        <li ng-class="{'active':$index==0}" ng-repeat="item in netIdData">{{item}}</li>
+                    </ul>
+                </div>
+                <div class="form-group input-box" id="offerIdBox">
+                    <label for="offerId" class="label">Offer ID</label>
+                    <input class="form-control input-con idSelect"  id="offerId" ng-model="offerId">
+                    <ul class="idListBox">
+                        <li ng-class="{'active':$index==0}" ng-repeat="item in offerIdData" ng-if="item.offer_id!=0">{{item}}</li>
+                    </ul>
+                </div>
+                <div class="form-group input-box" id="appIdBox">
+                    <label for="appId" class="label">App ID</label>
+                    <input class="form-control input-con idSelect" id="appId" ng-model="appId" >
+                    <ul class="idListBox">
+                        <li ng-class="{'active':$index==0}" ng-repeat="item in appIdData" ng-if="item.appid!=0">{{item}}</li>
+                    </ul>
+                </div>
+                <div class="form-group input-box" id="affIdBox">
+                    <label for="affId" class="label">Aff ID</label>
+                    <input class="form-control input-con idSelect" id="affId" ng-model="affId">
+                    <ul class="idListBox">
+                        <li ng-class="{'active':$index==0}" ng-repeat="item in affIdData" ng-if="item.affid!=0">{{item}}</li>
+                    </ul>
+                </div>
+                <!--<div class="form-group input-box" id="searchBox">-->
+                    <!--<div class="btnSearch">Search</div>-->
+                <!--</div>-->
+
+            </form>
+
+            <div class="resultTable">
+                <table class="table">
+                    <tr>
+                        <th class="text-center">Net ID</th>
+                        <th class="text-center">Offer ID</th>
+                        <th class="text-center">App ID</th>
+                        <th class="text-center">Aff ID</th>
+                        <th class="text-center">Pub ID</th>
+                        <th class="text-center">Fraud</th>
+                    </tr>
+                    <tr class="text-center" ng-show="flag">
+                        <td>No Resulst Found</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr class="text-center" ng-repeat="item in listData">
+                        <td id="detail">
+                            <a href="#!qualityReportDetail/{{item.netid}}/{{item.offer_id}}/{{item.appid}}/{{item.affid}}/{{monthTime}}/{{endTime}}/{{type}}">{{item.netid}}</a>
+                        </td>
+                        <td>{{item.offer_id}}</td>
+                        <td>{{item.appid}}</td>
+                        <td>{{item.affid}}</td>
+                        <td ng-if="item.pubid!=0">{{item.pubid}}</td>
+                        <td ng-if="item.pubid==0">{{item.srcid}}</td>
+                        <td>{{item.cafraud}}%</td>
+                    </tr>
+
+                </table>
+                <!--pagination-->
+                <tm-pagination conf="paginationConf" id="pagination"></tm-pagination>
+            </div>
+        </div>
+    </div>
+</div>

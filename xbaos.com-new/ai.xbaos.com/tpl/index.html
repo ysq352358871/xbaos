@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta HTTP-EQUIV="pragma" CONTENT="no-cache">
+    <meta HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate">
+    <meta HTTP-EQUIV="expires" CONTENT="0">
+    <title>Ai.Xbaos Marketing</title>
+    <link rel="shortcut icon" href="../img/icon.png">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="../css/animate.min.css">
+    <link rel="stylesheet" href="../css/init.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+</head>
+<body ng-app="app" ng-controller="index">
+<header>
+    <a href="index.html" class="logo">
+        <img src="../img/logo.png" alt="">
+    </a>
+    <div id="userCenter">
+        <img src="../img/icon_account.png" alt="">
+        <div class="userCenter_con animated">
+            <div class="user_arrow"></div>
+            <div class="user_detailCon">
+                <p id="user_data">
+                    <em></em>
+                    <span id="accountName">{{accountName}}</span><span>- {{accountId}}</span>
+                    <i></i>
+                </p>
+                <p class="money"><span>My Balance:</span> ${{confirmed}}</p>
+                <div class="ProgressBar">
+                    <div class="ProgressBar_have"></div>
+                </div>
+            </div>
+        </div>
+        <p id="contact"><span class="am one">:Manager Account</span><span class="am">{{ref.firstName}}</span></p>
+        <!--<p id="qq">{{ref.qqNumber}}/{{ref.skype}}:QQ/Skype</p>-->
+        <p id="skype"><span class="am one">:Email</span><span class="am">{{ref.email}}</span></p>
+    </div>
+    <!--tab nav start-->
+    <ul class="tab-nav">
+        <li class="icon" id="USTime">
+            <img src="http://xbaos-countryicon.oss-ap-southeast-1.aliyuncs.com/233.png" alt="">
+            <span></span>
+        </li>
+        <li class="icon" id="time">
+            <img src="http://xbaos-countryicon.oss-ap-southeast-1.aliyuncs.com/046.png" alt="">
+            <span></span>
+        </li>
+        <li class="icon" id="icon">
+            <span id="num" class="animated ">{{num}}</span>
+            <img src="../img/shopping_cart.png" id="img" alt="">
+            <div class="tab-nav-con-wrap animated">
+                <div class="jianTou"></div>
+                <!--<ul class="tab-nav-con">-->
+                    <!--<li class="keyId" ng-repeat="item in indexData">-->
+                        <!--<a href="javascript:;" id="{{item.id}}">{{item.id}}</a>-->
+                    <!--</li>-->
+                <!--</ul>-->
+                <div class="shopping-box">
+                    <div class="shopping-list" attr="true" ng-if="checkLength(lengthApp)">
+                        <div class="title">
+                            <p class="name">NewApp</p>
+                            <div class="shopping-line"></div>
+                        </div>
+                        <div class="shopping-con" ng-repeat="item in indexData"  ng-class="{'end':check('app',$index)}">
+                            <p class="name"><span>{{item.id}}</span>-{{item.name}}</p>
+                            <p class="desc first"><span>{{item.accept}}</span>-<span ng-show="{{item.incent}}==true">Incent</span><span ng-show="{{item.incent}}==false">Non Incent</span>-<span ng-show="{{item.android}}==true">Android</span><span ng-show="{{item.android}}==false">IOS</span></p>
+                            <em class="delCon"></em>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </li>
+        <li class="icon">
+            <img src="../img/news.png" alt="">
+        </li>
+
+    </ul>
+</header>
+<div class="content-box">
+    <div class="con">
+        <!--top nav start-->
+        <ul class="top-nav">
+            <li ng-class="{'action':paraText==item.title}" ng-repeat="item in navSelected">
+                <a ng-href="{{item.href}}" class="animated">
+                    <em class="{{item.icon}}"></em>
+                    <p>{{item.title}}</p>
+                </a>
+            </li>
+        </ul>
+        <!--top nav end-->
+        <!--sub nav start-->
+        <div class="sub-nav">
+            <ul class="sub-nav-list click">
+                <!--<li class="weight"><a href="javascript:;">Dashboard</a></li>-->
+                <li><a href="#!/">Dashboard</a></li>
+
+            </ul>
+            <ul class="sub-nav-list">
+                <!--<li class="weight"><a href="javascript:;">App Store</a></li>-->
+                <li><a href="#!/appstore">App Store</a></li>
+                <div class="line"></div>
+                <li><a href="#!/myStore">My Store</a></li>
+            </ul>
+            <ul class="sub-nav-list">
+                <!--<li class="weight"><a href="javascript:;">Filter</a></li>-->
+                <li><a href="#!/report">Report</a></li>
+            </ul>
+            <ul class="sub-nav-list">
+                <!--<li class="weight"><a href="javascript:;">Report</a></li>-->
+                <li><a href="#!/payment">Payment</a></li>
+            </ul>
+
+            <ul class="sub-nav-list">
+                <!--<li class="weight"><a href="javascript:;">Account</a></li>-->
+                <li><a href="#!/postBack">Postback</a></li>
+                <div class="line"></div>
+                <li><a href="#!/apiDoc">Api doc</a></li>
+            </ul>
+            <ul class="sub-nav-list">
+                <!--<li class="weight"><a href="javascript:;">Account</a></li>-->
+                <li><a href="#!/profile">Profile</a></li>
+                <div class="line"></div>
+                <li><a href="#!/trafficInfo">Traffic Info</a></li>
+                <div class="line"></div>
+                <li><a href="#!/password">Password</a></li>
+            </ul>
+            <!--搜索框-->
+            <div class="search-box">
+                <input type="text" class="search-key" placeholder="Search Hear">
+                <i>
+                    <img src="../img/icon_search.png" alt="">
+                </i>
+            </div>
+        </div>
+        <!--sub nav end-->
+
+        <!--这是套angular的预留地-->
+        <div ng-view>
+
+        </div>
+    </div>
+</div>
+<!--提示消息-->
+<div id="prompt">
+    Delete successfully
+</div>
+</body>
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="../js/jquery.fly.min.js"></script>
+<script src="../js/angular.min.js"></script>
+<script src="../js/angular-route.min.js"></script>
+<script src="../js/module.js"></script>
+<script src="../js/route.js"></script>
+<script src="../js/controller.js"></script>
+<script src="../js/service.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootstrap-datetimepicker.min.js"></script>
+<script src="../js/echarts.min.js"></script>
+<script>
+
+</script>
+</html>

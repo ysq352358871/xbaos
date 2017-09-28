@@ -1,0 +1,545 @@
+
+<link rel="stylesheet" href="../css/appDetail.css">
+<link rel="stylesheet" href="../css/email_newApp.css">
+<link rel="stylesheet" href="../css/setBid.css">
+<div class="cons-box">
+    <div class="box">
+        <div class="wrap">
+            <!--这是顶部，标题-->
+            <div class="top">
+                <div class="left_box">
+                    <img ng-src="{{appDetails.icon}}" alt="">
+                </div>
+                <div class="right_box_text">
+                    <p><span>{{appDetails.id}} - </span><span id="name" title="{{appDetails.name}}">{{appDetails.name}}</span><span> - {{appDetails.incent}} - </span><span>{{appDetails.platform}} - </span><span>{{appDetails.accept}}</span></p>
+                </div>
+            </div>
+            <!--顶部标题结束-->
+            <!--导航 开始-->
+            <ul class="lab">
+                <li ng-class="{'first':tab=='table1'}">
+                    <a href="javascript:;">App Detail</a>
+                </li>
+                <li ng-class="{'first':tab=='table2'}">
+                    <a href="javascript:;" id="setting">Setting</a>
+                </li>
+                <li ng-class="{'first':tab=='table3'}">
+                    <a href="javascript:;" id="bidding">Bidding</a>
+                </li>
+                <li ng-class="{'first':tab=='table4'}">
+                    <a href="javascript:;" id="getMark">Promotion record</a>
+                </li>
+                <li ng-class="{'first':tab=='table5'}">
+                    <a href="javascript:;" id="help">Help</a>
+                </li>
+            </ul>
+            <!--导航 结束-->
+            <!--content star-->
+            <!--app detail-->
+            <div class="con-list" ng-class="{'first':tab=='table1'}">
+                <div class="con-list-son">
+                    <!--package name-->
+                    <div class="projectName">
+                        <p class="appName">
+                            <span class="title">App Name:</span>
+                            {{appDetails.name}}
+                        </p>
+                        <p class="appName">
+                            <span class="title">Package Name:</span>
+                            {{appDetails.packageName}}
+                        </p>
+                    </div>
+                    <!--detail con-->
+                    <div class="detailCon">
+                        <p class="device">
+                            <span class="title">Device ID:</span>
+                            {{appDetailPlatform}}
+                        </p>
+                        <p class="description">
+                            <span class="title">Description:</span>
+                            <p id="descriptionCon"></p>
+                        </p>
+                        <p class="previewLink">
+                            <span class="title">Preview Link:</span>
+                            {{appDetails.previewLink}}
+                        </p>
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="selectDescription">
+                        <span class="title">Quality Require Desc</span>
+                        <div class="selectAppCon">
+                            <select class="form-control" id="selectApp" ng-click="getIndex()">
+                                <option ng-repeat="item in DescKpilist" id="{{$index}}">{{item.qualityDesc}}</option>
+                            </select>
+                            <div class="appDescription" ng-repeat="item in DescKpilist" ng-show="check($index)">
+                                <p>{{item.kpi}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--mark star-->
+                    <div class="mark-box">
+                        <span>App Kpi:</span>
+                        <textarea class="form-control " rows="3" id="mark" ng-model="remark"></textarea>
+                    </div>
+                    <!--mark end-->
+                    <!--submit box-->
+                    <div class="submit-box">
+                        <div class="edit">
+                            Save
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--setting-->
+            <div class="con-list" ng-class="{'first':tab=='table2'}">
+                <div class="mian_setting " id="content-1">
+                    <div class="setting_list">
+                        <span id="ts" class="bigFather">Topic Setting</span>
+                        <table class="table">
+                            <thead class="thead_bg">
+                            <tr>
+                                <th class="text-center">Offer ID</th>
+                                <th class="text-center">Identification</th>
+                                <th class="text-center">Offer Name</th>
+                                <th class="text-center">Status</th>
+                                <th class="text-center">NetWork</th>
+                                <th class="text-center">Payout</th>
+                                <th class="text-center">DailyCap</th>
+                                <th class="text-center">Remaining</th>
+                                <th class="text-center">Weight</th>
+                                <th class="text-center">Traffic</th>
+                                <th class="text-center">Locked</th>
+                            </tr>
+                            </thead>
+                            <tr ng-repeat="item in OTlist" class="text-center farther">
+                                <td>
+                                    <a href="#!/offersDetail/{{item.offer_id}}">
+                                        {{item.offer_id}}
+                                    </a>
+                                </td>
+                                <td>
+                                    <em ng-if="item.huge==true" class="sign">Huge</em>
+                                    <em ng-if="item.api==true" class="sign">Api</em>
+                                </td>
+                                <td>{{item.offerName}}</td>
+                                <td>{{item.status}}</td>
+                                <td>{{item.name}}</td>
+                                <td>{{item.payout}}</td>
+                                <td>{{item.dailyCap}}</td>
+                                <td>{{item.remaining}}</td>
+                                <td  class="td" style="text-decoration: underline;text-decoration-color: #D21212;"
+                                >{{item.weight}}</td>
+                                <td class="traffic" ng-class="{true:'true',false:'false'}[{{item.active}}]">
+                                    <img src="../img/Float_close.png" class=" false" alt="">
+                                    <img src="../img/Float_open.png" class="true" alt="" >
+                                </td>
+                                <td class="locked" ng-class="{true:'true',false:'false'}[{{item.locked}}]">
+                                    <img src="../img/icon_lock13x16.png" class="false " alt=""   >
+                                    <img src="../img/icon_open13x16.png" class="true " alt=""  >
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="setting_list group_list">
+                        <span id="gs" class="bigFather">Group Setting</span>
+                        <table class="table">
+                            <thead class="thead_bg">
+                            <tr>
+                                <th class="text-center">Offer ID</th>
+                                <th class="text-center">Identification</th>
+                                <th class="text-center">Offer Name</th>
+                                <th class="text-center">Status</th>
+                                <th class="text-center">NetWork</th>
+                                <th class="text-center">Payout</th>
+                                <th class="text-center">DailyCap</th>
+                                <th class="text-center">Remaining</th>
+                                <th class="text-center">Weight</th>
+                                <th class="text-center">Traffic</th>
+                                <th class="text-center">Locked</th>
+                            </tr>
+                            </thead>
+                            <tr ng-repeat="item in OGlist" class="text-center farther">
+                                <td>
+                                    <a href="#!/offersDetail/{{item.offer_id}}">{{item.offer_id}}</a>
+                                </td>
+                                <td>
+                                    <em ng-if="item.huge==true" class="sign">Huge</em>
+                                    <em ng-if="item.api==true" class="sign">Api</em>
+                                </td>
+                                <td>{{item.offerName}}</td>
+                                <td>{{item.status}}</td>
+                                <td>{{item.name}}</td>
+                                <td>{{item.payout}}</td>
+                                <td>{{item.dailyCap}}</td>
+                                <td>{{item.remaining}}</td>
+                                <td class="td" style="text-decoration: underline;text-decoration-color: #D21212;">{{item.weight}}</td>
+                                <td class="traffic" ng-class="{true:'true',false:'false'}[{{item.active}}]">
+                                    <img src="../img/Float_close.png" class=" false" alt="">
+                                    <img src="../img/Float_open.png" class="true" alt="" >
+                                </td>
+                                <td class="locked" ng-class="{true:'true',false:'false'}[{{item.locked}}]">
+                                    <img src="../img/icon_lock13x16.png" class="false " alt=""   >
+                                    <img src="../img/icon_open13x16.png" class="true " alt=""  >
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="setting_list smart_list">
+                        <span id="ss" class="bigFather">Smart Setting</span>
+                        <table class="table">
+                            <thead class="thead_bg">
+                            <tr>
+                                <th class="text-center">Offer ID</th>
+                                <th class="text-center">Identification</th>
+                                <th class="text-center">Offer Name</th>
+                                <th class="text-center">Status</th>
+                                <th class="text-center">NetWork</th>
+                                <th class="text-center">Payout</th>
+                                <th class="text-center">DailyCap</th>
+                                <th class="text-center">Remaining</th>
+                                <th class="text-center">Weight</th>
+                                <th class="text-center">Traffic</th>
+                                <th class="text-center">Locked</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr ng-repeat="item in OSlist" class="text-center farther">
+                                <td>
+                                    <a href="#!/offersDetail/{{item.offer_id}}" target="_blank">{{item.offer_id}}</a>
+                                </td>
+                                <td>
+                                    <em ng-if="item.huge==true" class="sign">Huge</em>
+                                    <em ng-if="item.api==true" class="sign">Api</em>
+                                </td>
+                                <td>{{item.offerName}}</td>
+                                <td>{{item.status}}</td>
+                                <td>{{item.name}}</td>
+                                <td>{{item.payout}}</td>
+                                <td>{{item.dailyCap}}</td>
+                                <td>{{item.remaining}}</td>
+                                <td class="td"
+                                    style="text-decoration: underline;text-decoration-color: #D21212;"
+
+                                >{{item.weight}}</td>
+                                <td class="traffic" ng-class="{true:'true',false:'false'}[{{item.active}}]">
+                                    <img src="../img/Float_close.png" class=" false" alt="">
+                                    <img src="../img/Float_open.png" class="true" alt="" >
+                                </td>
+                                <td class="locked" ng-class="{true:'true',false:'false'}[{{item.locked}}]">
+                                    <img src="../img/icon_lock13x16.png" class="false " alt=""   >
+                                    <img src="../img/icon_open13x16.png" class="true " alt=""  >
+                                </td>
+                            </tr>
+                            </tbody>
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!--bidding-->
+            <div class="con-list" ng-class="{'first':tab=='table3'}">
+                <div class="mian_setting bidding" id="content-2">
+                    <div class="setting_list">
+                        <span>Topic Bidding</span>
+                        <table class="table">
+                            <thead class="thead_bg">
+                            <tr class="text-center">
+                                <td>Offer ID</td>
+                                <td>Identification</td>
+                                <td>Affiliate</td>
+                                <td>Tracking</td>
+                                <td>PostBack</td>
+                                <td>Revenue</td>
+                                <td>CVR</td>
+                                <td>ECPC</td>
+                                <td>CallBack</td>
+                                <td>Payment</td>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr ng-repeat="item in OTBlist" class="text-center">
+                                <td>{{item.offer_id}}</td>
+                                <td>
+                                    <em ng-if="item.huge==true" class="sign">Huge</em>
+                                    <em ng-if="item.api==true" class="sign">Api</em>
+                                </td>
+                                <td>{{item.affid}}</td>
+                                <td>{{item.tracking}}</td>
+                                <td>{{item.postback}}</td>
+                                <td>{{item.revenue}}</td>
+                                <td>{{item.cvr}}</td>
+                                <td>{{item.epc}}</td>
+                                <td>{{item.callback}}</td>
+                                <td>{{item.payout}}</td>
+                            </tr>
+                            </tbody>
+
+                        </table>
+                    </div>
+                    <div class="setting_list group_list">
+                        <span>Group Bidding</span>
+                        <table class="table">
+                            <thead class="thead_bg" >
+                            <tr class="text-center">
+                                <td>Offer ID</td>
+                                <td>Identification</td>
+                                <td>Affiliate</td>
+                                <td>Tracking</td>
+                                <td>PostBack</td>
+                                <td>Revenue</td>
+                                <td>CVR</td>
+                                <td>ECPC</td>
+                                <td>CallBack</td>
+                                <td>Payment</td>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr ng-repeat="item in OGBlist " class="text-center">
+                                <td>{{item.offer_id}}</td>
+                                <td>
+                                    <em ng-if="item.huge==true" class="sign">Huge</em>
+                                    <em ng-if="item.api==true" class="sign">Api</em>
+                                </td>
+                                <td>{{item.affid}}</td>
+                                <td>{{item.tracking}}</td>
+                                <td>{{item.postback}}</td>
+                                <td>{{item.revenue}}</td>
+                                <td>{{item.cvr}}</td>
+                                <td>{{item.epc}}</td>
+                                <td>{{item.callback}}</td>
+                                <td>{{item.payout}}</td>
+                            </tr>
+                            </tbody>
+
+                        </table>
+                    </div>
+                    <div class="setting_list smart_list">
+                        <span>Smart Bidding</span>
+                        <table class="table">
+                            <thead class="thead_bg">
+                            <tr class="text-center">
+                                <td>Offer ID</td>
+                                <td>Identification</td>
+                                <td>Affiliate</td>
+                                <td>Tracking</td>
+                                <td>PostBack</td>
+                                <td>Revenue</td>
+                                <td>CVR</td>
+                                <td>ECPC</td>
+                                <td>CallBack</td>
+                                <td>Payment</td>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr ng-repeat="item in OSBlist" class="text-center">
+                                <td>{{item.offer_id}}</td>
+                                <td>
+                                    <em ng-if="item.huge==true" class="sign">Huge</em>
+                                    <em ng-if="item.api==true" class="sign">Api</em>
+                                </td>
+                                <td>{{item.affid}}</td>
+                                <td>{{item.tracking}}</td>
+                                <td>{{item.postback}}</td>
+                                <td>{{item.revenue}}</td>
+                                <td>{{item.cvr}}</td>
+                                <td>{{item.epc}}</td>
+                                <td>{{item.callback}}</td>
+                                <td>{{item.payout}}</td>
+                            </tr>
+                            </tbody>
+
+                        </table>
+                    </div>
+                    <div class="setting_list total_list">
+                        <span>Total Bidding</span>
+                        <table class="table">
+                            <thead class="thead_bg">
+                            <tr class="text-center">
+                                <!--<td>Offer ID</td>-->
+                                <td>Affiliate</td>
+                                <td>Tracking</td>
+                                <td>PostBack</td>
+                                <td>Revenue</td>
+                                <td>CVR</td>
+                                <td>ECPC</td>
+                                <td>CallBack</td>
+                                <td>Payment</td>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr ng-repeat="item in OTotalBlist" class="text-center">
+                                <!--<td>{{item.offer_id}}</td>-->
+                                <td>{{item.affid}}</td>
+                                <td>{{item.tracking}}</td>
+                                <td>{{item.postback}}</td>
+                                <td>{{item.revenue}}</td>
+                                <td>{{item.cvr}}</td>
+                                <td>{{item.epc}}</td>
+                                <td>{{item.callback}}</td>
+                                <td>{{item.payout}}</td>
+                            </tr>
+                            </tbody>
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!--Promotion record-->
+            <div class="con-list" ng-class="{'first':tab=='table4'}">
+                <div class="add">
+                    <a href="#!/addCart/{{id}}/false">Add</a>
+                </div>
+                <div class="clear"></div>
+                <div class="dataTable">
+                    <table class="table table-hover">
+                        <tr >
+                            <th class="text-center">Refid</th>
+                            <th class="text-center">Appid</th>
+                            <th class="text-center">Affid</th>
+                            <th class="text-center">Update Time</th>
+                            <th class="text-center">Payout</th>
+                            <th class="text-center">Cap</th>
+                            <th class="text-center">Margin</th>
+                            <th class="text-center">Profit</th>
+                            <th class="text-center">Shared</th>
+                            <th class="text-center">Status</th>
+                            <th class="text-center">Preview</th>
+                            <th class="text-center">Edit</th>
+                            <th class="text-center" ng-show="shortLink">Short Link</th>
+                        </tr>
+                        <tr class="text-center prData" ng-repeat="item in prData">
+
+                            <td>{{item.refid}}</td>
+                            <td>{{id}}</td>
+                            <td class="affid">{{item.affid}}</td>
+                            <td>{{item.updateTime}}</td>
+                            <td class="payout">{{item.payout}}</td>
+                            <td class="cap">{{item.cap}}</td>
+                            <td class="margin">{{item.margin}}</td>
+                            <td class="margin">{{item.profit}}</td>
+                            <td class="margin">{{item.shared}}</td>
+                            <td class="prFlag" id="{{item.active}}">
+                                <img src="../img/Float_close.png" class="false" alt="">
+                                <img src="../img/Float_open.png" class="true" alt="" >
+                            </td>
+                            <td>
+                                <em class="preview" title="preview"></em>
+                            </td>
+                            <td class="editApp">
+                                <span class="editTable"><a href="javascript:;"></a></span>
+                            </td>
+                            <td ng-show="shortLink">http://1nk0.com/{{item.shortCode}}</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!--help-->
+            <div class="con-list" ng-class="{'first':tab=='table5'}">
+                <div class="add">
+                    <a href="#!/addTrace/{{id}}">Add</a>
+                </div>
+                <div class="clear"></div>
+                <div class="dataTable">
+                    <table class="table table-hover">
+                        <tr >
+                            <th class="text-center">appid</th>
+                            <th class="text-center">link</th>
+                            <th class="text-center">main</th>
+                            <th class="text-center">method</th>
+                            <th class="text-center">status</th>
+                            <th class="text-center">netid</th>
+                            <th class="text-center">affid</th>
+                        </tr>
+                        <tr class="text-center" ng-repeat="item in helpData">
+                            <td>{{item.appid}}</td>
+                            <td>{{item.traceLink}}</td>
+                            <td><span ng-if="item.major==true">main</span><span ng-if="item.major==false">unmain</span></td>
+                            <td>{{item.method}}</td>
+                            <td>{{item.status}}</td>
+                            <td>{{item.netid}}</td>
+                            <td>{{item.affid}}</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!--content end-->
+        </div>
+    </div>
+    <div class="emailWrap">
+
+    </div>
+    <div class="email_page">
+        <div class="email_header">
+            <div class="email_bg"><img src="../img/logoNew.png" alt="logo"></div>
+            <div class="header_words">
+                <p>New App Notice</p>
+            </div>
+            <i></i>
+        </div>
+        <div class="email-content">
+            <p style="font-size:18px;">Dear Firstname:</p>
+            <div class="first_word">
+                <p>We are going to decrease the payout for the offer(s) below: </p>
+            </div>
+            <!--middle_content-->
+            <div class="newAPP">
+                <div class="new_top">
+                    <div class="new_icon"></div>
+                    <div class="icon_words">
+                        <div class="flag">
+                            <div class="national_flag"></div>
+                            <div class="zomato">{{id}} - {{emailData.name}} </div>
+                        </div>
+                        <div class="detail">
+                            <div class="detail_left">
+                                <p>{{platform}}</p>
+                                <p>{{incent}}</p>
+                                <p>Update: {{gaId}}</p>
+                            </div>
+                            <div class="detail_right">
+                                <p>Payout: $ {{emailData.beforePayout}}</p>
+                                <p>Daily cap: {{emailData.beforeCap}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tracking">
+                    <div class="tracking_left">Clicks Tracking:</div>
+                    <div class="tracking_right">{{emailData.clicksTracking}}</div>
+                </div>
+                <div class="link tracking ">
+                    <div class="link_left tracking_left">tracking_right:</div>
+                    <div class="link_right tracking_right">https://itunes.apple.com/cn/app/id1177287642</div>
+                </div>
+                <div class="description tracking ">
+                    <div class="description tracking_left">Description:</div>
+                    <div class="description tracking_right">{{emailData.description}}</div>
+                </div>
+                <div class="kpi tracking ">
+                    <div class="kpi tracking_left">Kpi:</div>
+                    <div class="kpi tracking_right">{{emailData.remark}}</div>
+                </div>
+                <div class="restriction">
+                    Restriction: The following traffic sources are not accepted on our Non-Incent offers: adult, Google search, social, push notifications, SMS, email, content locking, bots, forced clicks, auto-redirections, fake, pop-ups, pop-under and obviously any kind of frauds. Please do not use your own banners. If you have any doubts about those restrictions for your traffic, please contact your Account Manager.
+                    If the description does not includes specific KPIs, please consider 20% to 30% retention rate as a usual and normal expectation from our advertisers.
+                </div>
+            </div>
+            <!--middle_content-->
+            <div class="line_email"></div>
+            <div class="last_word">
+                For any inquiries regarding the listed offers please contact support@xbaos.com !
+            </div>
+            <div class="friend">
+                <p>Best Regards,</p>
+                <p>Xbaos LTD</p>
+            </div>
+        </div>
+
+        <div class="footer_xq">
+            Copyright © 2013.Xbaos LTD All rights reserved.
+        </div>
+    </div>
+</div>
+
+

@@ -1,0 +1,81 @@
+
+    <link rel="stylesheet" href="../css/page3.css">
+    <div class="box">
+        <ul class="lab">
+            <li ng-class="{'first':styleTypeOne}">
+                <a href="#!/affAccountDetail/{{affId}}/{{infoId}}/a">Basic info</a>
+            </li>
+            <li ng-class="{'first':styleTypeTwo}">
+                <a href="#!/trafficInfo/{{affId}}/{{infoId}}/b" id="setting">Traffic info</a>
+            </li>
+            <li ng-class="{'first':styleTypeThree}">
+                <a href="#!/payInfo/{{affId}}/{{infoId}}/c" id="bidding">Pay info</a>
+            </li>
+            <li ng-class="{'first':styleTypeFour}">
+                <a href="#!/password/{{affId}}/{{infoId}}/d" id="getMark">Password</a>
+            </li>
+        </ul>
+        <div class="wrap">
+            <div class="form-box">
+                <p class="title">Payment Account: {{affId}}</p>
+                <form class="form-inline" action="" method="post" id="addUserForm">
+                    <div class="input-box">
+                        <div class="form-group text one">
+                            <div>Account Holder</div>
+                            <input type="text" class="form-control text" id="accountHolder" ng-model="accountHolder">
+                        </div>
+                        <div class="form-group text two">
+                            <label for="accountNumber" class="label">Account Number/IBA</label>
+                            <input type="text" class="form-control text" id="accountNumber" ng-model="accountNumber">
+                        </div>
+                        <div class="form-group text one">
+                            <label for="SWIFT" class="label">SWIFT</label>
+
+                            <input type="text" class="form-control text" id="SWIFT" ng-model="swift">
+
+                        </div>
+                        <div class="form-group text two">
+                            <label for="bankName" class="label">Bank Name & Location</label>
+                            <input type="text" class="form-control text" id="bankName" ng-model="bankName">
+                        </div>
+                        <div class="form-group text one">
+                            <label for="bankCountry" class="label">Bank Country</label>
+
+                            <input type="text" class="form-control text" id="bankCountry" ng-model="bankCountry">
+
+                        </div>
+                        <div class="form-group text two">
+                            <label for="bankRoutingNumber" class="label">Bank Routing Number</label>
+
+                            <input type="text" class="form-control text" id="bankRoutingNumber" ng-model="bankRoutingNumber">
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="label" for="additionalPaymentDetails">Additional Payment Details</label>
+                        <textarea class="form-control two" rows="1" id="additionalPaymentDetails" ng-model="additionalPaymentDetails"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label class="label" for="companyRegistrationNo">Company Registration No</label>
+                        <textarea class="form-control two" rows="1" id="companyRegistrationNo" ng-model="companyRegistrationNo"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label class="label" for="registratioAddress">Company Registration Address</label>
+                        <textarea class="form-control two" rows="1" id="registratioAddress" ng-model="companyRegistrationAddress"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label class="label" for="officeAddress">Company Office Address</label>
+                        <textarea class="form-control two" rows="1" id="officeAddress" ng-model="companyOfficeAddress"></textarea>
+                    </div>
+                    <div class="form-group" id="btn_wrap">
+                        <button type="button" class="btn btn-default" id="btn">Submit</button>
+                    </div>
+
+                </form>
+            </div>
+            <div class="prompt">
+                Delete successfully
+            </div>
+        </div>
+    </div>
+

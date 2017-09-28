@@ -1,0 +1,195 @@
+html {
+  font-size: 12px;
+  color: #FFFFFF;
+}
+::-moz-placeholder {  text-indent: 8px;}
+::-webkit-input-placeholder { text-indent: 8px;}
+:-ms-input-placeholder { text-indent: 8px; }
+.register_bg{
+  margin: 0;
+  padding: 0;
+  background: url("../img/img_bg.png") no-repeat;
+  background-size: cover;
+}
+.content {
+  width: 100%;
+  background: rgba(0,0,0,0.65);
+  z-index: 100;
+}
+.content .bk_logo {
+  width: 100%;
+  height: 100%;
+
+}
+.content .top_logo {
+  width: 100%;
+  height: 17.5rem;
+}
+.content .top_logo img {
+  margin-top: 6.667rem;
+}
+.content .main {
+  width: 100%;
+  height: 65.0833rem;
+}
+.content .form_content {
+  width: 83.333rem;
+  height: 42.083rem ;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.content .form_wrap {
+  width: 29rem ;
+  height: 100%;
+  color: #363636;
+  background: rgba(255, 255, 255, 0.92);
+}
+.content .sign_up {
+  width: 27rem;
+  height: 4rem;
+  border-bottom: 2px solid #D21212;
+}
+.content .sign_up p {
+  display: inline-block;
+  height: 1.83333rem;
+  margin: 0;
+  font-size:22px;
+  padding-top: 1.6667rem;
+  padding-left: 2rem;
+
+  color: #272727;
+  line-height: 1.83333rem;
+}
+.content .list_content {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.content .list_content li {
+  width: 24.88888rem;
+  height: 6.0833333rem;
+  padding: 0 2rem;
+}
+.content .list_content p {
+  height: 1.41667rem;
+  margin: 0;
+  padding-top: 1.2555rem;
+  padding-bottom: 0.333rem;
+  color: #272727;
+}
+.content .list_content li input {
+  width: 24.666666rem;
+  height: 2.5rem;
+  border: 1px solid #B1B1B1;
+  box-shadow: inset 0 0 4px 0 rgba(159, 159, 159, 0.5);
+  border-radius: 4px;
+  background: #edecec;
+  text-indent: 8px;
+}
+.content .article {
+  width: 47.333rem;
+  height: 100%;
+}
+.content .article_title {
+  font-size: 4.667rem;
+  line-height: 4.667rem;
+  letter-spacing: 0.233rem;
+  margin-top: 10.5rem;
+  font-weight: bold;
+}
+.content .article_content {
+  width: 100%;
+  height: 5.666rem;
+  font-size: 14px;
+}
+.content .article_content p {
+  margin-top: 8px;
+  padding-left: 20px;
+  background: url(../img/but_Radio_selected.png) no-repeat 0 5px;
+  margin-bottom: 0.1667rem;
+  letter-spacing: 0.05rem;
+}
+
+.content .form_btn {
+  width: 27rem;
+  height: 3rem;
+  margin: 2rem 0;
+  overflow: hidden;
+}
+.content .form_btn input#submit{
+  width: 7.66666rem;
+  height: 3rem;
+  background: #850E0E;
+  border: none;
+  border-radius: 4px;
+  float: right;
+  padding: 0;
+  font-size: 1.66667rem;
+  line-height: 2.66667rem;
+  color: #FFFFFF;
+}
+/*alert info*/
+#message{
+  width: 450px;
+  height: 200px;
+  background:#fff;
+  border:1px solid #FACADE;
+  border-radius: 4px;
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin:auto;
+  display:none;
+  text-align: center;
+  font-size: 16px;
+  color: #333333;
+  z-index:200;
+
+}
+#message p {
+  line-height: 40px;
+  height: 40px;
+  width: 448px;
+  background: #D12121;
+  text-align: left;
+  text-indent: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  border: 1px solid #F9CADE;
+  margin: 0;
+  color: #333333;
+}
+#message_contain{
+  width: 450px;
+  height: 110px;
+  vertical-align: middle;
+  display: table-cell;
+}
+#message_contain span{
+  display: inline-block;
+  padding: 0 20px;
+}
+
+#message #confirm_box span{
+  background: #D21212;
+  border-radius: 4px;
+  border: none;
+  font-weight: bold;
+  text-align: center;
+  width: 66px;
+  color: #fff;
+  padding: 4px auto;
+  display: block;
+  height: 36px;
+  line-height: 36px;
+  margin: 0 auto;
+}

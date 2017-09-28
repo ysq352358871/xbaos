@@ -1,0 +1,107 @@
+<link rel="stylesheet" href="../css/affAccountDetail.css">
+<div class="detail_wrap">
+    <!--导航栏-->
+    <ul class="lab">
+        <li ng-class="{'first':styleTypeOne}">
+            <a href="#!/affAccountDetail/{{affId}}/{{infoId}}/a">Basic info</a>
+        </li>
+        <li ng-class="{'first':styleTypeTwo}">
+            <a href="#!/trafficInfo/{{affId}}/{{infoId}}/b" id="setting">Traffic info</a>
+        </li>
+        <li ng-class="{'first':styleTypeThree}">
+            <a href="#!/payInfo/{{affId}}/{{infoId}}/c" id="bidding">Pay info</a>
+        </li>
+        <li ng-class="{'first':styleTypeFour}">
+            <a href="#!/password/{{affId}}/{{infoId}}/d" id="getMark">Password</a>
+        </li>
+    </ul>
+    <!--内容-->
+    <div class="wrap">
+            <div class="form-box">
+                <p id="account">Account ID:{{affId}}</p>
+                <div class="input-box">
+                    <form class="form-inline">
+                        <div class="form-group one">
+                            <label for="firstName" class="label">First Name</label>
+                            <input type="text" ng-model="firstName" class="form-control text" id="firstName" placeholder="" required title=" Please enter your first name">
+                            <span class="verification">*&nbsp;This option is required&nbsp;*</span>
+                        </div>
+                        <div class="form-group two">
+                            <label for="lastName" class="label">Last Name</label>
+                            <input type="text" ng-model="lastName" class="form-control text" id="lastName" placeholder="" required title="Please enter your last name">
+                            <span class="verification">*&nbsp;The two input is inconsistent&nbsp;*</span>
+                        </div>
+                        <div class="form-group one">
+                            <label for="company" class="label">Company</label>
+                            <input type="text" ng-model="company" class="form-control text" id="company" placeholder="" required title="Please enter your company">
+                            <span class="verification">*&nbsp;This option is required&nbsp;*</span>
+                        </div>
+                        <div class="form-group two">
+                            <label for="email" class="label">Your Email</label>
+                            <input type="text" ng-model="email" class="form-control text" id="email" pattern=""  required title="Please enter your email">
+                            <span class="verification">*&nbsp;This option is required&nbsp;*</span>
+                        </div>
+                        <div class="form-group one">
+                            <label for="phoneNumber" class="label">Phone Number</label>
+                            <input type="text" ng-model="phoneNumber" class="form-control text" id="phoneNumber" placeholder="" required maxlength="11" title="Please enter your phone number">
+                            <span class="verification">*&nbsp;The two input is inconsistent&nbsp;*</span>
+                        </div>
+                        <div class="form-group two">
+                            <label for="officePhoneNumber" class="label">Office Phone Number</label>
+                            <input type="text" ng-model="officePhoneNumber" class="form-control text" id="officePhoneNumber" placeholder="" required title="Please enter your office phone number">
+                            <span class="verification">*&nbsp;The two input is inconsistent&nbsp;*</span>
+                        </div>
+                        <div class="form-group one">
+                            <label for="contactInformation" class="label">Skype/QQ</label>
+                            <input type="text" ng-model="contactInformation" class="form-control text" id="contactInformation" placeholder="" required title="Please enter your Skype or QQ">
+                            <span class="verification">*&nbsp;The two input is inconsistent&nbsp;*</span>
+                        </div>
+                        <div class="form-group two">
+                            <label for="website" class="label">Company’s Website</label>
+                            <input type="text" ng-model="website" class="form-control text" id="website" placeholder="" required title="Please enter your company's website">
+                            <span class="verification">*&nbsp;The two input is inconsistent&nbsp;*</span>
+                        </div>
+
+                        <div class="form-group one">
+                            <label for="link" class="label">Company’s Linkin link</label>
+                            <input type="text" ng-model="link" class="form-control especially text" id="link" placeholder="" required title="Please enter your company's linkin link">
+                        </div>
+                        <div class="form-group one" id="OfferemailWrap">
+                            <label for="offerEmail" class="label">Offeremail</label>
+                            <input type="email"  class="form-control text" id="offerEmail" placeholder="" required title="Please enter email">
+                            <em class="add"></em>
+                        </div>
+                        <div class="form-group two" id="billingEmailWrap">
+                            <label for="billingEmail" class="label">Billingemail</label>
+                            <input type="email"  class="form-control text" id="billingEmail" placeholder="" required title="Please enter email">
+                            <em class="add"></em>
+                        </div>
+                        <div class="form-group one">
+                            <label for="postBack" class="label">Postback</label>
+                            <textarea  ng-model="postBack" class="form-control" rows="3" style="width: 420px" id="postBack" placeholder="" required title="Please enter your Skype or QQ"></textarea>
+                        </div>
+                        <div class="form-group two">
+                            <label for="apiKey" class="label">Api key <em id="apiRefresh"></em></label>
+                            <p id="apiKey">{{apiKey}}</p>
+                        </div>
+                        <div class="form-group one">
+                            <label>
+                                <input type="checkbox" id="active" ng-checked="active==true">
+                                <span id="activeText">Active</span>
+                            </label>
+                        </div>
+                        <div class="form-group two api">
+                            <label>
+                                <input type="checkbox" id="api" ng-checked="api==true">
+                                <span id="apiText">Api</span>
+                            </label>
+                        </div>
+                        <button type="button" class="btn btn-default" id="btn">Save</button>
+                    </form>
+                </div>
+                <div class="prompt">
+                    Delete successfully
+                </div>
+            </div>
+        </div>
+</div>

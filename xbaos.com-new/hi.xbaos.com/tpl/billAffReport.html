@@ -1,0 +1,251 @@
+<link rel="stylesheet" href="../css/billAffReport.css">
+<!--<link rel="stylesheet" href="../css/bootstrap.min.css">-->
+<!--点击出现弹框，默认隐藏-->
+<div class="form-box hide" >
+    <img src="../img/cha.png" alt="cha" id="cha">
+    <p class="title">Payment Account {{downLHeaderData.id}}</p>
+    <form class="formlist" action="" method="post" id="addUserForm">
+        <div class="form-group ">
+            <label for="accountHolder" class="label form-inline">Account Holder</label>
+            <input value="{{downLHeaderData.accountHolder}}" type="text" class="form-control text" id="accountHolder" placeholder="" name="accountHolder"  required title="Please enter your account holder" disabled>
+        </div>
+        <div class="form-group  ">
+            <label for="accountNumber" class="label">Account Number/IBA</label>
+            <input value="{{downLHeaderData.accountNumber}}" disabled type="text" class="form-control text" id="accountNumber" placeholder="" required name="accountNumber" title="Please enter your accont number or IBA">
+            <!--<input  hidden name="user_id" value="${content.userId }" id="use1"/>-->
+        </div>
+        <div class="form-group ">
+            <label for="SWIFT" class="label">SWIFT</label>
+            <input value="{{downLHeaderData.swift}}" disabled type="email" class="form-control text" id="SWIFT" placeholder="" required name="swift" title="Please enter your SWIFT">
+        </div>
+        <div class="form-group ">
+            <label for="bankName" class="label">Bank Name & Location</label>
+            <input value="{{downLHeaderData.bankName}}" disabled type="text" class="form-control text" id="bankName" placeholder="" required  name="bankName" title="Please enter your bank name and location">
+        </div>
+        <div class="form-group ">
+            <label for="bankCountry" class="label">Bank Country</label>
+            <input value="{{downLHeaderData.bankCountry}}" disabled type="text" class="form-control text" id="bankCountry" placeholder="" required name="bankCountry" title="Please enter your bank country">
+        </div>
+        <div class="form-group  ">
+            <label for="bankRoutingNumber" class="label">Bank Routing Number</label>
+            <input value="{{downLHeaderData.bankRoutingNumber}}" disabled type="text" class="form-control text" id="bankRoutingNumber" placeholder="" required name="bankRoutingNumber" title="Please enter your bank routing number">
+        </div>
+        <div class="form-group">
+            <label class="label" for="additionalPaymentDetails">Additional Payment Details</label>
+            <textarea ng-model="additionalPaymentDetails" disabled class="form-control two" rows="1" id="additionalPaymentDetails" placeholder=""  name="additionalPaymentDetails"></textarea>
+        </div>
+        <div class="form-group">
+            <p class="hiddenPrompt"><span>*</span>  If you need to change your bank account information, please contact your account manager.</p>
+        </div>
+
+        <!--<div class="save">save</div>-->
+    </form>
+</div>
+<div class="bgC hide" ></div>
+
+<div class="payment_box">
+    <form class="form-inline input-con">
+        <div style="width: 49%;display: inline-block">
+            <div class="form-group input-box">
+                <label for="Affiliate" class="label">Affiliate</label>
+                <select-aff-id id="Affiliate" token="token" user="user" url="url"></select-aff-id>
+            </div>
+        </div>
+        <!--<div style="width: 49%;display: inline-block">-->
+            <!--<div class="form-group input-box">-->
+                <!--<label for="monthTime" class="label">Month</label>-->
+                <!--<select class="form-control input-con"  id="monthTime">-->
+                    <!--<option value="{{item}}" ng-repeat="item in monthData">{{item}}</option>-->
+                <!--</select>-->
+            <!--</div>-->
+            <!--<div class="form-group input-box" id="searchBox">-->
+                <!--<div class="btnSearch iconfont icon-queren"></div>-->
+            <!--</div>-->
+        <!--</div>-->
+
+    </form>
+    <div class="payment_page">
+        <div class="account_blances">
+            <div class="blances_content">
+                <div class="content_top">
+                    <div class="contentL">
+                        <div class="blances_header">
+                            Account Blances
+                            <img src="../img/icon_Refresh.png" alt="Refresh">
+                        </div>
+                        <table class="table table-bordered">
+                            <!--<thead class="thead_bg">-->
+                            <tr>
+                                <th style="width: 14.3%;">Month</th>
+                                <th style="width: 14.3%;">Conversion</th>
+                                <th style="width: 14.3%;">Pending Balance</th>
+                                <th style="width: 14.3%;">Approved Balance</th>
+                                <th style="width: 14.3%;">Deduct Balance</th>
+                                <th style="width: 14.3%;">Hold Balance</th>
+                                <th style="width: 14.3%;">Invoice</th>
+                            </tr>
+                            <!--</thead>-->
+                            <!--<tbody style="position:relative">-->
+                            <tr class="tr" ng-repeat="item in newArr">
+                                <td class="text-center drop_back" id="drop_back">
+                                    <a href="#!/billAffReportDetail/{{item.month}}/{{affiliate}}" style="color:#D21212;">{{item.month}}</a>
+                                </td>
+                                <td>{{item.callback}}</td>
+                                <td>{{item.pending}}</td>
+                                <td>{{item.approved}}</td>
+                                <td>{{item.deduct}}</td>
+                                <td>{{item.holdPayment}}</td>
+                                <td>{{item.holdPayment}}</td>
+                            </tr>
+                            <!--</tbody>-->
+                        </table>
+                    </div>
+                </div>
+                <div class="content_down">
+                    <div class="content_downL">
+                        <div class="downLHeader" id="downLHeader">
+                            Payment Accounts
+                        </div>
+                        <table class="table table-bordered">
+                            <thead class="thead_bg">
+                            <tr>
+                                <td class="sort" id="sort4">Payment Account
+                                    <img src="../img/sort_01.png" alt="sort_01" class="pic " ng-click="Desc=false">
+                                    <img src="../img/sort_02.png" alt="sort_02" class="pic" ng-click="Desc=true">
+                                </td>
+                                <td>Status</td>
+                                <td>Currency</td>
+                                <td>Payment Method</td>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr id="popup_parent" ng-repeat="item in account|orderBy : 'id': Desc">
+                                <td class="popup" id="{{item.id}}">{{item.id}}-{{item.accountHolder}}</td>
+                                <td class="active_wrap">
+                                    <span ng-class="item.status=='active'?'active':'activeFalse'">{{item.status}}</span>
+                                </td>
+                                <td>{{item.currency}}</td>
+                                <td>{{item.paymethod}}</td>
+                            </tr>
+                            </tbody>
+
+                        </table>
+                    </div>
+                    <div class="content_downR">
+                        <div class="downRHeader">
+                            <div>Payments History</div>
+                            <div class="page">
+                                <!--fenye-->
+                                <ul class="page-con" id="page-con">
+                                    <li id="firstpage">
+                                        <a href="javascript:;">
+                                            <img src="../img/firstpage-y.png" alt="firstpage">
+                                        </a>
+                                    </li>
+                                    <li id="previouspage">
+                                        <a href="javascript:;" >
+                                            <img src="../img/previouspage-y.png" alt="previouspage">
+                                        </a>
+                                    </li>
+                                    <li class="text">
+                                        <span class="now-page">{{pageNo}}</span>
+                                        <span class="xiexian">/</span>
+                                        <span class="total-page">{{pages}}</span>
+                                    </li>
+                                    <li id="nextpage">
+                                        <a href="javascript:;" >
+                                            <img src="../img/nextpage-y.png" alt="nextpage">
+                                        </a>
+                                    </li>
+                                    <li  id="lastpage">
+                                        <a href="javascript:;">
+                                            <img src="../img/lastpage-y.png" alt="lastpage">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <table class="table table-bordered">
+                            <thead class="thead_bg">
+                            <tr>
+                                <td class="sort" id="sort1" style="position: relative">Month
+                                    <img src="../img/sort_02.png" alt="sort_02" class="pic" ng-click="sortFun('month')" >
+                                    <img src="../img/sort_01.png" alt="sort_01" class="pic " ng-click="sortFun('month')">
+                                </td>
+                                <td>Status</td>
+                                <td class="sort" id="sort2">Amount
+                                    <img src="../img/sort_02.png" alt="sort_02" class="pic" ng-click="sortFun('amount')">
+                                    <img src="../img/sort_01.png" alt="sort_01" class="pic " ng-click="sortFun('amount')">
+                                </td>
+                                <td>Currency</td>
+                                <td>Rate</td>
+                                <td class="sort" id="sort3">Payment
+                                    <img src="../img/sort_02.png" alt="sort_02" class="pic" ng-click="sortFun('payment')">
+                                    <img src="../img/sort_01.png" alt="sort_01" class="pic " ng-click="sortFun('payment')">
+                                </td>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr ng-repeat="item in history|orderBy:sort:desc">
+                                <td>{{item.month}}</td>
+                                <td class="historyActiveWrap">
+                                    <span ng-class="item.status=='UNPAID'?'historyActive':'historyActiveFalse'">{{item.status}}</span>
+                                </td>
+                                <td>{{item.amount}}</td>
+                                <td class="usd" >
+                                    <input  value="{{item.currency}}" list="price"/>
+                                    <datalist id="price" style="width:60px;height: 20px;">
+                                        <option value="RMB" style="background:#D21212;color: white">
+                                        <option value="USD">
+                                    </datalist>
+                                    <!--<ul>-->
+                                    <!--<li class="checked">RMB</li>-->
+                                    <!--<li>USD</li>-->
+                                    <!--</ul>-->
+                                </td>
+                                <td>{{item.rate}}</td>
+                                <td>{{item.payment}}</td>
+                            </tr>
+                            </tbody>
+
+                        </table>
+                    </div>
+                </div>
+                <div class="content_top">
+                    <div class="contentL">
+                        <div class="blances_header">
+
+                        </div>
+                        <table class="table table-bordered">
+                            <!--<thead class="thead_bg">-->
+                            <tr>
+                                <th class="text-center" style="width: 20%;">Month</th>
+                                <th class="text-center" style="width: 20%;">Confirmed</th>
+                                <th class="text-center" style="width: 20%;">Confirmed Date</th>
+                                <th class="text-center" style="width: 20%;">Paid</th>
+                                <th class="text-center" style="width: 20%;">Paid Date</th>
+                            </tr>
+                            <!--</thead>-->
+                            <!--<tbody style="position:relative">-->
+                            <tr class="tr text-center" ng-repeat="item in invoiceData">
+                                <td class="drop_back">{{item.month}}</td>
+                                <td class="confirmed" ng-class="item.invoiced==false?'closeFlag':'open'">
+                                    <img src="../img/Float_open.png" alt="" class="true">
+                                    <img src="../img/Float_close.png" alt="" class="false">
+                                </td>
+                                <td class="createTime">{{item.createTime}}</td>
+                                <td class="paid" ng-class="item.paid==false?'closeFlag':'open'">
+                                    <img src="../img/Float_open.png" alt="" class="true">
+                                    <img src="../img/Float_close.png" alt="" class="false">
+                                </td>
+                                <td class="updateTime">{{item.updateTime}}</td>
+                            </tr>
+                            <!--</tbody>-->
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pagesPrompt">It's the first page already</div>
+</div>

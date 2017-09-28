@@ -1,0 +1,80 @@
+<link rel="stylesheet" href="../css/offerReport.css">
+<div class="father-box">
+    <div class="wrap">
+        <div class="input-content">
+            <!--表单内容-->
+            <form class="form-inline input-con">
+                <div class="form-group input-box">
+                    <select-net-id token="token" user="user" url="url" search-net-id="searchNetId" advertiser="advertiser"></select-net-id>
+                </div>
+                <div class="form-group input-box" >
+                    <label for="monthTime" class="label">Month</label>
+                    <input class="form-control input-con" moth-time id="monthTime"  ng-model="monthTime">
+                </div>
+                <div class="form-group input-box" id="searchBox">
+                    <div class="btnSearch">Search</div>
+                </div>
+
+            </form>
+
+            <div class="resultTable">
+                <table class="table">
+                    <tr>
+                        <th class="text-center">Net Id</th>
+
+                        <th class="text-center">Postback</th>
+                        <th class="text-center">Revenue</th>
+                        <th class="text-center">Confirmed</th>
+                        <th class="text-center">Deduct</th>
+
+                        <th class="text-center">Month</th>
+                        <th class="text-center">Status</th>
+
+                        <th class="text-center">Details</th>
+                        <th class="text-center">Invoice</th>
+                    </tr>
+                    <tr class="text-center" ng-show="flag">
+                        <td>No Resulst Found</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr class="text-center" ng-repeat="item in datas">
+                        <td id="detail">
+                            <a href="#!/billingDetail/{{item.netid}}/{{item.month}}" target="_blank">{{item.netid}}</a>
+                        </td>
+                        <td>{{item.postback}}</td>
+                        <td>{{item.revenue}}</td>
+                        <td>{{item.confirmed}}</td>
+                        <td>{{item.deduct}}</td>
+                        <td>{{item.month}}</td>
+                        <td id="status">
+                            <span class="false" ng-repeat="itemTwo in item.brCountApproved" ng-if="itemTwo.approved==0 && itemTwo.countappr!=0">Pending</span>
+                            <span class="true" ng-repeat="itemTwo in item.brCountApproved" ng-if="itemTwo.approved==0 && itemTwo.countappr==0">Approved</span>
+                        </td>
+                        <td id="details">
+                            <span class="wrap" ng-repeat="itemTwo in item.brCountApproved" ng-if="itemTwo.approved==0">Uncomfirmed:{{itemTwo.countappr}}</span>
+                            <span class="wrap" ng-repeat="itemTwo in item.brCountApproved" ng-if="itemTwo.approved==1">Confirmed:{{itemTwo.countappr}}</span>
+                        </td>
+                        <td id="invoiced">
+                            <span class="true" ng-repeat="itemTwo in item.brCountApproved" ng-if="itemTwo.approved==0 && itemTwo.countappr==0">
+                                <a href="#!/view/{{item.netid}}/{{item.month}}/{{item.confirmed}}">View</a>
+                            </span>
+                            <span class="false" ng-repeat="itemTwo in item.brCountApproved" ng-if="itemTwo.approved==0 && itemTwo.countappr!=0">
+                                <a href="javascript:;">View</a>
+                            </span>
+                        </td>
+                    </tr>
+
+                </table>
+                <!--pagination-->
+                <tm-pagination conf="paginationConf" id="pagination"></tm-pagination>
+            </div>
+        </div>
+    </div>
+</div>

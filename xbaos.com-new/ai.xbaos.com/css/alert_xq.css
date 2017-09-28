@@ -1,0 +1,31 @@
+/*alert info*/
+#message{
+    width: 450px;
+    height: 150px;
+    background:#fff;
+    border:1px solid #FACADE;
+    border-radius: 4px;
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+    display:none;
+    text-align: center;
+    font-size: 16px;
+    color: #333333;
+}
+#message p {
+    line-height: 40px;
+    height: 40px;
+    width: 448px;
+    background: #D12121;
+    text-align: left;
+    text-indent: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid #F9CADE;
+    margin: 0;
+    color: #333333;
+}

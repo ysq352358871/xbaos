@@ -1,0 +1,106 @@
+<link rel="stylesheet" href="../css/offerReport.css">
+<div class="father-box">
+    <div class="wrap">
+        <div class="input-content">
+            <div class="resultTable">
+                <table class="table">
+                    <tr>
+                        <th class="text-center" id="sortNetId">
+                            Net ID
+                            <img src="../img/sort_01.png" alt="" class="active" ng-click="sortFun('netid')">
+                            <img src="../img/sort_02.png" alt="" ng-click="sortFun('netid')">
+                        </th>
+                        <th class="text-center">Offer ID</th>
+                        <th class="text-center">App ID</th>
+                        <th class="text-center">Aff ID</th>
+                        <th class="text-center">Pub ID</th>
+                        <th class="text-center">Scr ID</th>
+                        <th class="text-center">IP</th>
+                        <th class="text-center" id="logsTime">
+                            Logs_time
+                            <img src="../img/sort_01.png" alt="" class="active" ng-click="sortFun('logs_time')">
+                            <img src="../img/sort_02.png" alt="" ng-click="sortFun('logs_time')">
+                        </th>
+                        <th class="text-center" id="leadTime">
+                            Lead_time
+                            <img src="../img/sort_01.png" alt="" class="active" ng-click="sortFun('lead_time')">
+                            <img src="../img/sort_02.png" alt="" ng-click="sortFun('lead_time')">
+                        </th>
+                        <th class="text-center" id="sortFraud">
+                            Fraud
+                            <img src="../img/sort_01.png" alt="" class="active" ng-click="sortFun('fraud')">
+                            <img src="../img/sort_02.png" alt="" ng-click="sortFun('fraud')">
+                        </th>
+                        <th class="text-center">keep</th>
+                    </tr>
+                    <tr class="text-center" ng-show="flag">
+                        <td>No Resulst Found</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr class="text-center" ng-repeat="item in dataList|orderBy : sort : desc">
+                        <td>{{netid}}</td>
+                        <td>{{item.offer_id}}</td>
+                        <td>{{item.appid}}</td>
+                        <td>{{item.affid}}</td>
+                        <td>{{item.pubid}}</td>
+                        <td>{{item.srcid}}</td>
+                        <td>{{item.uip}}</td>
+                        <td>{{item.logs_time}}</td>
+                        <td>{{item.lead_time}}</td>
+                        <td ng-if="item.fraud==false">0</td>
+                        <td ng-if="item.fraud==true">1</td>
+                        <td id="keep" ng-class="item.keep==true?'true':'false'">
+                            <em class="iconfont icon-dui true"></em>
+                            <em class="iconfont icon-asmkticon0246 false"></em>
+                        </td>
+                    </tr>
+
+                </table>
+                <div class="box-wrap">
+                    <div class="page-box one">
+                        <ul class="page-con" id="page-con">
+                            <li id="firstpage">
+                                <a href="javascript:;">
+                                    <img src="../img/firstpage.png" alt="">
+                                </a>
+                            </li>
+                            <li id="previouspage">
+                                <a href="javascript:;" >
+                                    <img src="../img/previouspage.png" alt="">
+                                </a>
+                            </li>
+                            <li class="text">
+                                <span class="now-page">{{pageNo}}</span>
+                                <span class="xiexian">/</span>
+                                <span class="total-page">{{pages}}</span>
+                            </li>
+                            <li id="nextpage">
+                                <a href="javascript:" >
+                                    <img src="../img/nextpage.png" alt="">
+                                </a>
+                            </li>
+                            <li  id="lastpage">
+                                <a href="javascript:">
+                                    <img src="../img/lastpage.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                        <div id="jumpBtn">
+                            Jump
+                        </div>
+                        <div class="input-page">
+                            <span>To</span>
+                            <input type="text" ng-model="pageNo" id="toPages">
+                            <span>Pages</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

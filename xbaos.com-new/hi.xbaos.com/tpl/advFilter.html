@@ -1,0 +1,100 @@
+
+<link rel="stylesheet" href="../css/advFilter.css">
+<div class="filter_content">
+    <div class="filter_wrapper">
+        <!--filter search-->
+        <!--筛选盒子-->
+        <div class="select-box">
+            <ul class="select-list">
+                <li class="country con" id="netWrap">
+                    <!--<input type="text" id="net" class="con" ng-model="search">-->
+                    <!--<select>-->
+                        <!--<option ng-repeat="item in netWorkList" value="{{item.netid}}">{{item.netid}} - {{item.user_name}}</option>-->
+                    <!--</select>-->
+                    <select-net-id token="token" user="user" url="url" search-net-id="searchNetId" advertiser="advertiser"></select-net-id>
+                    <!--选项内容-->
+                </li>
+                <li class="country con">
+                    <input type="text" id="con" class="con" ng-model="search" placeholder="Country">
+                    <i>
+                        <img src="../img/cha.png" alt="">
+                    </i>
+                    <!--选项内容-->
+                    <select-country search="search" country="countryCode"></select-country>
+                </li>
+                <li class="system con">
+                    <input type="text" id="con-one" class="con" ng-model="platform" placeholder="platform">
+                    <i>
+                        <img src="../img/icon_xiala_12x7.png" alt="">
+                    </i>
+                    <!--选项内容-->
+                    <ul class="system-son animated">
+                        <li class="active text get-con" ng-click="platform='ios'">ios</li>
+                        <li class="text get-con" ng-click="platform='Android'">Android</li>
+                    </ul>
+                </li>
+                <li class="package-name con">
+                    <input type="text" class="con" placeholder="Offer Name" ng-model="offerName">
+                </li>
+                <li class="system con">
+                    <input type="text" id="con-two" class="con" ng-model="activeCon">
+                    <i>
+                        <img src="../img/icon_xiala_12x7.png" alt="">
+                    </i>
+                    <!--选项内容-->
+                    <ul class="system-son animated">
+                        <li class="active text get-con" ng-click="activestate='-1';activeCon='All'">All</li>
+                        <li class="text get-con" ng-click="activestate='1';activeCon='Active'">Active</li>
+                        <li class="text get-con" ng-click="activestate='0';activeCon='Unactive'">Unactive</li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="btn-search">
+                <a href="javascript:;" ng-click="addOffer()">Add Offer</a>
+            </div>
+            <div class="btn-search" ng-click="ajaxGet()">
+                Search
+            </div>
+        </div>
+        <!--filter search-->
+
+        <!--filter content start-->
+        <div class="filter_body">
+            <table class="table">
+                <thead class="thead_bg">
+                    <tr>
+                        <td>Offer ID</td>
+                        <td>App ID</td>
+                        <td>Offer Name</td>
+                        <td>Active</td>
+                        <td>Verify</td>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="item in tableList" id="{{item.offid}}">
+                    <td>
+                        <a href="#!/offersDetail/{{item.offid}}" target="_blank">{{item.offid}}</a>
+                    </td>
+                    <td>
+                        <a href="#!/appDetail/{{item.appid}}/table2">{{item.appid}}</a>
+                    </td>
+                    <td>{{item.offerName}}</td>
+                    <td class="flag activeFlag" ng-class="item.active?'true':'false'">
+                        <img src="../img/Float_open.png" alt="" class="true">
+                        <img src="../img/Float_close.png" alt="" class="false">
+                    </td>
+                    <td class="flag verifyFlag" ng-class="item.verify?'true':'false'">
+                        <img src="../img/Float_open.png" alt="" class="true">
+                        <img src="../img/Float_close.png" alt="" class="false">
+                    </td>
+                </tr>
+                </tbody>
+
+            </table>
+            <!--pagination-->
+            <tm-pagination conf="paginationConf" id="pagination"></tm-pagination>
+        </div>
+        <!--filter content end-->
+
+    </div>
+</div>

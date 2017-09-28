@@ -1,0 +1,1 @@
+angular.module('app',['ngRoute','route','controller','service','tm.pagination'])

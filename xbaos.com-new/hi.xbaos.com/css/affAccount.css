@@ -1,0 +1,135 @@
+.data-wrap{
+    padding: 20px 15px 0 15px;
+    background-color:#FFFFFF;
+    min-height: 700px;
+}
+.table tr th{
+    font-family:inherit;
+    font-size: 12px;
+    color: #272727;
+    letter-spacing: 0;
+    background: #E2E2E2;
+}
+.table tr td{
+    font-family: inherit;
+    font-size: 12px;
+    color: #333333;
+    letter-spacing: 0;
+}
+
+
+
+.box-wrap{
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+}
+.box-wrap:after{
+    content: "";
+    width: 100%;
+    display: block;
+    clear: both;
+}
+.input-page{
+    float: right;
+    position: relative;
+    margin-left: 25px;
+    color: #D21212;
+}
+.input-page span{
+    font-family:PingFangSC-Regular;
+    font-size: 14px;
+    color: #D21212;;
+    letter-spacing: 0;
+}
+.input-page input{
+    display: inline-block;
+    width: 30px!important;height: 20px;
+    border: 1px solid #D8D8D8;
+    text-align: center;
+    line-height: 20px;
+}
+.page-box{
+    position: relative;
+    padding: 3px 0;
+    float: right;
+    margin-top: 20px;
+}
+.page-box.two{
+    display: none;
+}
+.page-con{
+    position: relative;
+    float:left;
+}
+.page-con:after{
+    content: "";
+    width: 100%;
+    display: block;
+    clear: both;
+}
+.page-con li{
+    width: 11px;height: 14px;
+    padding: 0 16px;
+    float: left;
+    z-index: 999;
+}
+.page-con li span{
+    font-family:PingFang-SC-Medium;
+    font-size: 14px;
+    color: #D21212;
+    letter-spacing: 0;
+}
+.page-con li.text{
+    width: auto;
+}
+.page-con li a{
+    display: block;
+    width:11px;
+    height: 14px;
+}
+#jumpBtn{
+    float: right;
+    width: 50px;
+    height: 25px;
+    background: #D21212;
+    border: 1px solid #9F0E0E;
+    border-radius: 2px;
+    margin-left: 10px;
+    text-align: center;
+    line-height: 21px;
+    color:white;
+    margin-top: -3px;
+    cursor: pointer;
+}
+.pagesPrompt{
+    width: 300px;height: 40px;
+    background: rgba(0,0,0,0.70);
+    border-radius: 4px;
+    position: fixed;
+    top:0;bottom: 0;
+    left:0;right: 0;
+    margin:auto;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0.7px;
+    text-align: center;
+    line-height: 40px;
+    display: none;
+}
+.status{
+    display: inline-block;
+    background-color: #04CA53;
+    padding:5px 10px;
+    color: #fff;
+    border-radius: 4px;
+    font-weight: bold;
+}
+.statusTwo{
+    display: inline-block;
+    background-color: #99989D;
+    padding:5px 10px;
+    color: #fff;
+    border-radius: 4px;
+    font-weight: bold;
+}

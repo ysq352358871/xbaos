@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="../css/affAccount.css">
+<div class="data-wrap">
+    <table class="table">
+        <tr>
+            <th>Aff ID</th>
+            <th>Company</th>
+            <th>Email</th>
+            <th>Status</th>
+            <th>Create Time</th>
+            <th></th>
+        </tr>
+        <tr ng-repeat="item in affAccountData">
+            <td>{{item.userid}}</td>
+            <td>{{item.company}}</td>
+            <td>{{item.user_name}}</td>
+            <td>
+                <span class="status" ng-if="item.active==true">Approved</span>
+                <span class="statusTwo" ng-if="item.active==false">Blocked</span>
+            </td>
+            <td>{{item.createTime}}</td>
+            <td>
+                <a href="#!/affAccountDetail/{{item.userid}}/{{item.infoid}}/a">
+                    <img src="../img/icon_edit14x14.png" alt="">
+                </a>
+            </td>
+        </tr>
+    </table>
+    <!--pagination-->
+    <tm-pagination conf="paginationConf" id="pagination"></tm-pagination>
+</div>

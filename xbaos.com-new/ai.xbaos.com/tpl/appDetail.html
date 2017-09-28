@@ -1,0 +1,91 @@
+
+<link rel="stylesheet" href="../css/appDetail.css">
+<div class="cons-box">
+    <div class="box">
+        <div class="wrap">
+            <!--这是顶部，标题-->
+            <div class="top">
+                <div class="left_box">
+                    <img ng-src="{{dataDetail.icon}}" alt="">
+                </div>
+                <div class="right_box_text">
+                    <p><span>{{appId}}</span> - <span>{{dataDetail.name}}</span></p>
+                </div>
+            </div>
+            <!--顶部标题结束-->
+            <!--content star-->
+            <div class="con-list first">
+                <div class="con-list-son">
+                    <!--package name-->
+                    <div class="projectName">App Details</div>
+                    <!--detail con-->
+                    <div class="detailCon">
+                        <p class="appName">
+                            <span class="title">Package Name:</span>
+                            {{dataDetail.packageName}}
+                        </p>
+                        <p class="appName">
+                            <span class="title">Country:</span>
+                            {{dataDetail.accept}}
+                        </p>
+                        <p class="appName">
+                            <span class="title">Traffic Require:</span>
+                            {{dataDetail.incent}}
+                        </p>
+                        <p class="device">
+                            <span class="title">Device ID:</span>
+                            {{device}}
+                        </p>
+                        <div class="description">
+                            <span class="title">Description:</span>
+                            <p id="descriptionCon"></p>
+                        </div>
+                        <p class="previewLink">
+                            <span class="title">Preview Link:</span>
+                            {{dataDetail.previewLink}}
+                        </p>
+                        <p class="previewLink">
+                            <span class="title" ng-if="dataDetail.hard==1">Hard Kpi :</span>
+                            <span class="title" ng-if="dataDetail.hard==0">Kpi:</span>
+                            {{dataDetail.remark}}
+                        </p>
+                    </div>
+                    <div class="projectName" style="margin-top: 20px;">App Require</div>
+                    <div class="trackLink">
+                        <span class="trackLinkFlag">Track Link:</span>
+                        <p class="applyTrue" ng-if="apply=='1'">{{tracking}}</p>
+                        <a class="trackLinkApply" ng-if="apply=='0'" href="javaScript:;">Click here to apply for Track Link access.</a>
+                    </div>
+                    <div class="trackLink" ng-if="apply=='1'">
+                        <span class="trackLinkFlag">Daily Cap:</span>
+                        <p class="applyTrue" ng-if="apply=='1'">{{cap}}</p>
+                        <a class="trackLinkApply" ng-if="apply=='0'" href="javaScript:;">Click here to apply for Track Link access.</a>
+                    </div>
+                    <div class="trackLink" ng-if="apply=='1'">
+                        <span class="trackLinkFlag">Payout:</span>
+                        <p class="applyTrue" ng-if="apply=='1'">{{payOut}}</p>
+                        <a class="trackLinkApply" ng-if="apply=='0'" href="javaScript:;">Click here to apply for Track Link access.</a>
+                    </div>
+                    <!--隐藏框 go it-->
+                    <div id="applyBox">
+                        <div class="promptContentWrap">
+                            <p>Your application has been added to the shopping cart. Please click on the shopping cart in the upper right corner to view the Pending app and your account manager will process your application as soon as possible. If you have not been approved within 24 hours, please contact your account manager.
+                            </p>
+                        </div>
+                        <div class="goBtn">
+                            Got it!
+                        </div>
+                        <div class="closeBtn">
+                            Close
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--content end-->
+        </div>
+    </div>
+</div>
+<div class="mask"></div>
+
+

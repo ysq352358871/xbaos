@@ -1,0 +1,112 @@
+
+.pcs-template {
+    font-size: 9pt;
+    color: #333333;
+    background: #ffffff ;
+}
+.pcs-header-content {
+    font-size: 9pt;
+    color: #333333;
+    background-color: #ffffff;
+}
+.pcs-template-body {
+    padding: 0 0.400000in 0 0.550000in;
+}
+.pcs-template-footer {
+    height: 0.700000in;
+    font-size: 6pt;
+    color: #aaaaaa;
+    padding: 0 0.400000in 0 0.550000in;
+    background-color: #ffffff;
+}
+.pcs-footer-content {
+    word-wrap: break-word;
+    color: #aaaaaa;
+    border-top: 1px solid #adadad;
+}
+
+.pcs-label {
+    color: #333333;
+}
+.pcs-entity-title {
+    font-size: 28pt;
+    color: #000000;
+}
+.pcs-orgname {
+    font-size: 10pt;
+    color: #333333;
+}
+.pcs-customer-name {
+    font-size: 9pt;
+    color: #333333;
+}
+.pcs-itemtable-header {
+    font-size: 9pt;
+    color: #ffffff;
+    background-color: #3c3d3a;
+}
+.pcs-taxtable-header {
+    font-size: 9pt;
+    color: #000;
+    background-color: #f5f4f3;
+}
+.itemBody tr {
+    page-break-inside: avoid;
+    page-break-after:auto;
+}
+.pcs-item-row {
+    font-size: 9pt;
+    border-bottom: 1px solid #adadad;
+    background-color: #ffffff;
+    color: #000000;
+}
+.pcs-item-sku {
+    margin-top: 2px;
+    font-size: 10px;
+    color: #444444;
+}
+.pcs-item-desc {
+    color: #727272;
+    font-size: 9pt;
+}
+.pcs-balance {
+    background-color: #f5f4f3;
+    font-size: 9pt;
+    color: #000000;
+}
+.pcs-totals {
+    font-size: 9pt;
+    color: #000000;
+    background-color: #ffffff;
+}
+.pcs-notes {
+    font-size: 8pt;
+}
+.pcs-terms {
+    font-size: 8pt;
+}
+.pcs-header-first {
+    background-color: #ffffff;
+    font-size: 9pt;
+    color: #333333;
+    height: auto;
+}
+
+.pcs-status {
+    /*color: ;*/
+    font-size: 15pt;
+    border: 3px solid ;
+    padding: 3px 8px;
+}
+
+@page :first {
+    @top-center {
+        content: element(header);
+    }
+    margin-top: 0.700000in;
+}
+
+.pcs-template-header {
+    padding: 0 0.400000in 0 0.550000in;
+    height: 0.700000in;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta HTTP-EQUIV="pragma" CONTENT="no-cache">
+    <meta HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate">
+    <meta HTTP-EQUIV="expires" CONTENT="0">
+    <title>Xbaos</title>
+</head>
+<body>
+
+</body>
+<script>
+    //window.location="http://u.xbaos.com"
+    function GetQueryString(name)
+    {
+        var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+        var r =window.location.search.substr(1).match(reg);
+        if(r!=null)return  unescape(r[2]); return null;
+    }
+    var token=GetQueryString("token");
+    var userData=GetQueryString("userData");
+    console.log(token,userData);
+    if(token===null && userData===null){
+        window.location="http://u.xbaos.com/"
+    }else{
+        localStorage.browserToken=JSON.stringify(token);
+        localStorage.userData=userData;
+        window.location='./tpl/index.html';
+    }
+</script>
+</html>

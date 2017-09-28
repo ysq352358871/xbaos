@@ -1,0 +1,97 @@
+
+/*setting table start*/
+.setting_list span{
+    height: 22px;
+    line-height: 22px;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 7px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.setting_list .table{
+    width: 100%;
+}
+.thead_bg{
+    height: 32px;
+    background: #E2E2E2;
+    font-size: 12px;
+    font-family:" PingFang-SC-Regular";
+    font-weight:bold;
+    color: #272727;
+    letter-spacing: 0;
+}
+.setting_list .table tbody{
+    font-size: 12px;
+    color: #333333;
+}
+.setting_list .table tbody tr td{
+    height: 17px;
+    line-height: 17px;
+}
+.setting_list .table tbody tr td:nth-child(1){
+    position: relative;
+}
+td.traffic img{
+    display: none;
+}
+td.locked img{
+    display: none;
+}
+td.traffic.true img.true{
+    display: block;
+}
+td.traffic.false img.false{
+    display: block;
+}
+td.locked.true img.true{
+    display: block;
+}
+td.locked.false img.false{
+    display: block;
+}
+td.traffic img,td.locked img{
+    margin: 0 auto;
+}
+
+.setting_list .table tbody tr{
+    height: 32px;
+    box-shadow: inset -1px 0 0 0 #E2E2E2, inset 1px 0 0 0 #E2E2E2, inset 0 -1px 0 0 #E2E2E2;
+}
+.group_list,.smart_list,.total_list{
+    margin-top: 30px;
+}
+td>input{
+    border: 1px solid #D8D8D8;
+    width: 51px;
+    height: 24px;
+}
+i{
+    cursor: pointer;
+}
+td>i:first-child{
+    float: left;
+}
+td>i:last-child{
+    float: right;
+    padding-top: 5px;
+
+}
+.setting_list .table tbody tr td:last-child{
+    box-sizing: border-box;
+    overflow: hidden;
+}
+table>tbody>tr #addBorder{
+    text-decoration: underline;
+    text-decoration-color: #D21212;
+    -moz-text-decoration-color: #D21212;
+    cursor: pointer;
+}
+em.sign{
+    font-style: normal;
+    display: inline-block;
+    padding: 4px 15px;
+    background-color: #87CB16;
+    color:#fff;
+    border-radius: 4px;
+}

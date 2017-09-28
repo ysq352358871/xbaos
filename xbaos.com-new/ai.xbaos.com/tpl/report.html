@@ -1,0 +1,145 @@
+<link rel="stylesheet" href="../css/report.css">
+<link rel="stylesheet" href="../css/alert.css">
+<div class="father-box">
+    <div class="wrap">
+        <p class="title">Revenue Report To Publisher</p>
+        <div class="input-content">
+            <!--表单内容-->
+            <form class="form-inline input-con">
+                <div class="form-group input-box">
+                    <label for="startDate" class="label">Period</label>
+                    <input class="form-control input-con" id="startDate" placeholder="Start Date" ng-model="startDate">
+                    <i><img src="../img/icon_xiala_12x7.png" alt=""></i>
+                </div>
+                <div class="form-group input-box two">
+                    <input class="form-control input-con" id="endDate" placeholder="End Date" ng-model="endDate">
+                    <i><img src="../img/icon_xiala_12x7.png" alt=""></i>
+                </div>
+                <div class="form-group input-box">
+                    <label for="appId" class="label">App</label>
+                    <input class="form-control input-con" id="appId" placeholder="" ng-model="appName">
+                </div>
+            </form>
+            <div class="btnSearch">Search</div>
+            <div class="resultTable">
+                <div class="iconTimeZone">
+                    <i></i>
+                    <span>GMT+8</span>
+                </div>
+                <table class="table">
+                    <tr>
+                        <th class="text-center">App</th>
+                        <th class="text-center">Pay Out</th>
+                        <th class="text-center">Clicks</th>
+                        <th class="text-center">Coversion</th>
+                        <th class="text-center">CVR</th>
+                        <th class="text-center">Revenue</th>
+                        <th class="text-center">ECPC</th>
+                    </tr>
+                    <tr class="text-center" ng-if="flag()">
+                        <td class="app">No Resulst Found</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="text-center" ng-repeat="item in reportData">
+                        <td class="app" attr="{{item.id}}">{{item.id}} - {{item.name}}</td>
+                        <td>{{item.payout}}</td>
+                        <td>{{item.tracking}}</td>
+                        <td>{{item.coversion}}</td>
+                        <td>{{item.cVR}}%</td>
+                        <td>{{item.revenue}}</td>
+                        <td>{{item.eCPC}}</td>
+                    </tr>
+                    <tr>
+                        <th class="text-center" style="color: #D21212">Total</th>
+                        <th class="text-center" style="color: #D21212">-</th>
+                        <th class="text-center" style="color: #D21212">-</th>
+                        <th class="text-center" style="color: #D21212">{{coversion}}</th>
+                        <th class="text-center" style="color: #D21212">-</th>
+                        <th class="text-center" style="color: #D21212">{{revenue}}</th>
+                        <th class="text-center" style="color: #D21212">-</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="box-wrap">
+            <div class="page-box one">
+                <ul class="page-con" id="page-con">
+                    <li id="firstpage">
+                        <a href="javascript:;">
+                            <img src="../img/firstpage.png" alt="">
+                        </a>
+                    </li>
+                    <li id="previouspage">
+                        <a href="javascript:;" >
+                            <img src="../img/previouspage.png" alt="">
+                        </a>
+                    </li>
+                    <li class="text">
+                        <span class="now-page">{{pageNo}}</span>
+                        <span class="xiexian">/</span>
+                        <span class="total-page">{{pages}}</span>
+                    </li>
+                    <li id="nextpage">
+                        <a href="javascript:" >
+                            <img src="../img/nextpage.png" alt="">
+                        </a>
+                    </li>
+                    <li  id="lastpage">
+                        <a href="javascript:">
+                            <img src="../img/lastpage.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+                <div id="jumpBtn">
+                    Jump
+                </div>
+                <div class="input-page">
+                    <span>To</span>
+                    <input type="text" ng-model="pageNo" id="toPages">
+                    <span>Pages</span>
+                </div>
+            </div>
+        </div>
+        <!--隐藏的弹出框，查看详细信息-->
+        <div class="alert_box">
+            <div class="header">
+                <div class="header_word">
+                    Daily Report: App 20468
+                </div>
+                <div class="header_img">
+                    <img src="../img/icon_close_alert.png" alt="icon_close">
+                </div>
+            </div>
+            <table class="table">
+                <tr>
+                    <th class="text-center">Date</th>
+                    <th class="text-center">Payout</th>
+                    <th class="text-center">Clicks</th>
+                    <th class="text-center">Coversion</th>
+                    <th class="text-center">CVR</th>
+                    <th class="text-center">Revenue</th>
+                    <th class="text-center">ECPC</th>
+                </tr>
+                <tr ng-repeat="item in appAllData" class="dataColor">
+                    <td class="text-center">{{item.date}}</td>
+                    <td class="text-center">{{item.payout}}</td>
+                    <td class="text-center">{{item.clicks}}</td>
+                    <td class="text-center">{{item.coversion}}</td>
+                    <td class="text-center">{{item.cVR}}</td>
+                    <td class="text-center">{{item.revenue}}</td>
+                    <td class="text-center">{{item.eCPC}}</td>
+                </tr>
+            </table>
+        </div>
+        <!--遮罩层-->
+        <div class="mask"></div>
+    </div>
+    <!--loading 效果-->
+    <div id="loading-center" loading-effect>
+    </div>
+</div>

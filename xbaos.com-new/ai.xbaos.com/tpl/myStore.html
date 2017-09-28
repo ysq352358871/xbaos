@@ -1,0 +1,114 @@
+
+    <link rel="stylesheet" href="../css/appstore.css">
+    <div class="con-wrap">
+    <div class="select-box">
+        <ul class="select-list">
+            <li class="system con">
+                <input type="text" id="con-one" class="con" ng-model="system" placeholder="System">
+                <i>
+                    <img src="../img/icon_xiala_12x7.png" alt="">
+                </i>
+                <!--选项内容-->
+                <ul class="system-son">
+                    <li class="text get-con">iOS</li>
+                    <li class="text get-con">Android</li>
+                </ul>
+            </li>
+            <li class="system con">
+                <input type="text" id="con-id" class="con" placeholder="AppID" ng-model="appId">
+            </li>
+            <li class="system con">
+                <input type="text" id="con-two" class="con" placeholder="AppName" ng-model="appName">
+            </li>
+            <li class="package-name con">
+                <input type="text" class="con" placeholder="Package Name" ng-model="packageName">
+            </li>
+            <li class="country con">
+                <input type="text" id="con" class="con" ng-model="search" placeholder="Country">
+                <i>
+                    <img src="../img/cha.png" alt="">
+                </i>
+                <!--选项内容-->
+                <ul class="system-son">
+                    <li class="text" ng-repeat="item in data | filter:{countryName:search}" id="{{item.countryCode}}" ng-click="get(item.countryName,item.countryCode)">
+                        {{item.countryName}}
+                    </li>
+                </ul>
+            </li>
+            <div class="btn-search" ng-click="ajaxGet()">
+                Search
+            </div>
+        </ul>
+
+    </div>
+    <div class="cartBox">
+        <div class="patch" ng-repeat="item in contents">
+            <div class="header">
+                <span>{{item.appid}} - </span><span class="appName" title="{{item.appname}}">{{item.appname}}</span><span>- {{item.incent}}</span>
+            </div>
+            <div class="content">
+                <!--<img src="../img/icon_add.png" alt="add">-->
+                <div class="content_inner">
+                    <div class="imgBox">
+                        <img ng-src="{{item.icon}}" alt="" class="appIcon">
+                    </div>
+                    <div class="content_words">
+                        <div class="img">
+                            <img ng-src="{{imgUrl}}{{item.nationalFlag}}" alt="" class="nationalFlag">
+                        </div>
+                        <div id="nationalFlag">
+                            <img src="../img/icon_andriod.png" alt="andriod" class="platform" ng-show="checkAndroid('{{item.platform}}')">
+                            <img src="../img/icon_ios.png" alt="andriod" class="platform" ng-show="checkIos('{{item.platform}}')">
+                        </div>
+                        <div class="app_detail_con">
+                            <p><span class="title">Unit Price:</span> <i> $ {{item.beforePayout}}</i></p>
+                            <strong>Conversion Flow:</strong> <i>{{item.conversion}}</i>
+                        </div>
+                    </div>
+                </div>
+                <a href="#!/appDetail/{{item.appid}}/{{item.beforePayout}}/{{item.beforeCap}}/{{item.apply}}" class="detail">Detail</a>
+            </div>
+        </div>
+    </div>
+        <div class="box-wrap">
+            <div class="page-box">
+                <ul class="page-con" id="page-con">
+                    <li id="firstpage">
+                        <a href="javaScript:;">
+                            <img src="../img/firstpage.png" alt="">
+                        </a>
+                    </li>
+                    <li id="previouspage">
+                        <a href="javaScript:;" >
+                            <img src="../img/previouspage.png" alt="">
+                        </a>
+                    </li>
+                    <li class="text">
+                        <span class="now-page">{{pageNo}}</span>
+                        <span class="xiexian">/</span>
+                        <span class="total-page">{{pages}}</span>
+                    </li>
+                    <li id="nextpage">
+                        <a href="javaScript:;" >
+                            <img src="../img/nextpage.png" alt="">
+                        </a>
+                    </li>
+                    <li  id="lastpage">
+                        <a href="javaScript:;">
+                            <img src="../img/lastpage.png" alt="">
+                        </a>
+
+                    </li>
+                </ul>
+                <div class="input-page">
+                    <span>To</span>
+                    <input type="text" ng-model="pageNo" id="toPages">
+                    <span>Pages</span>
+                </div>
+            </div>
+        </div>
+        <div class="pagesPrompt">It's the first page already</div>
+        <!--loading 效果-->
+        <div id="loading-center" loading-effect>
+        </div>
+    </div>

@@ -1,0 +1,173 @@
+.box{
+    width: 100%;
+    background-color: white;
+    padding: 0px 15px 150px 15px;
+}
+.wrap{
+    width: 100%;
+    padding-top: 1px;
+    position: relative;
+
+}
+.wrap:after{
+    content:"";
+    width: 100%;
+    display: block;
+    clear: both;
+}
+.form-inline.form-box{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    width:100%;
+    justify-content:space-between;
+}
+.form-group.input-box{
+    margin-top: 15px;
+    color: #272727;
+    padding: 0;
+    position: relative;
+}
+.form-group .label{
+    width: 240px;
+    display: block;
+    color: #272727;
+    font-size: 16px;
+    text-align:left;
+    padding-left: 0;
+}
+.form-control.input-con{
+    width: 240px;height: 36px;
+}
+.form-control.input-con.active:focus{
+    border: 1px solid #D21212;
+    box-shadow: none;
+}
+/*可输入下拉框*/
+#system-son{
+    width: 240px;
+    height: auto;
+    padding: 8px 0;
+    background: #F8F8F8;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+    border-radius: 2px;
+    position: absolute;
+    left: 0;top: 65px;
+    overflow: auto;
+    max-height: 160px;
+    z-index: 9999;
+    display: none;
+}
+#system-son li{
+    width: 100%;
+    height: 24px;
+    line-height: 24px;
+    padding-left: 10px;
+    font-size: 14px;
+    color: #272727;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+#system-son li:hover{
+    background: #D21212;
+    color: white;
+}
+.form-group.input-box i{
+    display: block;
+    width: 12px;height: 7px;
+    position: absolute;
+    top:33px;left:220px;
+    cursor: pointer;
+}
+/*单选框*/
+.selectRadio{
+    margin-top: 15px;
+    padding-left: 0;
+}
+.selectRadio input[type="radio"]{
+    opacity: 0;
+}
+.circular {
+    display: block;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -7px;
+    background-image: url("../img/but_Radio_default.png");
+}
+
+.radio-inline.check .circular{
+    background-image: url("../img/but_Radio_selected.png");
+}
+.select-list .circular{
+    background-image: url("../img/but_Checkbox_default.png");
+}
+.select-list .checkbox-inline.checkAgain .circular{
+    background-image: url("../img/but_Checkbox_selected.png");
+}
+.select-list input[type="checkbox"]{
+    opacity: 0;
+}
+.form-group.input-box.con{
+    width: 100%;
+}
+.form-group.input-box.con p{
+    font-size: 16px;
+    color: #272727;
+    line-height: 25px;
+}
+.form-group.input-box.con textarea{
+    width: 100%;
+}
+.btn-wrap{
+    float: right;
+    width: 72px;height: 36px;
+}
+.btn-wrap:after{
+    content: "";
+    width: 100%;
+    display: block;
+    clear: both;
+}
+.detail-btn{
+    float: right;
+    width: 72px;height: 36px;
+    background: #D21212;
+    border: 1px solid #9F0E0E;
+    border-radius: 2px;
+    color:white;
+    text-align: center;
+    line-height: 36px;
+    font-size: 14px;
+    position: absolute;
+    bottom: -63px;right:0;
+}
+.detail-btn a{
+    width: 100%;height: 100%;
+    display: block;
+    border-radius: 2px;
+    color: white;
+}
+.detail-btn:hover{
+    background: #9F0E0E;
+    border: 1px solid #9F0E0E;
+}
+/*提示消息*/
+.prompt{
+    width: 300px;
+    height: 60px;
+    background: rgba(0,0,0,0.70);
+    border-radius: 4px;
+    text-align: center;
+    line-height: 60px;
+    position: fixed;
+    top:0;bottom: 0;left:0;right:0;
+    margin: auto;
+    font-size: 14px;
+    color: #FFFFFF;
+    display: none;
+}

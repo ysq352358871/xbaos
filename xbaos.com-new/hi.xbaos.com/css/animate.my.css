@@ -1,0 +1,14 @@
+.animated-my {
+    animation-duration:1s;
+    -webkit-animation-duration:1s;
+    animation-timing-function:ease;
+    -webkit-animation-timing-function:ease;
+    animation-fill-mode: both;
+}
+@keyframes open {
+    from{height: 0}
+    to{height: 160px}
+}
+.open{
+    animation-name: open;
+}

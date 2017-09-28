@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="../css/billingDetail.css">
+<div class="wrapBox">
+    <table class="table table-striped" id="tableBox">
+        <tr>
+            <th class="text-center">Net Id</th>
+            <th class="text-center">Month</th>
+            <th class="text-center">Offer ID</th>
+            <th class="text-center">App ID</th>
+            <th class="text-center">Aff ID</th>
+            <th class="text-center">Callback</th>
+            <th class="text-center">Pending</th>
+            <th class="text-center">Confirmed</th>
+            <th class="text-center">Deduct</th>
+            <th class="text-center">Approved</th>
+            <th class="text-center">Hold</th>
+        </tr>
+        <tr class="text-center dataWrap" ng-repeat="item in dataList" id='{{item.payaffid}}'>
+            <td>{{item.netid}}</td>
+            <td class="moth">{{item.month}}</td>
+            <td class="offerId">{{item.offer_id}}</td>
+            <td class="appId">{{item.appid}}</td>
+            <td class="affId">{{item.affid}}</td>
+            <td>{{item.callback}}
+            <td>{{item.payment}}</td>
+            <td>{{item.confirmed}}</td>
+            <td class="deduct">{{item.deduct}}</td>
+            <td id="approved" ng-class="{{item.approved}}==true?'true':'false'">
+                <img src="../img/but_Checkbox_selected.png" alt="" class="true">
+                <img src="../img/but_Checkbox_default_dark.png" alt="" class="false">
+            </td>
+            <td id="hold" ng-class="{{item.hold}}==true?'true':'false'">
+                <img src="../img/but_Checkbox_selected.png" alt="" class="true">
+                <img src="../img/but_Checkbox_default_dark.png" alt="" class="false">
+            </td>
+        </tr>
+    </table>
+    <!--pagination-->
+    <tm-pagination conf="paginationConf" id="pagination"></tm-pagination>
+</div>

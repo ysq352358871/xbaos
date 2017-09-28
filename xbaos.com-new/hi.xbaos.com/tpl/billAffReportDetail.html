@@ -1,0 +1,57 @@
+<link rel="stylesheet" href="../css/billAffReportDetail.css">
+<div class="container-fluid">
+    <div class="row">
+        <table class="table table-bordered" id="hideTable">
+            <tr>
+                <th class="text-center" style="line-height: 60px;width: 10%">Month</th>
+                <th class="text-center" style="line-height: 60px;width: 40%">AppID-Name</th>
+                <th class="text-center" style="line-height: 60px;width: 10%">Conversion</th>
+                <th colspan="4" class="text-center statusBox" style="height: 60px;width: 40%">
+                    <table style="width: 100%;">
+                        <tr class="text-center" style="height: 30px;line-height: 30px">
+                            <td colspan="4">Status</td>
+                        </tr>
+                        <tr class="text-center" style="height: 30px;line-height: 30px">
+                            <td style="width: 25%">Pending</td>
+                            <td style="width: 25%">Approved</td>
+                            <td style="width: 25%">Hold</td>
+                            <td style="width: 25%">Deduct</td>
+                        </tr>
+                    </table>
+                </th>
+            </tr>
+        </table>
+        <table class="table table-bordered">
+            <tr id="conHead">
+                <th class="text-center" style="line-height: 60px;width: 10%">Month</th>
+                <th class="text-center" style="line-height: 60px;width: 40%">AppID-Name</th>
+                <th class="text-center" style="line-height: 60px;width: 10%">Conversion</th>
+                <th colspan="4" class="text-center statusBox" style="height: 60px;width: 40%">
+                    <table style="width: 100%;">
+                        <tr class="text-center" style="height: 30px;line-height: 30px">
+                            <td colspan="4">Status</td>
+                        </tr>
+                        <tr class="text-center" style="height: 30px;line-height: 30px">
+                            <td style="width: 25%">Pending</td>
+                            <td style="width: 25%">Approved</td>
+                            <td style="width: 25%">Hold</td>
+                            <td style="width: 25%">Deduct</td>
+                        </tr>
+                    </table>
+                </th>
+                <!--<th>Approved</th>-->
+                <!--<th>Hold</th>-->
+                <!--<th>Deduct</th>-->
+            </tr>
+            <tr class="text-center" ng-repeat="item in dataList">
+                <td style="width: 10%">{{month}}</td>
+                <td style="width: 40%">{{item.appid}}-{{item.name}}</td>
+                <td style="width: 10%">{{item.callback}}</td>
+                <td style="width: 10%">{{item.pendingpayment}}</td>
+                <td style="width: 10%">{{item.approvedpayment}}</td>
+                <td style="width: 10%">{{item.holdpayment}}</td>
+                <td style="width: 10%">{{item.deduct}}</td>
+            </tr>
+        </table>
+    </div>
+</div>

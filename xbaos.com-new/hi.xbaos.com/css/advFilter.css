@@ -1,0 +1,189 @@
+
+.filter_content{
+    background-color: #FFFFFF;
+    width: 100%;
+    /*height: 100%;*/
+    min-height: 789px;
+    padding: 15px 15px 0 15px;
+    position:relative;
+    font-family:"PingFangSC-Regular";
+}
+.filter_wrapper{
+    width: 100%;
+    position: relative;
+}
+
+/*filter search box*/
+.select-box{
+    background-color: #D3D3D3;
+    padding: 8px 14px;
+}
+li.country i>img{
+    position: absolute;
+    top: 15px;
+    right: 5px;
+}
+.select-box:after{
+    content: "";
+    width: 100%;
+    display: block;
+    clear: both;
+}
+.select-list{
+    /*position: relative;*/
+    float:left;
+    /*add css*/
+    /*position: absolute;*/
+    /*left: 20px;*/
+    width:80%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+.select-list:after{
+    content: "";
+    display: block;
+    width: 100%;
+    clear: both;
+}
+ul.select-list li.con{
+    width:160px;height: 36px;
+    background: #F8F8F8;
+    border-radius: 4px;
+    /*float: left;*/
+    /*margin-right: 60px;*/
+    padding:0px 6px;
+    position: relative;
+    cursor: pointer;
+}
+ul.select-list li input.con{
+    display: inline-block;
+    font-size: 14px;
+    color: #B5B5B5;
+    letter-spacing: 0;
+    line-height: 16px;
+    height: 100%;
+    border: 0;outline: none;
+    background: #F8F8F8;
+    width:100%;
+}
+ul.select-list li.system i{
+    width: 12px;height:7px;
+    display:inline-block;
+    /*float: right;*/
+    /*add css*/
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+ul.select-list li.country i{
+    width:12px;height: 12px;
+    float: right;
+    display: none;
+}
+.selectNetIdWrap input.netIdCon {
+    width: 100%;
+    border-radius: 4px;
+}
+.selectNetIdWrap .netIdList{
+    width: 100%;
+}
+.btn-search{
+    background: #D21212;
+    border: 1px solid #9F0E0E;
+    border-radius: 4px;
+    width: 80px;height: 36px;
+    float: left;
+    text-align: center;
+    line-height: 36px;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+    margin-left: 15px;
+}
+.btn-search a{
+    display: block;
+    width: 100%;height: 100%;
+    color: #fff;
+}
+.btn-search:hover{
+    background: #9F0E0E;
+    border: 1px solid #9F0E0E;
+}
+/*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+select::-ms-expand { display: none; }
+/*add css*/
+
+/*filter search end*/
+
+/*filter body start*/
+.filter_body{
+    width: 100%;
+    margin-top: 30px;
+}
+.filter_body .table{
+    width: 100%;
+}
+ .thead_bg{
+    height: 32px;
+    background: #E2E2E2;
+    font-size: 12px;
+    font-family:" PingFang-SC-Regular";
+     font-weight:bold;
+    color: #272727;
+    letter-spacing: 0;
+}
+.filter_body .table tbody tr{
+    /*add css*/
+    border-right: 1px solid #e2e2e2;
+    border-left: 1px solid #e2e2e2;
+}
+.filter_body .table tbody tr td{
+    font-size: 12px;
+}
+.filter_body .table tbody tr td a{
+    color: #333333;
+}
+/*add css*/
+.filter_body .table tbody tr:last-child{
+    border-bottom: 1px solid #e2e2e2;
+}
+/*filter body end*/
+ul.select-list li#netWrap{
+    padding: 0;
+}
+ul.select-list li#netWrap select{
+    width: 100%;height: 100%;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #B5B5B5;
+    padding-left: 6px;
+    /*将默认的select选择框样式清除*/
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    -ms-appearance:none;
+}
+ul.select-list li#netWrap select option{
+    width: 100%;
+}
+ul.select-list li#netWrap select:focus{
+    border: none;
+    box-shadow: none;
+}
+
+.flag img{
+    cursor: pointer;
+    display: none;
+}
+.flag.false img.false{
+    display: block;
+}
+.flag.true img.true{
+    display: block;
+}

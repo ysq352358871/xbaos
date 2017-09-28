@@ -1,0 +1,385 @@
+<link rel="stylesheet" href="../css/postBack.css">
+<div class="con_wrap">
+    <div class="wrap">
+        <div class="url_box">
+            <p class="title">Tracking URL’s</p>
+            <p class="text_con">
+                You can now add up to 5 dynamic parameters, 512 characters each. The dynamic-parameter can be reported back to you on external pixels and callbacks by the corresponding parameter name (clickid, gaid, idfa etc.)
+            </p>
+            <form class="form-inline">
+                <div class="form-group">
+                    <label for="DP1">Your clickid parameter</label>
+                    <input type="text" class="form-control" ng-model="clickid" id="DP1" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="DP2">Your publisherid parameter</label>
+                    <input type="text" class="form-control" ng-model="publisherid" id="DP2" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="DP2">Your gaid parameter</label>
+                    <input type="text" class="form-control" ng-model="gaid" id="DP3" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="DP2">Your idfa parameter</label>
+                    <input type="text" class="form-control" ng-model="idfa" id="DP4" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="DP2">Your scrid parameter</label>
+                    <input type="text" class="form-control" ng-model="scrid" id="DP5" placeholder="">
+                </div>
+                <div class="link">
+                    <p class="title">i.e :</p>
+                    <p class="link_con">https://m.z2z.org/t?appid=12345&affid={{currentId}}&pubid={{publisherid}}&gaid={{gaid}}&idfa={{idfa}}&srcid={{scrid}}&refid={{clickid}}</p>
+                </div>
+                <div class="form-group postback">
+                    <label for="postBack">Postback</label>
+                    <input type="text" ng-model="postBack" class="form-control" id="postBack" placeholder="" required title="Please enter your Skype or QQ">
+                    <div style="margin-top: 10px;font-weight: bold;font-size: 14px">Acount ID:<span style="font-weight:normal;">{{postBackData.id}}</span></div>
+                    <div style="margin-top: 10px;font-weight: bold;font-size: 14px">Api Key:<span style="font-weight:normal;">{{postBackData.apikey}}</span></div>
+                    <div class="Add_btn">Save</div>
+                </div>
+            </form>
+        </div>
+        <!--track box-->
+        <div class="track_box">
+            <p class="title">Tracking</p>
+            <table class="table table-bordered">
+                <tr class="head">
+                    <th class="text-center">#NO.#</th>
+                    <th class="text-center">Para Name</th>
+                    <th class="text-center">Para Type</th>
+                    <th class="text-center">Length Limit</th>
+                    <th class="text-center">Required Para</th>
+                    <th class="text-center">Para Description</th>
+                </tr>
+                <tr class="text-center">
+                    <td>01</td>
+                    <td>appid</td>
+                    <td>init</td>
+                    <td>11</td>
+                    <td>Yes</td>
+                    <td>aapid is for direct-owner, advid is for partner.</td>
+                </tr>
+                <tr class="active text-center">
+                    <td>02</td>
+                    <td>affid</td>
+                    <td>init</td>
+                    <td>11</td>
+                    <td>Yes</td>
+                    <td>affiliate code</td>
+                </tr>
+                <tr class="text-center">
+                    <td>03</td>
+                    <td>pubid</td>
+                    <td>init</td>
+                    <td>11</td>
+                    <td>Yes</td>
+                    <td>publisher code</td>
+                </tr>
+                <tr class="active text-center">
+                    <td>04</td>
+                    <td>gaid</td>
+                    <td>String</td>
+                    <td>32</td>
+                    <td>Yes</td>
+                    <td>Google Advertising ID</td>
+                </tr>
+                <tr class="text-center">
+                    <td>05</td>
+                    <td>aaid</td>
+                    <td>String</td>
+                    <td>16</td>
+                    <td>Yes</td>
+                    <td>Android Android ID</td>
+                </tr>
+                <tr class="active text-center">
+                    <td>06</td>
+                    <td>idfa</td>
+                    <td>String</td>
+                    <td>32</td>
+                    <td>Yes</td>
+                    <td>IdentifierForIdentifier</td>
+                </tr>
+                <tr class="text-center">
+                    <td>07</td>
+                    <td>idfv</td>
+                    <td>String</td>
+                    <td>32</td>
+                    <td>Yes</td>
+                    <td>IdentifierForVendor</td>
+                </tr>
+                <tr class="active text-center">
+                    <td>08</td>
+                    <td>imei</td>
+                    <td>Number</td>
+                    <td>15</td>
+                    <td>Yes</td>
+                    <td>International Mobile Equipment Identity</td>
+                </tr>
+                <tr class="text-center">
+                    <td>09</td>
+                    <td>imsi</td>
+                    <td>Number</td>
+                    <td>11</td>
+                    <td>Yes</td>
+                    <td>International Mobile Subscriber Identification Number</td>
+                </tr>
+                <tr class="active text-center">
+                    <td>10</td>
+                    <td>udid</td>
+                    <td>String</td>
+                    <td>40</td>
+                    <td>Yes</td>
+                    <td>Unique Device Identifier</td>
+                </tr>
+                <tr class="text-center">
+                    <td>11</td>
+                    <td>refid</td>
+                    <td>String</td>
+                    <td>-</td>
+                    <td>No</td>
+                    <td>User Defined Para 1, Recommended for Clickid</td>
+                </tr>
+                <tr class="active text-center">
+                    <td>12</td>
+                    <td>srcid</td>
+                    <td>String</td>
+                    <td>-</td>
+                    <td>No</td>
+                    <td>User Defined Para 2, Recommended for Traffic</td>
+                </tr>
+                <tr class="text-center">
+                    <td>13</td>
+                    <td>subid</td>
+                    <td>String</td>
+                    <td>-</td>
+                    <td>No</td>
+                    <td>User Defined Para 3</td>
+                </tr>
+            </table>
+            <div class="con_footer">
+                <div class="link">
+                    <p class="title">i.e :</p>
+                    <p class="link_con">https://m.z2z.org/t?appid=10002&affid=1024&pubid={publisher}&gaid={gaid}&aaid={aaid}&idfa={idfa}&idfv={idfv}&srcid={traffic}&refid={clickid}</p>
+                </div>
+                <div class="desc">
+                    <p class="title">Declaration :</p>
+                    <p class="desc_con">
+                        Parameter pubid is digital account of affiliate (default 1, nil or nan default 0), used for monitoring quality, optimizing quality and controlling the risk.
+                        <br>Our system is designed for matching the target ads precisely, means the more complete of para, the more accuracy of targeting. Or it will target to other AD position and maintain the price.
+                        <br>Needn’t to worry about the waste of traffic even if running out the budget, our system will switch the mode of targeting ads precisely to the mode of cash the flow automatically. Will send notification mail simultaneously.
+                        <br>Paused campaign will switch into long Tail Business Model automatically if we can’t remove it immediately. All modes go with machine learning and bidding to guarantee the earnings. Will send notification mail simultaneously.
+                        <br>Because of the difference of conversion model, please upload equipment parameters, like, GAID and AAID for Android platform, IDFA and IDFV for IOS platform.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--postback box-->
+        <div class="track_box">
+            <p class="title">Postback</p>
+            <table class="table table-bordered">
+                <tr class="head">
+                    <th class="text-center">#NO.#</th>
+                    <th class="text-center">Extraction Rule</th>
+                    <th class="text-center">Para Type</th>
+                    <th class="text-center">Length Limit</th>
+                    <th class="text-center">Required Para</th>
+                    <th class="text-center">Para Description</th>
+                </tr>
+                <tr class="text-center">
+                    <td>01</td>
+                    <td>{appid}</td>
+                    <td>init</td>
+                    <td>11</td>
+                    <td>No</td>
+                    <td>aapid is for direct-owner, advid is for partner.</td>
+                </tr>
+                <tr class="active text-center">
+                    <td>02</td>
+                    <td>{affid}</td>
+                    <td>init</td>
+                    <td>11</td>
+                    <td>No</td>
+                    <td>affiliate code</td>
+                </tr>
+                <tr class="text-center">
+                    <td>03</td>
+                    <td>{pubid}</td>
+                    <td>init</td>
+                    <td>11</td>
+                    <td>No</td>
+                    <td>publisher code</td>
+                </tr>
+                <tr class="active text-center">
+                    <td>04</td>
+                    <td>{gaid}</td>
+                    <td>String</td>
+                    <td>32</td>
+                    <td>No</td>
+                    <td>Google Advertising ID</td>
+                </tr>
+                <tr class="text-center">
+                    <td>05</td>
+                    <td>{aaid}</td>
+                    <td>String</td>
+                    <td>16</td>
+                    <td>No</td>
+                    <td>Android Android ID</td>
+                </tr>
+                <tr class="active text-center">
+                    <td>06</td>
+                    <td>{idfa}</td>
+                    <td>String</td>
+                    <td>32</td>
+                    <td>No</td>
+                    <td>IdentifierForIdentifier</td>
+                </tr>
+                <tr class="text-center">
+                    <td>07</td>
+                    <td>{idfv}</td>
+                    <td>String</td>
+                    <td>32</td>
+                    <td>No</td>
+                    <td>IdentifierForVendor</td>
+                </tr>
+                <tr class="active text-center">
+                    <td>08</td>
+                    <td>{imei}</td>
+                    <td>Number</td>
+                    <td>15</td>
+                    <td>No</td>
+                    <td>International Mobile Equipment Identity</td>
+                </tr>
+                <tr class="text-center">
+                    <td>09</td>
+                    <td>{imsi}</td>
+                    <td>Number</td>
+                    <td>15</td>
+                    <td>No</td>
+                    <td>International Mobile Subscriber Identification Number</td>
+                </tr>
+                <tr class="active text-center">
+                    <td>10</td>
+                    <td>{udid}</td>
+                    <td>String</td>
+                    <td>40</td>
+                    <td>No</td>
+                    <td>Unique Device Identifier</td>
+                </tr>
+                <tr class="text-center">
+                    <td>11</td>
+                    <td>{refid}</td>
+                    <td>String</td>
+                    <td>-</td>
+                    <td>No</td>
+                    <td>User Defined Para 1</td>
+                </tr>
+                <tr class="active text-center">
+                    <td>12</td>
+                    <td>{srcid}</td>
+                    <td>String</td>
+                    <td>-</td>
+                    <td>No</td>
+                    <td>User Defined Para 2</td>
+                </tr>
+                <tr class="text-center">
+                    <td>13</td>
+                    <td>{subid}</td>
+                    <td>String</td>
+                    <td>-</td>
+                    <td>No</td>
+                    <td>User Defined Para 3</td>
+                </tr>
+                <tr class="active text-center">
+                    <td>14</td>
+                    <td>{payout}</td>
+                    <td>Double</td>
+                    <td>-</td>
+                    <td>No</td>
+                    <td>Revenue (USD)</td>
+                </tr>
+                <tr class="text-center">
+                    <td>15</td>
+                    <td>{isp}</td>
+                    <td>String</td>
+                    <td>-</td>
+                    <td>No</td>
+                    <td>Network Carrier</td>
+                </tr>
+                <tr class="active text-center">
+                    <td>16</td>
+                    <td>{os}</td>
+                    <td>String</td>
+                    <td>-</td>
+                    <td>No</td>
+                    <td>DEVICE OS</td>
+                </tr>
+                <tr class="text-center">
+                    <td>17</td>
+                    <td>{device}</td>
+                    <td>String</td>
+                    <td>-</td>
+                    <td>No</td>
+                    <td>DEVICE TYPE</td>
+                </tr>
+                <tr class="active text-center">
+                    <td>18</td>
+                    <td>{brand}</td>
+                    <td>String</td>
+                    <td>-</td>
+                    <td>No</td>
+                    <td>DEVICE BRAND</td>
+                </tr>
+                <tr class="text-center">
+                    <td>19</td>
+                    <td>{model}</td>
+                    <td>String</td>
+                    <td>-</td>
+                    <td>No</td>
+                    <td>DEVICE MODEL</td>
+                </tr>
+                <tr class="active text-center">
+                    <td>20</td>
+                    <td>{ip}</td>
+                    <td>String</td>
+                    <td>-</td>
+                    <td>No</td>
+                    <td>USER IP</td>
+                </tr>
+                <tr class="text-center">
+                    <td>21</td>
+                    <td>{countryCode}</td>
+                    <td>String</td>
+                    <td>-</td>
+                    <td>No</td>
+                    <td>COUNTRY CODE</td>
+                </tr>
+                <tr class="active text-center">
+                    <td>22</td>
+                    <td>{countryName}</td>
+                    <td>String</td>
+                    <td>-</td>
+                    <td>No</td>
+                    <td>COUNTRY NAME</td>
+                </tr>
+            </table>
+            <div class="con_footer">
+                <div class="link">
+                    <p class="title">i.e :</p>
+                    <p class="link_con" id="postBack_link">https://postback/api?clickid={refid}&payout={payout}</p>
+                </div>
+                <div class="desc">
+                    <p class="title">Declaration :</p>
+                    <p class="desc_con">
+                        1. All hardware parameters that doesn’t match the rule will be NULL.<br>
+                        2. System will send notification mail to affiliates once it get a postback almost without any delay.<br>
+                        3. Our default request method is GET, please contact our AM if need to change into POST.<br>
+                        4. Security Mechanism 1: User-Agent that which inform request must be z2z.org<br>
+                        5. Security Mechanism 2: IP (47.88.159.197) that which inform request should keep updated.<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="pagesPrompt">It's the first page already</div>
+    </div>
+</div>

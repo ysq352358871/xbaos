@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta HTTP-EQUIV="pragma" CONTENT="no-cache">
+    <meta HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate">
+    <meta HTTP-EQUIV="expires" CONTENT="0">
+    <title>Xbaos Marketing</title>
+    <link rel="icon" href="../img/title.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="../css/animate.min.css">
+    <link rel="stylesheet" href="../css/animate.my.css">
+    <link rel="stylesheet" href="../css/init.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/fontview/iconfont.css">
+</head>
+<body ng-app="app" ng-controller="index" class="ng-cloak">
+<div class="container-fluid">
+    <div class="row">
+        <header>
+            <a href="index.html" class="logo">
+                <img src="../img/logo.png" alt="">
+            </a>
+            <p class="userName">{{firstName}}</p>
+        <!--tab nav start-->
+            <ul class="tab-nav">
+            <li class="icon" id="icon">
+                <img src="../img/shopping_cart.png" id="img" alt="">
+                <div class="tab-nav-con-wrap animated">
+                    <div class="jianTou"></div>
+                    <ul class="tab-nav-con">
+                        <li class="keyId" ng-repeat="item in indexData">
+                            <a href="javascript:;" id="{{item.id}}">{{item.id}}</a>
+                        </li>
+                    </ul>
+                    <div class="shopping-box">
+                        <div class="shopping-list" attr="true" ng-if="checkLength(lengthApp)">
+                            <div class="title">
+                                    <span class="img">
+                                        <img src="../img/shopcart_Checkbox_selected.png" alt="" class="radioImg">
+                                    </span>
+                                <p class="name">NewApp</p>
+                                <div class="shopping-line"></div>
+                            </div>
+                            <div class="shopping-con" ng-repeat="item in newApp"  ng-class="{'end':check('app',$index)}">
+                                <p class="name"><span>{{item.appid}}</span>-{{item.name}}</p>
+                                <p class="desc first"><span>{{item.accept}}</span>-<span ng-show="{{item.incent}}==true">Incent</span><span ng-show="{{item.incent}}==false">Non Incent</span>-<span ng-show="{{item.android}}==true">Android</span><span ng-show="{{item.android}}==false">IOS</span></p>
+                                <p class="desc one updateCon">
+                                    <span>Cap:</span>
+                                    <span class="text">{{item.nowCap}}</span>
+                                </p>
+                                <p class="desc two updateCon">
+                                    <span>Payout:</span>
+                                    <span class="text">{{item.nowPayout}}</span>
+                                </p>
+                                <em class="delCon"></em>
+                            </div>
+                        </div>
+                        <div class="shopping-list" attr="true" ng-if="checkLength(lengthCap)">
+                            <div class="title">
+                                    <span class="img">
+                                        <img src="../img/shopcart_Checkbox_selected.png" alt="" class="radioImg">
+                                    </span>
+                                <p class="name">NewCap</p>
+                                <div class="shopping-line"></div>
+                            </div>
+                            <div class="shopping-con"  ng-repeat="item in newCap"   ng-class="{'end':check('cap',$index)}">
+                                <p class="name"><span>{{item.appid}}</span>-{{item.name}}</p>
+                                <p class="desc">
+                                    N Cap:
+                                    <span class="text">{{item.nowCap}}</span>
+                                </p>
+                                <p class="desc two">
+                                    O Cap:
+                                    <span>{{item.beforeCap}}</span>
+                                </p>
+                                <em class="delCon"></em>
+                            </div>
+                        </div>
+                        <div class="shopping-list" attr="true" ng-if="checkLength(lengthPay)">
+                            <div class="title">
+                                    <span class="img">
+                                        <img src="../img/shopcart_Checkbox_selected.png" alt="" class="radioImg">
+                                    </span>
+                                <p class="name">NewPayout</p>
+                                <div class="shopping-line"></div>
+                            </div>
+                            <div class="shopping-con" ng-repeat="item in newPayout" ng-class="{'end':check('pay',$index)}">
+                                <p class="name"><span>{{item.appid}}</span>-{{item.name}}</p>
+                                <p class="desc">
+                                    N Payout:
+                                    <span class="text">{{item.nowPayout}}</span>
+                                </p>
+                                <p class="desc two">
+                                    O Payout:
+                                    <span>{{item.beforePayout}}</span>
+                                </p>
+                                <em class="delCon"></em>
+                            </div>
+                        </div>
+                        <div class="shopping-list" attr="true" ng-if="checkLength(lengthpause)">
+                            <div class="title">
+                                    <span class="img">
+                                        <img src="../img/shopcart_Checkbox_selected.png" alt="" class="radioImg">
+                                    </span>
+                                <p class="name">Pause</p>
+                                <div class="shopping-line"></div>
+                            </div>
+                            <div class="shopping-con" ng-repeat="item in pause" ng-class="{'end':check('pause',$index)}">
+                                <p class="name"><span>{{item.appid}}</span>-{{item.name}}</p>
+                                <p class="desc">
+                                    Status:
+                                    <span>Pause</span>
+                                </p>
+                                <em class="delCon"></em>
+                            </div>
+                        </div>
+                        <button type="button" id="btn">Send</button>
+                    </div>
+
+                </div>
+            </li>
+            <li class="icon">
+                <img src="../img/news.png" alt="">
+            </li>
+            <li class="icon">
+                <img src="../img/news.png" alt="">
+            </li>
+        </ul>
+        </header>
+        <div class="content-box">
+            <div class="content">
+                <!--top nav start-->
+                <ul class="top-nav">
+                    <li ng-class="{'action':paraText==item.title}" ng-repeat="item in navSlecected">
+                        <a ng-href="{{item.href}}" class="animated">
+                            <em ng-class="getIcon($index)"></em>
+                            <p>{{item.title}}</p>
+                        </a>
+                    </li>
+                </ul>
+                <!--top nav end-->
+                <!--sub nav start-->
+                <div class="sub-nav">
+                    <ul class="sub-nav-list click">
+                        <!--<li class="weight"><a href="javascript:;">Dashboard</a></li>-->
+                        <li><a href="#!/">Dashboard1</a></li>
+                        <div class="line"></div>
+                        <li><a href="">Dashboard2</a></li>
+                        <div class="line"></div>
+                        <li><a href="#!/affApply">Affiliate Apply</a></li>
+                    </ul>
+                    <ul class="sub-nav-list">
+                        <!--<li class="weight"><a href="javascript:;">Account</a></li>-->
+                        <li><a href="#!/myAc">My Account</a></li>
+                        <div class="line"></div>
+                        <li><a href="#!/advAccount">Advertiser Account</a></li>
+                        <div class="line"></div>
+                        <li><a href="#!/affAccount">Publihser Account</a></li>
+                    </ul>
+                    <ul class="sub-nav-list">
+                        <!--<li class="weight"><a href="javascript:;">App Store</a></li>-->
+                        <li><a href="#!/apps/all">Apps</a></li>
+                        <div class="line"></div>
+                        <li><a href="#!/apps/huge">Huge Apps</a></li>
+                        <div class="line"></div>
+                        <li><a href="#!/apps/hard">Hard Apps</a></li>
+                        <div class="line"></div>
+                        <li><a href="#!/apps/hand">Hand Apps</a></li>
+                        <div class="line"></div>
+                        <li><a href="#!/offers/all">Offers</a></li>
+                        <div class="line"></div>
+                        <li><a href="#!/offers/hand">Hand Offers</a></li>
+                    </ul>
+                    <ul class="sub-nav-list">
+                        <!--<li class="weight"><a href="javascript:;">Filter</a></li>-->
+                        <li><a href="#!/advFilter">Advertiser Filter</a></li>
+                        <div class="line"></div>
+                        <li><a href="#!/affFilter">Publihser Filter</a></li>
+                    </ul>
+                    <ul class="sub-nav-list">
+                        <!--<li class="weight"><a href="javascript:;">Report</a></li>-->
+                        <li><a href="#!/offerReport">Offer Report</a></li>
+                        <div class="line"></div>
+                        <li><a href="#!/appReport">App Report</a></li>
+                        <div class="line"></div>
+                        <li><a href="#!/qualityReport">Quality Report</a></li>
+                    </ul>
+                    <ul class="sub-nav-list">
+                        <!--<li class="weight"><a href="javascript:;">Report</a></li>-->
+                        <li><a href="#!/billReport">Billing Report</a></li>
+                        <div class="line"></div>
+                        <li><a href="#!/billAffReport">Billing Aff Report</a></li>
+                        <div class="line"></div>
+                        <li><a href="#!/holdBilling">Hold Billing</a></li>
+                    </ul>
+
+                    <!--搜索框-->
+                    <div class="search-box">
+                        <input type="text" class="search-key" placeholder="Search Hear">
+                        <i>
+                            <img src="../img/icon_search.png" alt="">
+                        </i>
+                    </div>
+                </div>
+                <!--sub nav end-->
+
+                <!--这是套angular的预留地-->
+                <div ng-view class="view-animation" ng-cloak>
+
+                </div>
+            </div>
+        </div>
+        <!--提示消息-->
+        <div id="prompt">
+            Delete successfully
+        </div>
+        <!--遮罩-->
+        <div id="mask"></div>
+        <!--修改弹出框-->
+        <div id="updateData">
+            <div id="close">
+
+            </div>
+            <form class="form-inline">
+                <div class="form-group">
+                    <label for="newData" style="float: left;margin-top: 8px;margin-right: 5px">{{updateName}}</label>
+                    <input type="text" class="form-control" id="newData" placeholder="{{updateName}}" ng-model="newData">
+                </div>
+                <button type="button" class="btn btn-default" id="updateBtn">Update</button>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="../js/angular.min.js"></script>
+<script src="../js/angular-route.min.js"></script>
+<script src="../js/module.js"></script>
+<script src="../js/route.js"></script>
+<script src="../js/controller.js"></script>
+<script src="../js/service.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootstrap-datetimepicker.min.js"></script>
+<!--<script src="../js/jspdf.min.js"></script>-->
+<!--<script src="../js/html2canvas.min.js"></script>-->
+<script src="../js/clipboard.min.js"></script>
+<script src="../js/tm.pagination.js"></script>
+</html>

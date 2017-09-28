@@ -1,0 +1,93 @@
+<link rel="stylesheet" href="../css/apiDoc.css">
+<div class="con_wrap">
+    <div class="wrap">
+        <!--track box-->
+        <div class="track_box">
+            <p class="title">Advertising synchronization (S2S need to be docked privately) / Private</p>
+            <table class="table table-bordered">
+                <tr class="head">
+                    <th>#NO.#</th>
+                    <th>Para Name</th>
+                    <th>Para Type</th>
+                    <th>Required Para</th>
+                    <th>Para Description</th>
+                </tr>
+                <tr>
+                    <td>01</td>
+                    <td>appid</td>
+                    <td>init</td>
+                    <td>Yes</td>
+                    <td>aapid is for direct-owner, advid is for partner.</td>
+                </tr>
+                <tr class="active">
+                    <td>02</td>
+                    <td>affid</td>
+                    <td>init</td>
+                    <td>Yes</td>
+                    <td>affiliate code</td>
+                </tr>
+                <tr>
+                    <td>03</td>
+                    <td>pubid</td>
+                    <td>init</td>
+                    <td>Yes</td>
+                    <td>publisher code</td>
+                </tr>
+                <tr class="active">
+                    <td>04</td>
+                    <td>gaid</td>
+                    <td>String</td>
+                    <td>Yes</td>
+                    <td>Google Advertising ID</td>
+                </tr>
+            </table>
+            <div class="con_footer">
+                <div class="link">
+                    <p class="title">i.e :</p>
+                    <p class="link_con"><span class="especial">(Private)</span>https://api.z2z.org/getApp?affid=1024&android=1&ios=1&apikey=</p>
+                    <p class="link_con"><span class="especial">(Private)</span>https://api.z2z.org/getApp?affid=1024&apikey=&offer_id=12345</p>
+                </div>
+            </div>
+        </div>
+        <!--postback box-->
+        <div class="track_box">
+            <p class="title">Data structure analysis</p>
+            <div class="dataStru">
+                <p class="dataStru_title">Json</p>
+                <p class="dataStru_con">
+                    { <br>
+                   data:[<br>
+                    {<br>
+                    offer_id: “100004”,      //advertising<br>
+                    payout: “0.3000”,        //payout<br>
+                    dailyCap: “0”,             //quota<br>
+                    remaining: “0”,           //remaining<br>
+                    timeZone: “-5.00”,           //timezone<br>
+                    adult: “false”,           //adult<br>
+                    incent: “false”,           //traffic<br>
+                    payType: “CPI”,           //paytype<br>
+                    offerName: “Reshare(except China)”,<br>
+                    packageName: “com.funnymobi.smartlink”,<br>
+                    previewLink: “http://smartlink.funnymobi.com”,<br>
+                    trackingLink: “https://t.z2z.org/c?advid=100004&affid=1024&pubid={publisher}&gaid={gaid}&aaid={aaid}&idfa={idfa}&idfv={idfv}&refid={clickid}”,<br>
+                    accept: “ALL”,           //Allowed country,’|’segmentation<br>
+                    except: “CN”,            //Excluded country,’|’segmentation<br>
+                    include: “ALL”,           //Allowed city,’|’segmentation<br>
+                    exclude: “”,           //Excluded city,’|’segmentation<br>
+                    inApp: “true”,           //Allow APP to serve<br>
+                    inWeb: “true”,           //Allows the web to serve<br>
+                    Android: “true”,           //Allow Android platform<br>
+                    iOS: “true”,           //Allow the iOS platform<br>
+                    Mobile: “true”,           //Allow mobile phone<br>
+                    Tablet: “true”,            //Allow platform devices<br>
+                    flow: “”,           //Conversion description information<br>
+                    desc: “”           //Advertising description information<br>
+                    }<br>
+                    ],<br>
+                    size: 1<br>
+                    }<br>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

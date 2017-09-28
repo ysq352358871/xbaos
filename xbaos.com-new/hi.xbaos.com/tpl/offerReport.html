@@ -1,0 +1,79 @@
+<link rel="stylesheet" href="../css/offerReport.css">
+<div class="father-box">
+    <div class="wrap">
+        <p class="title">Revenue Report To Advertiser</p>
+        <div class="input-content">
+            <!--表单内容-->
+            <form class="form-inline input-con">
+                <div class="form-group input-box">
+                    <label for="startDate" class="label">Period</label>
+                    <input class="form-control input-con" id="startDate" start-time ng-model="startDate" placeholder="Start Date">
+                    <i><img src="../img/icon_xiala_12x7.png" alt=""></i>
+                </div>
+                <div class="form-group input-box two">
+                    <input class="form-control input-con" id="endDate" end-time ng-model="endDate" placeholder="End Date">
+                    <i><img src="../img/icon_xiala_12x7.png" alt=""></i>
+                </div>
+                <div class="form-group input-box">
+                    <select-net-id token="token" user="user" url="url" search-net-id="searchNetId" advertiser="advertiser"></select-net-id>
+                </div>
+                <div class="form-group input-box" >
+                    <label for="offId" class="label">Campaign</label>
+                    <input class="form-control input-con" id="offId" placeholder="Offer ID" ng-model="offId">
+                </div>
+                <div class="form-group input-box" >
+                    <label for="offName" class="label"></label>
+                    <input class="form-control input-con" id="offName" placeholder="Offer Name" ng-model="offName">
+                </div>
+            </form>
+            <div class="btnSearch">Search</div>
+            <div class="resultTable">
+                <div class="iconTimeZone">
+                    <i></i>
+                    <span>GMT+8</span>
+                    <span id="total">Running:{{runTotal}}</span>
+                </div>
+                <table class="table">
+                    <tr>
+                        <th class="text-center">Offer</th>
+                        <th class="text-center">Pay Out</th>
+                        <th class="text-center">Currency</th>
+                        <th class="text-center">Coversion</th>
+                        <th class="text-center">Revenue</th>
+                        <th class="text-center">Click</th>
+                        <th class="text-center">Cvr</th>
+                    </tr>
+
+                    <tr class="text-center" ng-show="flag">
+                        <td>No Resulst Found</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="text-center" ng-repeat="item in datas">
+                        <td>{{item.id}} - {{item.name}}</td>
+                        <td>{{item.payout}}</td>
+                        <td>{{item.currency}}</td>
+                        <td>{{item.coversion}}</td>
+                        <td>{{item.revenue}}</td>
+                        <td>{{item.tracking}}</td>
+                        <td>{{item.postcvr}}%</td>
+                    </tr>
+                    <tr class="text-center" id="doubleTotal">
+                        <td>Total</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>{{coversion}}</td>
+                        <td>{{revenue}}</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                </table>
+                <!--pagination-->
+                <tm-pagination conf="paginationConf" id="pagination"></tm-pagination>
+            </div>
+        </div>
+    </div>
+</div>

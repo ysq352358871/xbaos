@@ -1,0 +1,279 @@
+/*导航*/
+.lab{
+    width: 100%;
+    height: 40px;
+    position: relative;
+    border-bottom: 1px solid #D8D8D8;
+}
+.lab li{
+    height: 39px;
+    padding: 0 15px;
+    float: left;
+    color:#272727;
+    font-size: 15px;
+    line-height: 40px;
+    background-color: #ffffff;
+}
+.lab li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: inherit;
+}
+.lab li.first{
+    border-top: 3px solid #D21212;
+    height: 40px;
+    border-left: 1px solid #D8D8D8;
+    border-right: 1px solid #D8D8D8;
+}
+.affid{
+    font-size: 28px;
+    color: #272727;
+    letter-spacing: 0;
+}
+/*点击多选的*/
+input#strongestGeos{
+    outline:none;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+
+}
+input#strongestGeos:focus{
+    outline: none;
+    border: none;
+    box-shadow: 0 0 5px transparent;
+}
+.moreIdWrap{
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 37px;
+}
+.countryList{
+    width: 320PX;
+    position: absolute;
+    top: 37px;
+    left: 0;
+    background: #ccc;
+    z-index: 10;
+    overflow: auto;
+    border-radius: 2px;
+    display: none;
+}
+.countryList li{
+    width: 100%;
+    padding-left: 15px;
+    height: 25px;
+    text-align: left;
+    line-height: 25px;
+    font-size: 14px;
+    color: #272727;
+}
+.countryList li:hover{
+    background: #1E90ff;
+    color: #ffffff;
+}
+.moreIdWrap span{
+    display: inline-block;
+    padding:0px 3px;
+    height: 20px;
+    width:90px ;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    line-height: 20px;
+    float: left;
+    margin:6px 0 0 5px;
+    background: #FF9F9F;
+    border-radius: 2px;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+    text-align: center;
+}
+.moreIdWrap span.special{
+    background: #9F0E0E;
+}
+/*点击多选结束*/
+.form-inline{
+    padding-bottom: 30px;
+}
+.form-inline:after{
+    content: "";
+    width:100%;
+    display: block;
+    clear: both;
+}
+.box{
+    position: relative;
+    padding: 30px 0 0 15px;
+    background-color: #FFFFFF;
+}
+.wrap{
+    width: 100%;position: relative;
+    padding-top: 1px;
+}
+.logo-box{
+    width: 130px;
+    height: 34px;
+
+}
+.logo-box a,.logo-box a img{
+    width: 100%;height: 100%;
+    display: block;
+}
+.form-box{
+    padding-top: 30px;
+    width: 100%;
+    position: relative;
+}
+.form-box p.title{
+    font-size: 28px;
+    color: #272727;
+    letter-spacing: 0;
+}
+.form-box p.remarks{
+    font-size: 14px;
+    color: #272727;
+    line-height: 20px;
+    margin-top: 4px;
+}
+.form-box .form-group{
+    margin-top: 20px;
+    display: block;
+    color: #272727;
+    font-size: 14px;
+}
+.form-box .form-group .label{
+    display: block;
+    text-align: left;
+    padding:0 0 5px 0;
+    color: #272727;
+}
+.form-box .form-group .form-control.one{
+    background-color: transparent;
+    width: 320px;height: 36px;
+    color: #272727;
+    font-size: 14px;
+}
+.form-box .form-group .form-control.two{
+    background-color: transparent;
+    width:970px;height: 36px;
+    color: #272727;
+    font-size: 14px;
+}
+.form-box .form-group .form-control.one option{
+    background-color:#FFF;
+}
+.form-box .form-group .question{
+    font-size: 14px;
+    color: #272727;
+    letter-spacing: 0;
+    padding-bottom: 4px;
+}
+.form-group:after{
+    content: "";
+    width: 100%;
+    display: block;
+    clear: both;
+}
+.form-group .radio-inline{
+    z-index: 99;
+}
+.circular{
+    display: block;
+    width:14px;height: 14px;
+    position: absolute;
+    left: 0;
+    top:50%;
+    margin-top: -7px;
+}
+
+.select-list{
+    width: 33.33%;
+    position: relative;
+    padding-top: 4px;
+    float: left;
+}
+.select-list .checkbox-inline{
+    display: block;
+    margin: 0;
+}
+.select-list .checkbox-inline.top{
+    margin-top: 6px;
+}
+.checkbox-inline input[type=checkbox]{
+    margin-top: 0;
+}
+.form-group .input-text{
+    display: block;
+    width: 320px;height: 36px;
+    background-color: transparent;
+    color: #272727;
+    line-height: 36px;
+    font-size: 16px;
+}
+.form-group.especial .form-group{
+    float: left;
+}
+.form-group.especial .form-group.one{
+    clear: left;
+}
+
+.form-group.especial .form-group.two{
+    margin-left: 100px;
+}
+
+.radio-inline.much-num{
+    width: 24%;
+    margin: 0;
+    margin-top: 8px;
+}
+
+input.radio{
+    opacity: 0;
+}
+.radio-inline.one{
+    cursor: pointer;
+}
+input.radio-two{
+    opacity: 0;
+}
+.form-group{
+    position: relative;
+}
+#btns{
+    float: right;
+    width: 136px;
+    height: 46px;
+    margin-right: 20px;
+    margin-top: 100px;
+    background: #D21212;
+    border: 1px solid #9F0E0E;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+.comIm:after{
+    content: "";
+    width: 100%;
+    display: block;
+    clear: both;
+}
+/*提示消息*/
+.prompt{
+    width: 300px;
+    height: 60px;
+    background: rgba(0,0,0,0.70);
+    border-radius: 4px;
+    text-align: center;
+    line-height: 60px;
+    position: fixed;
+    top:0;bottom: 0;left:0;right:0;
+    margin: auto;
+    font-size: 14px;
+    color: #FFFFFF;
+    display: none;
+}

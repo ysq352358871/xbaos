@@ -1,0 +1,59 @@
+
+<link rel="stylesheet" href="../css/addCart.css">
+<div class="bigBoxWrap">
+    <div class="addCartBox">
+        <!--<p class="title">App Send Details</p>-->
+        <div class="inputBox">
+            <form class="form-inline">
+                <div class="form-group inputCon">
+                    <div class="moreIdWrap">
+                        <select type="text" class="form-control" id="main" placeholder="" style="width: 100%;border:none;display: block">
+                            <option value="0">Unmain</option>
+                            <option value="1">Main</option>
+                        </select>
+                    </div>
+                    <label for="main">Main</label>
+                </div>
+                <div class="form-group inputCon">
+                    <select  class="form-control con" id="method" placeholder=""  style="float: right">
+                        <option value="Get">Get</option>
+                        <option value="Post">Post</option>
+                    </select>
+                    <label for="method">Method</label>
+                </div>
+                <div class="form-group inputCon">
+                    <select-net-id class="form-control con" id="netId" token="token" user="user" url="url" style="float: right"></select-net-id>
+                    <!--<input type="text"placeholder="">-->
+                    <label for="netId">Net ID</label>
+                </div>
+                <div class="form-group inputCon">
+                    <select-aff-id class="form-control con" id="affId" token="token" user="user" url="url" style="float: right"></select-aff-id>
+                    <!--<input type="text" class="form-control con" id="margin" placeholder="" ng-model="margin">-->
+                    <label for="affId">Aff ID</label>
+                </div>
+                <div class="form-group inputCon">
+                    <textarea class="form-control con" id="link" style="float: right;height: 150px">
+
+                    </textarea>
+                    <label for="Link">Link</label>
+                </div>
+                <!--<div class="form-group inputCon">-->
+
+                    <!--<input type="text" class="form-control con" id="shared" placeholder="" ng-model="shared">-->
+                    <!--<label for="shared">Shared</label>-->
+                <!--</div>-->
+                <div class="radio">
+                    <div class="radioWrap">
+                        <em id="true">
+                            <img src="../img/but_Checkbox_selected.png" alt="">
+                        </em>
+                        <span>Status</span>
+                    </div>
+                </div>
+                <button id="save" ng-click="saveAjax()">Save</button>
+            </form>
+
+        </div>
+
+    </div>
+</div>

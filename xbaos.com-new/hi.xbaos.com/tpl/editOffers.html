@@ -1,0 +1,182 @@
+<link rel="stylesheet" href="../css/seeDetail.css">
+<link rel="stylesheet" href="../css/editOffers.css">
+<div class="box">
+    <div class="wrap">
+        <form class="form-inline form-box">
+            <!--筛选盒子-->
+
+                <ul class="select-list">
+                    <div class="form-group input-box col-md-4">
+                        <li class="system cons">
+                            <label for="con-one" class="label">IOS/Android</label>
+                            <input type="text" id="con-one" class="cons" ng-model="systemSearch">
+                            <i>
+                                <img src="../img/icon_xiala_12x7.png" alt="">
+                            </i>
+                            <!--选项内容-->
+                            <ul class="system-son">
+                                <li class="text get-con" ng-click="get_con(item.name)" ng-repeat="item in system">{{item.name}}</li>
+                            </ul>
+                        </li>
+                    </div>
+                    <div class="form-group input-box col-md-4">
+                        <li class="country cons">
+                            <label for="con" class="label">Country Name</label>
+                            <input type="text" id="con" class="cons" ng-model="search">
+                            <i>
+                                <img src="../img/cha.png" alt="">
+                            </i>
+                            <!--选项内容-->
+                            <ul class="system-son">
+                                <li class="text" ng-repeat="item in data | filter:{countryName:search}" ng-click="get(item.countryName,item.countryCode)" id="{{item.countryCode}}">{{item.countryName}}</li>
+                            </ul>
+                        </li>
+                    </div>
+                    <div class="form-group input-box col-md-4">
+                        <li class="package-name cons">
+                            <label for="packageName" class="label">Package Name</label>
+                            <input type="text" class="cons" id="packageName" placeholder="" ng-model="packageName">
+                        </li>
+                    </div>
+                </ul>
+
+            <div class="form-group input-box col-md-4">
+                <label for="offerSource" class="label">Offer Source</label>
+                <input type="text" class="form-control input-con" id="offerSource" ng-model="offerSource">
+                <i><img src="../img/icon_xiala_12x7.png" alt=""></i>
+                <ul id="system-son">
+                    <li class="text" ng-repeat="item in netWorkList | filter:{name:company}" ng-click="offerS(item.company,item.netid)" id="{{item.netid}}">
+                        <span>{{item.netid}}</span>-<span ng-if="item.api==true">api-</span><span>{{item.company}}</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="form-group input-box  col-md-4">
+                <label for="timeZone" class="label">Time Zone</label>
+                <select class="form-control input-con" id="timeZone">
+                </select>
+            </div>
+            <div class="form-group input-box col-md-4">
+                <label for="payType" class="label">Pay Type</label>
+                <select class="form-control input-con" id="payType">
+                    <option ng-repeat="item in paytypelist" value="{{item.value}}" ng-selected="checkeds('{{item.value}}')">{{item.value}}</option>
+                </select>
+            </div>
+            <div class="form-group input-box col-md-4">
+                <label for="offerName" class="label">Offer Name</label>
+                <input type="text" class="form-control input-con" id="offerName" placeholder="" ng-model="offerName">
+            </div>
+            <div class="form-group input-box col-md-4">
+                <label for="payOut" class="label">Pay Out</label>
+                <input type="text" class="form-control input-con" id="payOut" placeholder="" ng-model="payout">
+            </div>
+            <div class="form-group input-box col-md-4">
+                <label for="dailyCap" class="label">Daily Cap</label>
+                <input type="text" class="form-control input-con" id="dailyCap" placeholder="" ng-model="dailyCap">
+            </div>
+            <div class="form-group input-box col-md-4">
+                <label for="safetyCap" class="label">Safety Cap</label>
+                <input type="text" class="form-control input-con" id="safetyCap" placeholder="" ng-model="dailyLimit">
+            </div>
+            <div class="form-group input-box col-md-8">
+                <label for="totalCap" class="label">Total Cap</label>
+                <input type="text" class="form-control input-con" id="totalCap" placeholder="" ng-model="totalCap">
+            </div>
+            <div class="form-group input-box col-md-4">
+                <label for="startDate" class="label">Start Date</label>
+                <input class="form-control input-con" id="startDate" start-time placeholder="" value="{{offerDetail.startDate}}">
+                <i><img src="../img/icon_xiala_12x7.png" alt=""></i>
+            </div>
+            <div class="form-group input-box col-md-8">
+                <label for="endDate" class="label">End Date</label>
+                <input class="form-control input-con" id="endDate" placeholder="" end-time value="{{offerDetail.closeDate}}">
+                <i><img src="../img/icon_xiala_12x7.png" alt=""></i>
+            </div>
+
+            <!--单选框-->
+            <!--<div class="selectRadio col-md-4">-->
+            <!--<label class="radio-inline check">-->
+            <!--<span class="circular">-->
+            <!--</span>-->
+            <!--<input checked="checked" type="radio" name="system" id="android" value="Android">Android-->
+            <!--</label>-->
+            <!--<label class="radio-inline">-->
+            <!--<span class="circular">-->
+            <!--</span>-->
+            <!--<input type="radio" name="system" id="IOS" value="IOS">IOS-->
+            <!--</label>-->
+            <!--</div>-->
+            <!--<div class="selectRadio col-md-8">-->
+            <!--<label class="radio-inline check">-->
+            <!--<span class="circular ">-->
+            <!--</span>-->
+            <!--<input checked="checked" type="radio" name="incnet" id="incnet" value="incnet">incnet-->
+            <!--</label>-->
+            <!--<label class="radio-inline">-->
+            <!--<span class="circular">-->
+            <!--</span>-->
+            <!--<input  type="radio" name="incnet" id="nonIncnet" value="non incnet">non incnet-->
+            <!--</label>-->
+            <!--</div>-->
+
+            <!--复选框-->
+            <div class="form-group input-box col-md-4">
+                <div class="select-list">
+                    <label class="checkbox-inline">
+                        <span class="circular">
+                            </span>
+                        <input type="checkbox" id="hardKPI" value="Hard KPI"> Hard KPI
+                    </label>
+                    <label class="checkbox-inline">
+                        <span class="circular">
+                            </span>
+                        <input type="checkbox" id="gaid" value="GAID/IDFA">GAID/IDFA
+                    </label>
+                    <label class="checkbox-inline">
+                        <span class="circular">
+                            </span>
+                        <input type="checkbox" id="huge" value="huge">Huge Click
+                    </label>
+                </div>
+            </div>
+            <div class="form-group input-box col-md-4">
+                <div class="select-list">
+                    <label class="checkbox-inline">
+                        <span class="circular">
+                            </span>
+                        <input type="checkbox" id="inweb" value="inweb"> inweb
+                    </label>
+                    <label class="checkbox-inline">
+                        <span class="circular">
+                            </span>
+                        <input type="checkbox" id="inapp" value="inapp">inapp
+                    </label>
+                </div>
+            </div>
+            <div class="form-group input-box col-md-4">
+                <div class="select-list">
+                    <label class="checkbox-inline">
+                        <span class="circular">
+                            </span>
+                        <input type="checkbox" id="phone" value="phone"> phone
+                    </label>
+                    <label class="checkbox-inline">
+                        <span class="circular">
+                            </span>
+                        <input type="checkbox" id="tablet" value="tablet">tablet
+                    </label>
+                </div>
+            </div>
+            <div class="form-group input-box con">
+                <p>Quality Requirement Description:</p>
+                <textarea class="form-control" rows="5" id="description" value="" ng-model="kpi"></textarea>
+            </div>
+            <div class="form-group input-box con">
+                <p>Tracking link:</p>
+                <textarea class="form-control" id="trackinglink" rows="5" value="" ng-model="trackingLink"></textarea>
+            </div>
+            <div class="detail-btn">
+                <a href="javascript:;">Submit</a>
+            </div>
+        </form>
+    </div>
+</div>

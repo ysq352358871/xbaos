@@ -1,0 +1,61 @@
+<link rel="stylesheet" href="../css/affApply.css">
+<div class="father-box">
+    <div class="wrap">
+        <div class="input-content">
+            <!--表单内容-->
+            <form class="form-inline input-con">
+                <div class="form-group input-box">
+                    <label for="affiliate" class="label">Affiliate ID</label>
+                    <select class="form-control input-con" id="affiliate">
+                        <option value="0">All</option>
+                        <option ng-repeat="item in pubData" value="{{item.netid}}">{{item.netid}} - {{item.user_name}}</option>
+                    </select>
+                </div>
+            </form>
+
+            <div class="resultTable">
+                <table class="table">
+                    <tr>
+                        <th class="text-center">Aff Id</th>
+                        <th class="text-center">App Id</th>
+                        <th class="text-center">Payout</th>
+                        <th class="text-center">Cap</th>
+                        <th class="text-center">Margin</th>
+                        <th class="text-center">Profit</th>
+                        <th class="text-center">Share</th>
+                        <th class="text-center false" id="applyWrap">
+                            <span>Apply</span>
+                            <img src="../img/but_Checkbox_selected.png" alt="" class="true">
+                            <img src="../img/but_Checkbox_default_dark.png" alt="" class="false">
+                            <!--<img src="../img/but_Checkbox_default_dark.png" alt="" class="false">-->
+                        </th>
+                    </tr>
+                    <tr class="text-center" ng-show="flag">
+                        <td>No Resulst Found</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="text-center dataBox" ng-repeat="item in applyData">
+                        <td class="affid">{{item.affid}}</td>
+                        <td class="appid">{{item.appid}}</td>
+                        <td class="edit payout">{{item.payout}}</td>
+                        <td class="edit cap">{{item.cap}}</td>
+                        <td class="edit margin">{{item.margin}}</td>
+                        <td class="edit profit">{{item.profit}}</td>
+                        <td class="edit shared">{{item.shared}}</td>
+                        <td class="apply" ng-class="{{item.apply}}==0?'false':'true'">
+                            <img src="../img/but_Checkbox_selected.png" alt="" class="true">
+                            <img src="../img/but_Checkbox_default_dark.png" alt="" class="false">
+                        </td>
+                    </tr>
+                </table>
+                <!--pagination-->
+                <tm-pagination conf="paginationConf" id="pagination"></tm-pagination>
+            </div>
+        </div>
+    </div>
+</div>

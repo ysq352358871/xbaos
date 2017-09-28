@@ -1,0 +1,168 @@
+
+    <link rel="shortcut icon" href="../img/favicon.ico">
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/addAppCart.css">
+    <link rel="stylesheet" href="../css/apps.css">
+
+
+    <!-- Important. For Theming change primary-color variable in main.css  -->
+
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="../js/html5shiv.js"></script>
+
+    <![endif]-->
+    <div class="con-wrap">
+        <!--saixuan BOX-->
+
+        <div class="select-box">
+            <ul class="select-list">
+                <li class="system con">
+                    <input type="text" id="con-id" class="con" placeholder="AppID" ng-model="appidCon">
+                </li>
+                <li class="system con">
+                    <input type="text" id="con-one" class="con" placeholder="AppName" ng-model="appName">
+                </li>
+                <li class="package-name con">
+                    <input type="text" class="con" placeholder="Package Name" ng-model="packageName">
+                </li>
+                <li class="country con">
+                    <input type="text" id="con" class="con" ng-model="search" placeholder="Country">
+                    <i>
+                        <img src="../img/cha.png" alt="">
+                    </i>
+                    <!--选项内容-->
+                    <select-country search="search" country="countryCode"></select-country>
+                </li>
+
+            </ul>
+            <button class="btn-search" ng-click="ajaxGet()">
+                Search
+            </button>
+        </div>
+
+
+        <div class="list-box">
+            <a href="javaScript:;" id="select_btn">Administrate</a>
+            <div id="addCartBtn">
+                <em></em>
+                Add to cart
+            </div>
+            <div class="listWhole">
+                <!--loop start-->
+                <div class="list-container" ng-repeat="item in contents">
+                    <div class="icons ">
+                        <!--复选框-->
+                        <div class="appSelect" attr="false" attrId="{{item.id}}">
+                            <img src="../img/appSelect.png" alt="">
+                        </div>
+                        <!--复选框-->
+
+                        <div class="icons_img ">
+                            <a href="#!/appDetail/{{item.id}}/table1" target="_blank">
+                                <img ng-src="{{item.icon}}" class="icon" >
+                            </a>
+                        </div>
+                        <div class="icon_words">
+                            <h4><a href="#!/appDetail/{{item.id}}/table1" target="_blank"><span>{{item.id}}</span>-{{item.name}}</a></h4>
+                            <p><span>{{item.incent}}-</span><span>{{item.platform}}</span><span>-{{item.accept}}</span></p>
+                            <span><img src="../img/position.png" alt="position.png"><span>8.00</span><span>Hong Kong</span></span>
+                        </div>
+                    </div>
+                    <!--<div class="middle_content">-->
+                        <!--<div class="today_lead">-->
+                            <!--<p>Today Lead</p>-->
+                            <!--<p>{{item.today_lead}}</p>-->
+                        <!--</div>-->
+                        <!--<div class="today_lead">-->
+                            <!--<p>Month Lead</p>-->
+                            <!--<p>{{item.total_lead}}</p>-->
+                        <!--</div>-->
+                        <!--<div class="Earnings">-->
+                            <!--<p>Earnings</p>-->
+                            <!--<p>{{item.total_revenue}}</p>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <div class="button_status">
+                        <div class="status">
+                            <div class="status_img" id="{{item.active}}" ng-click="switch(item.id,$index)">
+                                <img src="../img/Float_close.png" alt="float_close" class="closes">
+                                <img src="../img/Float_open.png" alt="float_close" class="open">
+                            </div>
+                            <div class="edit">Edit</div>
+                        </div>
+                    </div>
+                </div>
+                <!--loop end-->
+                <!--pagination-->
+                <tm-pagination conf="paginationConf" id="pagination"></tm-pagination>
+            </div>
+            <!--loading 效果-->
+            <div id="loading-center" loading-effect>
+            </div>
+        </div>
+        <!--Pagination-->
+        <!--添加详细-->
+        <div class="addAppMask"></div>
+        <div class="bigBoxWrap">
+            <div class="closeBtn">
+                <img src="../img/icon_close_email.png" alt="">
+            </div>
+            <div class="addCartBox">
+                <p class="title">App Send Details</p>
+                <div class="inputBox">
+                    <form class="form-inline">
+                        <div class="form-group inputCon">
+                            <multi-select style="float: right;width: 360px" data="appsAffidData" transmit-data="select"></multi-select>
+                            <label>Aff ID</label>
+                        </div>
+                        <div class="form-group inputCon">
+
+                            <input type="text" class="form-control con" id="cap" placeholder="" ng-model="cap">
+                            <label for="cap">Cap</label>
+                        </div>
+                        <!--<div class="form-group inputCon">-->
+
+                            <!--<input type="text" class="form-control con" id="payout" placeholder="" ng-model="payout">-->
+                            <!--<label for="payout">Payout</label>-->
+                        <!--</div>-->
+                        <div class="form-group inputCon">
+
+                            <input type="text" class="form-control con" id="margin" placeholder="" ng-model="margin">
+                            <label for="margin">Margin</label>
+                        </div>
+                        <div class="form-group inputCon">
+                            <input type="text" class="form-control con" id="profit" placeholder="" ng-model="profit">
+                            <label for="profit">Profit</label>
+                        </div>
+                        <div class="form-group inputCon">
+
+                            <input type="text" class="form-control con" id="shared" placeholder="" ng-model="shared">
+                            <label for="shared">Shared</label>
+                        </div>
+                        <div class="radio">
+                            <div class="radioWrap">
+                                <em id="true">
+                                    <img src="../img/but_Checkbox_selected.png" alt="">
+                                </em>
+                                <span>Agree</span>
+                            </div>
+                        </div>
+                        <button id="save" ng-click="saveAjax()">Save</button>
+                        <button id="view">View</button>
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="prompt">
+            Delete successfully
+        </div>
+    </div>
+                    <!-- detail_list End -->
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>

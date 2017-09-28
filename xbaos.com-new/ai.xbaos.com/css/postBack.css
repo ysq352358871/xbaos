@@ -1,0 +1,144 @@
+.con_wrap{
+    width: 100%;
+    position: relative;
+    padding: 25px 15px 25px 15px;
+    background: #F5F5F5;
+}
+.wrap{
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+}
+.url_box,.track_box{
+    padding: 15px 0 20px 10px;
+    border: 1px solid #EAEAEA;
+    background: #FFFFFF;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,0.38);
+    border-radius: 2px;
+}
+.url_box p.title,.track_box p.title{
+    font-size: 25px;
+    color: #333333;
+    letter-spacing: 0;
+}
+.text_con{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #333333;
+    letter-spacing: 0;
+}
+form .form-inline{
+    position: relative;
+}
+.form-group label{
+    display: block;
+    margin-bottom: 5px;
+}
+.form-inline .form-group{
+    margin-left: 55px;
+}
+.form-group.postback{
+    clear: left;
+    display: block;
+    margin-left: 0;
+    margin-top: 15px;
+    position: relative;
+}
+.form-group.postback input{
+    width: 67.4%;
+}
+.form-inline .form-group:nth-child(1){
+    margin-left: 0px;
+}
+div.Add_btn{
+    display: inline-block;
+    width: 72px;height: 36px;
+    background: #D21212;
+    border: 1px solid #9F0E0E;
+    border-radius: 4px;
+    color: #FFFFFF;
+    text-align: center;
+    line-height:36px;
+    margin-top: 20px;
+    position: absolute;
+    top:-40px;left:75.4%;
+    cursor: pointer;
+}
+
+/*track*/
+.track_box{
+    margin-top: 30px;
+}
+.table.table-bordered{
+    margin-top: 15px;
+}
+.head th{
+    background-color: #c2c2c2;
+    font-size: 16px;
+    color: #272727;
+    letter-spacing: 0;
+    line-height: 41px;
+    padding: 0;
+}
+tr.text-center td{
+    font-size: 14px;
+    color: #333333;
+}
+.table{
+    margin-bottom: 0;
+}
+.con_footer{
+    width: 100%;
+    position: relative;
+    margin-top: 10px;
+}
+.con_footer .link,.con_footer .desc,.form-inline .link{
+    width: 100%;
+    position: relative;
+}
+.form-inline .link{
+    margin-top: 10px;
+}
+.con_footer .link p.title,.con_footer .desc p.title,.form-inline .link p.title{
+    font-family: inherit;
+    font-size: 14px;
+    color: #333333;
+    letter-spacing: 0;
+    font-weight: bold;
+}
+.con_footer .link p.link_con,.form-inline .link p.link_con{
+    font-family:inherit;
+    font-size: 14px;
+    color: #0091DF;
+    letter-spacing: 0;
+    line-height: 20px;
+}
+.con_footer .desc{
+    margin-top: 10px;
+}
+.con_footer .desc p.desc_con{
+    font-family:inherit;
+    font-size: 12px;
+    color: #333333;
+    letter-spacing: 0;
+    line-height: 20px;
+}
+#postBack_link{
+    color:#D21212;
+}
+.pagesPrompt{
+    width: 300px;height: 40px;
+    background: rgba(0,0,0,0.70);
+    border-radius: 4px;
+    position: fixed;
+    top:0;bottom: 0;
+    left:0;right: 0;
+    margin:auto;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0.7px;
+    text-align: center;
+    line-height: 40px;
+    display: none;
+}

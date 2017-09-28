@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xbaos Group Partners Payment Information </title>
+    <link rel="shortcut icon" href="../../img/icon.png">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/init.css">
+    <link rel="stylesheet" href="./css/page3.css">
+</head>
+<body>
+    <div class="mask">
+
+    </div>
+    <div id="message">
+        <p>Notice</p>
+        <div id="message_contain">
+            <span id="words"></span>
+        </div>
+    </div>
+    <div class="box">
+        <div class="wrap">
+            <div class="logo-box">
+                <a href="../../index.html">
+                    <img src="img/logo.png" alt="">
+                </a>
+            </div>
+            <div class="form-box">
+                <p class="title">Xbaos Group Partner Qualification Form(Developer)</p>
+                <p class="remarks">Please fill in the following information carefully and he will affect your account rating.</p>
+                <form class="form-inline" action="" method="post" id="addUserForm">
+                    <div class="input-box">
+                        <div class="form-group text">
+                            <div>Account Holder</div>
+                            <i class="special">*</i>
+                            <input type="text" class="form-control text" id="accountHolder" placeholder="" name="accountHolder"  required title="Please enter your account holder">
+                            <i class="verification">**</i>
+                        </div>
+                        <div class="form-group text two">
+                            <label for="accountNumber" class="label">Account Number/IBA</label>
+                            <i class="special">*</i>
+                            <input type="text" class="form-control text" id="accountNumber" placeholder="" required name="accountNumber" title="Please enter your accont number or IBA">
+                            <i class="verification">**</i>
+                            <input hidden name="user_id" value="${content.userId }" id="use1"/>
+                        </div>
+                        <div class="form-group text">
+                            <label for="SWIFT" class="label">SWIFT</label>
+                            <i class="special">*</i>
+                            <input type="email" class="form-control text" id="SWIFT" placeholder="" required name="swift" title="Please enter your SWIFT">
+                            <i class="verification">**</i>
+                        </div>
+                        <div class="form-group text two">
+                            <label for="bankName" class="label">Bank Name & Location</label>
+                            <i class="special">*</i>
+                            <input type="text" class="form-control text" id="bankName" placeholder="" required  name="bankName" title="Please enter your bank name and location">
+                            <i class="verification">**</i>
+                        </div>
+                        <div class="form-group text">
+                            <label for="bankCountry" class="label">Bank Country</label>
+                            <i class="special">*</i>
+                            <input type="text" class="form-control text" id="bankCountry" placeholder="" required name="bankCountry" title="Please enter your bank country">
+                            <i class="verification">**</i>
+                        </div>
+                        <div class="form-group text two">
+                            <label for="bankRoutingNumber" class="label">Bank Routing Number</label>
+                            <i class="special">*</i>
+                            <input type="text" class="form-control text" id="bankRoutingNumber" placeholder="" required name="bankRoutingNumber" title="Please enter your bank routing number">
+                            <i class="verification">**</i>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="label" for="additionalPaymentDetails">Additional Payment Details</label>
+                        <textarea class="form-control two" rows="1" id="additionalPaymentDetails" placeholder=""  name="additionalPaymentDetails"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label class="label" for="companyRegistrationNo">Company Registration No</label>
+                        <textarea class="form-control two" rows="1" id="companyRegistrationNo" placeholder="" name="companyRegistrationNo"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label class="label" for="registratioAddress">Company Registration Address</label>
+                        <textarea class="form-control two" rows="1" id="registratioAddress" placeholder="" name="companyRegistrationAddress"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label class="label" for="officeAddress">Company Office Address</label>
+                        <i class="special">*</i>
+                        <textarea class="form-control two" rows="1" id="officeAddress" placeholder="" name="companyOfficeAddress"></textarea>
+                        <i class="verification">**</i>
+                    </div>
+
+                    <button type="button" class="btn btn-default" id="btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/jquery-3.2.1.min.js"></script>
+<script src="./js/page3.js"></script>
+</html>

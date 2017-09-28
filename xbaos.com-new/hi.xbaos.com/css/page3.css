@@ -1,0 +1,231 @@
+/*导航*/
+.lab{
+    width: 100%;
+    height: 40px;
+    position: relative;
+    border-bottom: 1px solid #D8D8D8;
+}
+.lab li{
+    height: 39px;
+    padding: 0 15px;
+    float: left;
+    color:#272727;
+    font-size: 15px;
+    line-height: 40px;
+    background-color: #ffffff;
+}
+.lab li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: inherit;
+}
+.lab li.first{
+    border-top: 3px solid #D21212;
+    height: 40px;
+    border-left: 1px solid #D8D8D8;
+    border-right: 1px solid #D8D8D8;
+}
+.box{
+    width:100%;
+    position: relative;
+    padding: 30px 0 0 15px;
+    background-color: #FFFFFF;
+}
+.wrap{
+    width: 100%;position: relative;
+    padding-top: 1px;
+    margin-top: 30px;
+}
+.logo-box{
+    width: 130px;
+    height: 34px;
+
+}
+.logo-box a,.logo-box a img{
+    width: 100%;height: 100%;
+    display: block;
+}
+
+.form-box{
+    width: 100%;
+    position: relative;
+}
+form.form-inline:after{
+    content: "";
+    width: 100%;
+    display: block;
+    clear: both;
+}
+.form-box p.title{
+    font-size: 28px;
+    color: #272727;
+    letter-spacing: 0;
+}
+.form-box p.remarks{
+    font-size: 14px;
+    color: #272727;
+    line-height: 20px;
+    margin-top: 4px;
+}
+.form-box .form-group{
+    margin-top: 20px;
+    display: block;
+    color: #272727;
+    font-size: 14px;
+}
+.form-box .form-group:after{
+    content: "";
+    width: 100%;
+    display: block;
+    clear: both;
+}
+.form-box .form-group .label{
+    display: block;
+    text-align: left;
+    padding:0 0 5px 0;
+    color:#272727
+}
+.form-box .form-group .form-control.one{
+    background-color: transparent;
+    width: 320px;height: 36px;
+    color: #272727;
+    font-size: 14px;
+}
+.form-box .form-group .form-control.two{
+    background-color: transparent;
+    width:970px;height: 36px;
+    color: #272727;
+    font-size: 14px;
+}
+.input-box{
+    width: 100%;
+    position: relative;
+}
+.input-box:after{
+    content: "";
+    width: 100%;
+    display: block;
+    clear: both;
+}
+.form-group.text{
+    float: left;
+
+}
+.form-group.two{
+    margin-left: 265px;
+}
+.form-group.one{
+    clear: left;
+}
+.form-control.text{
+    width: 320px;height: 36px;
+    background-color: transparent;
+    color:#272727;
+}
+
+#btn_wrap{
+    padding-right: 256px;
+}
+#btn{
+    float: right;
+    width: 136px;height:46px;
+    margin-top: 100px;
+    background: #D21212;
+    border: 1px solid #9F0E0E;
+    color: #fff;
+    margin-bottom: 20px;
+    font-family:inherit;
+    font-size: 22px;
+    letter-spacing: 0;
+}
+/*alert info*/
+#message{
+    width: 450px;
+    height: 200px;
+    background:#fff;
+    border:1px solid #FACADE;
+    border-radius: 4px;
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+    display: none;
+    text-align: center;
+    font-size: 16px;
+    color: #333333;
+    z-index:200;
+
+}
+#message p {
+    line-height: 40px;
+    height: 40px;
+    width: 448px;
+    background: #D12121;
+    text-align: left;
+    text-indent: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid #F9CADE;
+    margin: 0;
+    color: #333333;
+}
+#message_contain{
+    width: 450px;
+    height: 110px;
+    vertical-align: middle;
+    display: table-cell;
+}
+#message_contain span{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+#message #confirm_box span{
+    background: #D21212;
+    border-radius: 4px;
+    border: none;
+    font-weight: bold;
+    text-align: center;
+    width: 66px;
+    color: #272727;
+    padding: 4px auto;
+    display: block;
+    height: 36px;
+    line-height: 36px;
+    margin: 0 auto;
+}
+.form-group{
+    position: relative;
+}
+i.special{
+    position: absolute;
+    top: 25px;
+    left: -18px;
+    color: #D21212;
+    font-size: 30px;
+}
+i.verification{
+    position: absolute;
+    top:28px;
+    right: -230px;
+    color: red;
+    width:228px;
+    display:none;
+}
+.prompt{
+    width: 300px;
+    height: 60px;
+    background: rgba(0,0,0,0.70);
+    border-radius: 4px;
+    text-align: center;
+    line-height: 60px;
+    position: fixed;
+    top:0;bottom: 0;left:0;right:0;
+    margin: auto;
+    font-size: 14px;
+    color: #FFFFFF;
+    display: none;
+}

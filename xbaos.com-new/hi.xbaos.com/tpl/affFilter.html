@@ -1,0 +1,70 @@
+
+<link rel="stylesheet" href="../css/advFilter.css">
+<div class="filter_content">
+    <div class="filter_wrapper">
+        <!--filter search-->
+        <!--筛选盒子-->
+        <div class="select-box">
+            <ul class="select-list">
+                <li class="country con" id="netWrap">
+                    <!--<input type="text" id="net" class="con" ng-model="search">-->
+                    <select-aff-id token="token" user="user" url="url"></select-aff-id>
+                    <!--选项内容-->
+                </li>
+                <li class="country con">
+                    <input type="text" id="con" class="con" ng-model="search" placeholder="Country">
+                    <i>
+                        <img src="../img/cha.png" alt="">
+                    </i>
+                    <!--选项内容-->
+                    <select-country search="search" country="countryCode"></select-country>
+                </li>
+                <li class="system con">
+                    <input type="text" id="con-one" class="con" ng-model="platform" placeholder="platform">
+                    <i>
+                        <img src="../img/icon_xiala_12x7.png" alt="">
+                    </i>
+                    <!--选项内容-->
+                    <ul class="system-son animated">
+                        <li class="active text get-con" ng-click="platform='ios'">ios</li>
+                        <li class="text get-con" ng-click="platform='Android'">Android</li>
+                    </ul>
+                </li>
+                <li class="package-name con">
+                    <input type="text" class="con" placeholder="App Name" ng-model="appName">
+                </li>
+            </ul>
+            <div class="btn-search" ng-click="ajaxGet()">
+                Search
+            </div>
+        </div>
+        <!--filter search-->
+
+        <!--filter content start-->
+        <div class="filter_body">
+            <table class="table">
+                <thead class="thead_bg">
+                <tr>
+                    <td>App ID</td>
+                    <td>Offer Name</td>
+                    <td>Country</td>
+                    <td>OS</td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="item in tableList">
+                    <td>{{item.id}}</td>
+                    <td>{{item.name}}</td>
+                    <td>{{countryName}}</td>
+                    <td>{{platform}}</td>
+                </tr>
+                </tbody>
+
+            </table>
+            <!--pagination-->
+            <tm-pagination conf="paginationConf" id="pagination"></tm-pagination>
+        </div>
+        <!--filter content end-->
+
+    </div>
+</div>

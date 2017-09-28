@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xbaos Group Partner Traffic Information</title>
+    <link rel="shortcut icon" href="img/icon.png">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/init.css">
+    <link rel="stylesheet" href="./css/page2.css">
+
+</head>
+<body>
+    <div class="mask">
+
+    </div>
+    <div class="box">
+        <div class="wrap">
+            <div class="logo-box">
+                <a href="../../index.html">
+                    <img src="img/logo.png" alt="">
+                </a>
+            </div>
+            <div class="form-box">
+                <p class="title">Xbaos Group Partner Qualification Form(Developer)</p>
+                <p class="remarks">Please fill in the following information carefully and he will affect your account rating.</p>
+                <form class="form-inline">
+                    <div class="form-group ">
+                        <label class="label" for="traffic">Please choose your source of traffic</label>
+                        <select  class="form-control one" id="traffic">
+                            <option>AppDeveloper</option>
+                            <option>MediaBuyingCorporation</option>
+                            <option>SDKIntegratedBusiness</option>
+                            <option>AdNetwork</option>
+                            <option>individualAppDeveloper</option>
+                            <option>AdAgency</option>
+                            <option>other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="label" for="agencyName">If you are an Ad Agency, please list at least five of your direct agency advertiser names.</label>
+                        <textarea class="form-control two" rows="1" id="agencyName" placeholder=""></textarea>
+			        </div>
+                    <div class="form-group">
+                        <label class="label" for="trafficSources">If you have direct/proprietary traffic sources – please provide link to website, facebook pages, app etc.</label>
+                        <textarea class="form-control two" rows="1" id="trafficSources" placeholder=""></textarea>
+                    </div>
+                    <div class="form-group">
+                        <p class="question">Whether to accept hard kpi?</p>
+                        <label class="radio-inline one">
+                            <span class="circular">
+                                <img src="./img/but_Radio_default.png" class="img" alt="">
+                            </span>
+                            <input class="radio" type="radio" name="select" id="yes" value="1">Yes
+                        </label>
+                        <label class="radio-inline one">
+                            <span class="circular">
+                                <img src="./img/but_Radio_default.png" class="img" alt="">
+                            </span>
+                            <input class="radio" type="radio" name="select" id="no" value="0">No
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label class="label" for="description">Whether there is a huge click on traffic, if there is a description of the source.</label>
+                        <i class="special">*</i>
+                        <textarea class="form-control two" rows="1" id="description" placeholder=""></textarea>
+                        <i class="verification">*&nbsp;&nbsp;*</i>
+                    </div>
+
+                    <!--国家变成多选-->
+                    <div class="form-group ">
+                        <label class="label" for="strongestGeos">Strongest Geos</label>
+                        <i class="special">*</i>
+                        <i class="verification">*&nbsp;&nbsp;*</i>
+                        <div class="moreIdWrap">
+                            <input type="text" class="form-control one" id="strongestGeos">
+                            <ul class="countryList">
+                                <!--<li class="strongestGeos1">1</li>-->
+                                <!--<li class="strongestGeos1">2</li>-->
+                            </ul>
+                        </div>
+
+                        <!--<select  class="form-control one" id="strongestGeos" >-->
+
+                        <!--</select>-->
+                    </div>
+                    <div class="form-group targetsSupport">
+                        <p>What are the Targets you support?</p>
+                        <div class="select-list">
+                            <label class="checkbox-inline">
+                                <input type="checkbox" id="cityTargeting" value="CityTargeting"> City Targeting
+                            </label>
+                            <label class="checkbox-inline top">
+                                <input type="checkbox" id="ctrSharing" value="CTRSharing"> CTR Sharing
+                            </label>
+                            <label class="checkbox-inline top">
+                                <input type="checkbox" id="hardCapping" value="hardCapping"> Hard Capping
+                            </label>
+                            <label class="checkbox-inline top">
+                                <input type="checkbox" id="OS-version" value="OSversion"> OS version
+                            </label>
+                            <label class="checkbox-inline top">
+                                <input type="checkbox" id="clickCapping" value="ClickCapping"> Click Capping
+                            </label>
+                        </div>
+                        <div class="select-list">
+
+                            <label class="checkbox-inline ">
+                                <input type="checkbox" id="impressionTracking" value="Impressiontracking"> Impression tracking
+                            </label>
+                            <label class="checkbox-inline top">
+                                <input type="checkbox" id="names" value="SiteURLsorAppNames"> Site URLs or App Names
+                            </label>
+                            <label class="checkbox-inline top">
+                                <input type="checkbox" id="bannerUsageData" value="BannerUsageData"> Banner Usage Data (A/B Testing)
+                            </label>
+                            <label class="checkbox-inline top">
+                                <input type="checkbox" id="placementLevelOptimisation" value="PlacementLevelOptimisation">Placement Level Optimisation
+                            </label>
+                            <label class="checkbox-inline top">
+                                <input type="checkbox" id="htmlAdTag" value="HTMLAdTag"> HTML Ad Tag (iframe or script tag)
+                            </label>
+                        </div>
+                        <div class="select-list">
+                            <label class="checkbox-inline">
+                                <input type="checkbox" id="IDFA" value="IDFA"> IDFA
+                            </label>
+                            <label class="checkbox-inline top">
+                                <input type="checkbox" id="GAID" value="GAID"> GAID
+                            </label>
+                            <label class="checkbox-inline top">
+                                <input type="checkbox" id="placement" value="PlacementIDs"> Placement IDs
+                            </label>
+                            <label class="checkbox-inline top">
+                                <input type="checkbox" id="carrierTargeting" value="CarrierTargeting"> Carrier Targeting
+                            </label>
+                            <label class="checkbox-inline top">
+                                <input type="checkbox" id="other" value="Other"> Other
+                            </label>
+                        </div>
+
+                    </div>
+                    <div class="form-group campaignSupport">
+                        <p>What type of campaign do you support?</p>
+                        <div class="select-list">
+                            <label class="checkbox-inline">
+                                <input type="checkbox" id="APK" value="APK"> APK
+                            </label>
+                            <label class="checkbox-inline top">
+                                <input type="checkbox" id="DDL" value="DDL">DDL
+                            </label>
+                            <label class="checkbox-inline top">
+                                <input type="checkbox" id="CPL" value="CPL"> CPL
+                            </label>
+                            <label class="checkbox-inline top">
+                                <input type="checkbox" id="CPS" value="CPS"> CPS
+                            </label>
+                            <label class="checkbox-inline top">
+                                <input type="checkbox" id="otherTwo" value="Other"> Other
+                            </label>
+                        </div>
+                        <div class="select-list">
+
+                            <label class="checkbox-inline top">
+                                <input type="checkbox" id="CPV" value="CPV"> CPV
+                            </label>
+                            <label class="checkbox-inline top">
+                                <input type="checkbox" id="CPC" value="CPC"> CPC
+                            </label>
+                            <label class="checkbox-inline top">
+                                <input type="checkbox" id="CPM" value="CPM"> CPM
+                            </label>
+                            <label class="checkbox-inline top">
+                                <input type="checkbox" id="CPr" value="CPr">CPR
+                            </label>
+                        </div>
+                        <div class="select-list">
+                            <label class="checkbox-inline">
+                                <input type="checkbox" id="googlePlay" value="GooglePlay"> Google Play
+                            </label>
+                            <label class="checkbox-inline top">
+                                <input type="checkbox" id="itunesStore" value="itunesStore"> itunes Store
+                            </label>
+                            <label class="checkbox-inline top">
+                                <input type="checkbox" id="Subscription" value="Subscription">Subscription
+                            </label>
+                            <label class="checkbox-inline top">
+                                <input type="checkbox" id="SmartLink" value="SmartLink"> SmartLink
+                            </label>
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <label class="label" for="complianceManagement">Compliance Management Tools & Processes for direct and sub-sources? (CR, placement etc.)</label>
+                        <textarea class="form-control two" rows="1" id="complianceManagement" placeholder=""></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="label" for="campaigns">Typically how long does it take for you to set up campaigns and set them live?</label>
+                        <textarea class="form-control two" rows="1" id="campaigns" placeholder=""></textarea>
+                    </div>
+
+                    <div class="form-group especial">
+                            <i class="special">*</i>
+                            <p>
+                                Which networks are you currently working with?<br>
+                                (Please fill in your account manager’s IM information, the staff will ask you about the traffic situation and make a preliminary rating on your traffic)
+                            </p>
+                            <span class="verification">*&nbsp;&nbsp;*</span>
+                            <div class="form-group">
+
+                                <input type="text" class="form-control input-text" id="company-one" placeholder="Company">
+                            </div>
+                            <div class="form-group two">
+
+                                <input type="text" class="form-control input-text" id="IM-one" placeholder="IM">
+                            </div>
+                            <div class="form-group">
+
+                                <input type="text" class="form-control input-text" id="company-two" placeholder="Company">
+                            </div>
+                            <div class="form-group two">
+
+                                <input type="text" class="form-control input-text" id="IM-two" placeholder="IM">
+                            </div>
+                            <div class="form-group">
+
+                                <input type="text" class="form-control input-text" id="company-three" placeholder="Company">
+                            </div>
+                            <div class="form-group two">
+
+                                <input type="text" class="form-control input-text" id="IM-three" placeholder="IM">
+                            </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="label" for="transparency">Are you open to providing transparency on sources?</label>
+                        <textarea class="form-control two" rows="1" id="transparency" placeholder=""></textarea>
+                    </div>
+
+                    <!--很多的单选框-->
+                    <div class="form-group">
+                        <p class="question">Your average revenue of each month is about?</p>
+                        <label class="radio-inline much-num" >
+                            <span class="circular">
+                                <img src="./img/but_Radio_default.png" class="img-two" alt="">
+                            </span>
+                            <input class="radio-two" type="radio" name="kpi" id="kpi-1" value="0-1000USD">0-1000 USD
+                        </label>
+                        <label class="radio-inline much-num">
+                            <span class="circular">
+                                <img src="./img/but_Radio_default.png" class="img-two" alt="">
+                            </span>
+                            <input class="radio-two" type="radio" name="kpi" id="kpi-2" value="1000-5000USD">1000-5000 USD
+                        </label>
+                        <label class="radio-inline much-num">
+                            <span class="circular">
+                                <img src="./img/but_Radio_default.png" class="img-two" alt="">
+                            </span>
+                            <input class="radio-two" type="radio" name="kpi" id="kpi-3" value="5000-10000USD">5000-10000 USD
+                        </label>
+                        <label class="radio-inline much-num">
+                            <span class="circular">
+                                <img src="./img/but_Radio_default.png" class="img-two" alt="">
+                            </span>
+                            <input class="radio-two" type="radio" name="kpi" id="kpi-4" value="10000-20000USD">10000-20000 USD
+                        </label>
+                        <label class="radio-inline much-num">
+                            <span class="circular">
+                                <img src="./img/but_Radio_default.png" class="img-two" alt="">
+                            </span>
+                            <input class="radio-two" type="radio" name="kpi" id="kpi-5" value="30000-50000USD">30000-50000 USD
+                        </label>
+                        <label class="radio-inline much-num">
+                            <span class="circular">
+                                <img src="./img/but_Radio_default.png" class="img-two" alt="">
+                            </span>
+                            <input class="radio-two" type="radio" name="kpi" id="kpi-6" value="50000+USD">50000+ USD
+                        </label>
+                        <label class="radio-inline much-num">
+                            <span class="circular">
+                                <img src="./img/but_Radio_default.png" class="img-two" alt="">
+                            </span>
+                            <input class="radio-two" type="radio" name="kpi" id="kpi-7" value="50000+USD">Other
+                        </label>
+                    </div>
+
+                    <div class="form-group ">
+                        <label class="label" for="timeZone">Please select a time zone that is
+                            similar to your work time zone</label>
+                        <select  class="form-control one" id="timeZone">
+
+                        </select>
+                    </div>
+
+                    <button type="button" class="btn btn-default" id="btn">Next</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/jquery-3.2.1.min.js"></script>
+<script src="./js/page2.js"></script>
+</html>

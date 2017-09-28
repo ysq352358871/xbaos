@@ -1,0 +1,252 @@
+.box{
+    width:100%;
+    position: relative;
+    padding:30px 15px 15px 15px;
+    background-color:#FFFFFF;
+
+}
+.wrap{
+    width:100%;
+    position: relative;
+    /*background-color: aqua;*/
+}
+/*顶部标题开始*/
+.top{
+    width: 100%;
+    height: 64px;
+    font-size: 25px;
+    line-height: 64px;
+}
+.top .left_box{
+    width: 64px;
+    height: 64px;
+    border-radius: 4px;
+    background-color: #D8D8D8;
+    float: left;
+}
+.top .left_box img{
+    display: block;
+    width:64px;height: 64px;
+}
+.top .right_box_text{
+    margin-left:15px;
+    float: left;
+}
+
+/*导航部分 开始*/
+.lab{
+    width: 100%;
+    height: 40px;
+    margin-top: 30px;
+    position: relative;
+    border-bottom: 1px solid #D8D8D8;
+}
+.lab li{
+    height: 39px;
+    padding: 0 15px;
+    float: left;
+    color:#272727;
+    font-size: 15px;
+    line-height: 40px;
+    background-color: #ffffff;
+}
+.lab li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: inherit;
+}
+.lab li.first{
+    border-top: 3px solid #D21212;
+    height: 40px;
+    border-left: 1px solid #D8D8D8;
+    border-right: 1px solid #D8D8D8;
+}
+
+/*content start*/
+.con-list{
+    width:100%;
+    position: relative;
+    margin-top: 20px;
+}
+.con-list span.title{
+    color: #272727;
+    font-size: 16px;
+    margin-bottom: 7px;
+    display: block;
+    font-weight:bolder;
+    font-family:PingFang-SC-Medium;
+
+}
+.bt th{
+    color: #272727;
+    background-color:#D8D8D8;
+}
+
+/*mark star*/
+.footer{
+    width: 100%;
+    position: relative;
+}
+.footer p.text{
+    color: #272727;
+    font-size: 16px;
+    margin-bottom: 7PX;
+}
+.footer .mark-box{
+    width: 100%;
+    position: relative;
+}
+.mark-box:after{
+    content: "";
+    display:block;
+    width: 100%;
+    clear: both;
+}
+.footer .mark-box span{
+    color:#333333;
+    font-size: 14px;
+}
+#mark{
+    display: inline-block;
+    width: 93%;
+    float: right;
+}
+.submit-box{
+    width: 100%;
+    position: relative;
+    margin-top: 25px;
+}
+.submit-box::after{
+    content:"";
+    width:100%;
+    display: block;
+    clear: both;
+}
+.submit-box .select-box{
+    width: 94px;
+    height: 36px;
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 2px;
+    float: right;
+    position: relative;
+}
+.submit-box .select-box a{
+    display: block;
+    font-family:PingFang-SC-Medium;
+    font-size: 16px;
+    color: #272727;
+    line-height: 36px;
+    padding-left: 15px;
+}
+.submit-box .select-box em{
+    display: block;
+    width: 10px;
+    height: 22px;
+    position: absolute;
+    top:6px;
+    right:15px;
+
+}
+.submit-box .select-list{
+    width: 94px;
+    /*padding: 5px 0;*/
+    position: absolute;
+    top:38px;right:0;
+    border: 1px solid #e3e3e3;
+    display: none;
+    -moz-box-shadow:0 2px 4px 0 #000000;
+    -webkit-box-shadow:0 2px 4px 0 #000000;
+    box-shadow: 0 2px 4px 0 #000000;
+    z-index: 9999;
+    background-color: #FFFFFF;
+}
+.submit-box .select-list li{
+    width: 100%;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    font-size: 14px;
+    color:#272727;
+    cursor: pointer;
+}
+.submit-box .select-list li.color{
+    background-color: #D21212;
+    color:#FFFFFF;
+}
+
+.edit,.save{
+    width: 64px;
+    height: 36px;
+    background-color: #D21212;
+    border-radius: 2px;
+    border:1px solid #9F0E0E;
+    float: right;margin-right: 10px;
+    color:#FFFFFF;
+    line-height: 36px;
+    text-align: center;
+}
+.edit:hover{
+    background-color: #9F0E0E;
+    border:1px solid #9F0E0E;
+}
+.save:hover{
+    background-color: #9F0E0E;
+    border:1px solid #9F0E0E;
+}
+.edit a,.save a{
+    display: block;
+    width: 100%;height: 100%;
+    line-height: 36px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.footer-box{
+    width: 100%;
+    margin-top: 30px;
+    position: relative;
+}
+.footer-box p.title{
+    width: 100%;
+    height: 24px;
+    background-color: #e2e2e2;
+    border: 1px solid #D8D8D8;
+    border-bottom: none;
+    line-height: 24px;
+    color:#272727;
+    font-size: 14px;
+}
+.footer-box p.title span{
+    color: #222222;
+}
+.footer-box .content{
+    width: 100%;
+    position: relative;
+    padding: 10px;
+    border: 1px solid #D8D8D8;
+}
+
+.footer-box .content .link{
+    margin-top: 10px;
+}
+.footer-box .content .con-one span,.footer-box .content .link span{
+    color:#222222;
+    font-weight:bolder;
+}
+.pagesPrompt{
+    width: 300px;height: 40px;
+    background: rgba(0,0,0,0.70);
+    border-radius: 4px;
+    position: fixed;
+    top:0;bottom: 0;
+    left:0;right: 0;
+    margin:auto;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 40px;
+    display: none;
+}
+

@@ -1,0 +1,76 @@
+<link rel="stylesheet" href="../css/billingDetail.css">
+<div class="wrapBox">
+    <div class="form-group input-box" >
+        <label for="netId" class="label">Net Id</label>
+        <input class="form-control input-con"  id="netId"  ng-model="netId" disabled>
+    </div>
+    <table class="table table-striped" id="tableBox">
+        <tr>
+            <th class="text-center">Month</th>
+            <th class="text-center"  id="sort1">
+                <span style="cursor: pointer" ng-click="sortFun('offer_id')">Offer ID</span>
+                <img src="../img/sort_02.png" alt="sort_02" class="pic" ng-click="sortFun('offer_id')" >
+                <img src="../img/sort_01.png" alt="sort_01" class="pic active" ng-click="sortFun('offer_id')">
+            </th>
+            <th class="text-center" id="sort2">
+                <span style="cursor: pointer" ng-click="sortFun('appid')">App ID</span>
+                <img src="../img/sort_02.png" alt="sort_02" class="pic" ng-click="sortFun('appid')" >
+                <img src="../img/sort_01.png" alt="sort_01" class="pic active" ng-click="sortFun('appid')">
+            </th>
+            <th class="text-center" id="sort3">
+                <span style="cursor: pointer" ng-click="sortFun('affid')">Aff ID</span>
+                <img src="../img/sort_02.png" alt="sort_02" class="pic" ng-click="sortFun('affid')" >
+                <img src="../img/sort_01.png" alt="sort_01" class="pic active" ng-click="sortFun('affid')">
+            </th>
+            <th class="text-center" id="sort4">
+                <span style="cursor: pointer" ng-click="sortFun('callback')">Callback</span>
+                <img src="../img/sort_02.png" alt="sort_02" class="pic" ng-click="sortFun('callback')" >
+                <img src="../img/sort_01.png" alt="sort_01" class="pic active" ng-click="sortFun('callback')">
+            </th>
+            <th class="text-center" id="sort5">
+                <span style="cursor: pointer" ng-click="sortFun('payment')">Total</span>
+                <img src="../img/sort_02.png" alt="sort_02" class="pic" ng-click="sortFun('payment')" >
+                <img src="../img/sort_01.png" alt="sort_01" class="pic active" ng-click="sortFun('payment')">
+            </th>
+            <th class="text-center">Confirmed</th>
+            <th class="text-center">Deduct</th>
+            <th class="text-center false" id="approvedWrap">
+                <span>Approved</span>
+                <img src="../img/but_Checkbox_selected.png" alt="" class="true">
+                <img src="../img/but_Checkbox_default_dark.png" alt="" class="false">
+            </th>
+            <th class="text-center">Hold</th>
+        </tr>
+        <tr class="text-center">
+            <td style="color: #D21212">Total</td>
+            <td style="text-align: center;color: #D21212">-</td>
+            <td style="color: #D21212">-</td>
+            <td style="color: #D21212">-</td>
+            <td style="color: #D21212">{{sum.sumcallback}}</td>
+            <td style="color: #D21212">{{sum.sumpayment}}</td>
+            <td style="color: #D21212">{{sum.sumpaymentreduce}}</td>
+            <td style="color: #D21212">{{sum.sumdeduct}}</td>
+            <td style="color: #D21212">-</td>
+            <td style="color: #D21212">-</td>
+        </tr>
+        <tr class="text-center dataWrap" ng-repeat="item in dataList | orderBy:sort:desc" id='{{item.payaffid}}'>
+            <td class="month">{{item.month}}</td>
+            <td class="offerId"><span class="offerIdCon">{{item.offer_id}}</span>-{{item.offerName}}</td>
+            <td class="appId">{{item.appid}}</td>
+            <td class="affId">{{item.affid}}</td>
+            <td>{{item.callback}}
+            <td>{{item.payment}}</td>
+            <td>{{item.confirmed}}</td>
+            <td class="deduct">{{item.deduct}}</td>
+            <td id="approved" ng-class="{{item.approved}}==true?'true':'false'">
+                <img src="../img/but_Checkbox_selected.png" alt="" class="true">
+                <img src="../img/but_Checkbox_default_dark.png" alt="" class="false">
+            </td>
+            <td id="hold" ng-class="{{item.hold}}==true?'true':'false'">
+                <img src="../img/but_Checkbox_selected.png" alt="" class="true">
+                <img src="../img/but_Checkbox_default_dark.png" alt="" class="false">
+            </td>
+        </tr>
+    </table>
+    <tm-pagination conf="paginationConf" id="pagination"></tm-pagination>
+</div>
